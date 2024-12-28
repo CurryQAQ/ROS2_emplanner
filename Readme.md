@@ -7,7 +7,7 @@
 ## base_msgs功能包修改
 
 
-1、在.xml文件中增加依赖说明
+1、在.xml文件中增加依赖说明<br>
   <buildtool_depned>rosidl_default_generators</buildtool_depend> 编译依赖<br>
   <build_depend>rosidl_default_generators</build_depend> 编译依赖<br>
   <exec_depend>rosidl_default_runtime</exec_depend> 执行依赖<br>
@@ -17,14 +17,15 @@
   <depend>geometry_msgs</depend> <br>
   <depend>nav_msgs</depend> ROS2自带消息类型的依赖<br>
   <member_of_group>rosidl_interface_packages</member_of_group> 消息打包依赖<br>
-2、修改cmakelist文件
-🕐把cmake版本修改成自己的
-    设置C和C++格式  
-    if(NOT CMAKE_C_STANDARD)  
-        set(CMAKE_C_STANDARD 99)  
-    endif()  
+2、修改cmakelist文件<br>
+🕐把cmake版本修改成自己的<br>
+    设置C和C++格式<br>
+    
+    if(NOT CMAKE_C_STANDARD)<br>  
+        set(CMAKE_C_STANDARD 99)<br>  
+    endif()<br>
 
-    if(NOT CMAKE_CXX_STANDARD)  
+    if(NOT CMAKE_CXX_STANDARD)<br>  
         set(CMAKE_CXX_STANDARD 17)  
     endif()  
 
