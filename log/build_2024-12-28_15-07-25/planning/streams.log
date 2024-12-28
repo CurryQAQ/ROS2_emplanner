@@ -1,0 +1,44 @@
+[0.153s] Invoking command in '/home/miao/planning_with_ROS2_ws/build/planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble /usr/bin/cmake --build /home/miao/planning_with_ROS2_ws/build/planning -- -j20 -l20
+[0.168s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.245s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.262s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.263s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.266s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.272s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.280s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.299s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.299s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.360s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.385s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.425s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.425s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/miao/planning_with_ROS2_ws/src/planning/include>
+[0.425s] -- Configured cppcheck exclude dirs and/or files: 
+[0.425s] -- Added test 'lint_cmake' to check CMake code style
+[0.425s] -- Added test 'uncrustify' to check C / C++ code style
+[0.425s] -- Configured uncrustify additional arguments: 
+[0.425s] -- Added test 'xmllint' to check XML markup files
+[0.426s] -- Configuring done
+[0.429s] -- Generating done
+[0.431s] -- Build files have been written to: /home/miao/planning_with_ROS2_ws/build/planning
+[0.451s] [35m[1mConsolidate compiler generated dependencies of target planning_node[0m
+[0.459s] [100%] Built target planning_node
+[0.467s] Invoked command in '/home/miao/planning_with_ROS2_ws/build/planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble /usr/bin/cmake --build /home/miao/planning_with_ROS2_ws/build/planning -- -j20 -l20
+[0.468s] Invoking command in '/home/miao/planning_with_ROS2_ws/build/planning': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble /usr/bin/cmake --install /home/miao/planning_with_ROS2_ws/build/planning
+[0.472s] -- Install configuration: ""
+[0.472s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/planning_node
+[0.472s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
+[0.472s] -- Installing: /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
+[0.472s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/ament_prefix_path.sh
+[0.472s] -- Installing: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/ament_prefix_path.dsv
+[0.472s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/path.sh
+[0.472s] -- Installing: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/path.dsv
+[0.472s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.bash
+[0.472s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.sh
+[0.472s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.zsh
+[0.473s] -- Installing: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.dsv
+[0.473s] -- Installing: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/package.dsv
+[0.473s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/packages/planning
+[0.473s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/cmake/planningConfig.cmake
+[0.473s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/cmake/planningConfig-version.cmake
+[0.473s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/package.xml
+[0.474s] Invoked command in '/home/miao/planning_with_ROS2_ws/build/planning' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble /usr/bin/cmake --install /home/miao/planning_with_ROS2_ws/build/planning

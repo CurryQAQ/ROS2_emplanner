@@ -1,0 +1,15 @@
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/ament_index/resource_index/package_run_dependencies/base_msgs
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/ament_index/resource_index/parent_prefix_path/base_msgs
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/ament_prefix_path.sh
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/ament_prefix_path.dsv
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/path.sh
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/path.dsv
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.bash
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.sh
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.zsh
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.dsv
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/package.dsv
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/ament_index/resource_index/packages/base_msgs
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgsConfig.cmake
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgsConfig-version.cmake
+/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/package.xml
