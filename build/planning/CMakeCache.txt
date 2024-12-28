@@ -232,6 +232,9 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=/usr/share/eigen3/cmake
+
 //Path to a library.
 FastCDR_LIBRARY_DEBUG:FILEPATH=FastCDR_LIBRARY_DEBUG-NOTFOUND
 
@@ -256,6 +259,9 @@ OPENSSL_INCLUDE_DIR:PATH=/usr/include
 //Path to a library.
 OPENSSL_SSL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libssl.so
 
+//The directory containing a CMake configuration file for OsqpEigen.
+OsqpEigen_DIR:PATH=/usr/local/lib/cmake/OsqpEigen
+
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 
@@ -272,7 +278,10 @@ SITE:STRING=miao
 TinyXML2_DIR:PATH=TinyXML2_DIR-NOTFOUND
 
 //Path to a library.
-_lib:FILEPATH=/opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so
+_lib:FILEPATH=/opt/ros/humble/lib/libvisualization_msgs__rosidl_typesupport_fastrtps_cpp.so
+
+//The directory containing a CMake configuration file for action_msgs.
+action_msgs_DIR:PATH=/opt/ros/humble/share/action_msgs/cmake
 
 //The directory containing a CMake configuration file for ament_cmake.
 ament_cmake_DIR:PATH=/opt/ros/humble/share/ament_cmake/cmake
@@ -361,8 +370,38 @@ ament_uncrustify_BIN:FILEPATH=/opt/ros/humble/bin/ament_uncrustify
 //Path to a program.
 ament_xmllint_BIN:FILEPATH=/opt/ros/humble/bin/ament_xmllint
 
+//The directory containing a CMake configuration file for base_msgs.
+base_msgs_DIR:PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake
+
 //The directory containing a CMake configuration file for builtin_interfaces.
 builtin_interfaces_DIR:PATH=/opt/ros/humble/share/builtin_interfaces/cmake
+
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/humble/share/class_loader/cmake
+
+//Value Computed by CMake
+common_BINARY_DIR:STATIC=/home/miao/planning_with_ROS2_ws/build/planning/src/common
+
+//Value Computed by CMake
+common_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+common_SOURCE_DIR:STATIC=/home/miao/planning_with_ROS2_ws/src/planning/src/common
+
+//The directory containing a CMake configuration file for composition_interfaces.
+composition_interfaces_DIR:PATH=/opt/ros/humble/share/composition_interfaces/cmake
+
+//The directory containing a CMake configuration file for console_bridge.
+console_bridge_DIR:PATH=/usr/lib/x86_64-linux-gnu/console_bridge/cmake
+
+//Value Computed by CMake
+decision_center_BINARY_DIR:STATIC=/home/miao/planning_with_ROS2_ws/build/planning/src/decision_center
+
+//Value Computed by CMake
+decision_center_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+decision_center_SOURCE_DIR:STATIC=/home/miao/planning_with_ROS2_ws/src/planning/src/decision_center
 
 //The directory containing a CMake configuration file for fastcdr.
 fastcdr_DIR:PATH=/opt/ros/humble/lib/cmake/fastcdr
@@ -379,11 +418,53 @@ fmt_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/fmt
 //The directory containing a CMake configuration file for foonathan_memory.
 foonathan_memory_DIR:PATH=/opt/ros/humble/lib/foonathan_memory/cmake
 
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/humble/share/geometry_msgs/cmake
+
+//Value Computed by CMake
+global_planner_BINARY_DIR:STATIC=/home/miao/planning_with_ROS2_ws/build/planning/src/global_planner
+
+//Value Computed by CMake
+global_planner_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+global_planner_SOURCE_DIR:STATIC=/home/miao/planning_with_ROS2_ws/src/planning/src/global_planner
+
 //The directory containing a CMake configuration file for libstatistics_collector.
 libstatistics_collector_DIR:PATH=/opt/ros/humble/share/libstatistics_collector/cmake
 
 //The directory containing a CMake configuration file for libyaml_vendor.
 libyaml_vendor_DIR:PATH=/opt/ros/humble/share/libyaml_vendor/cmake
+
+//Value Computed by CMake
+local_planner_BINARY_DIR:STATIC=/home/miao/planning_with_ROS2_ws/build/planning/src/local_planner
+
+//Value Computed by CMake
+local_planner_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+local_planner_SOURCE_DIR:STATIC=/home/miao/planning_with_ROS2_ws/src/planning/src/local_planner
+
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/humble/share/message_filters/cmake
+
+//Value Computed by CMake
+move_cmd_BINARY_DIR:STATIC=/home/miao/planning_with_ROS2_ws/build/planning/src/move_cmd
+
+//Value Computed by CMake
+move_cmd_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+move_cmd_SOURCE_DIR:STATIC=/home/miao/planning_with_ROS2_ws/src/planning/src/move_cmd
+
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/humble/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for osqpEigen.
+osqpEigen_DIR:PATH=osqpEigen_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for osqp.
+osqp_DIR:PATH=/usr/local/lib/cmake/osqp
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
@@ -400,8 +481,29 @@ planning_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 planning_SOURCE_DIR:STATIC=/home/miao/planning_with_ROS2_ws/src/planning
 
+//Value Computed by CMake
+planning_process_BINARY_DIR:STATIC=/home/miao/planning_with_ROS2_ws/build/planning/src/planning_process
+
+//Value Computed by CMake
+planning_process_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+planning_process_SOURCE_DIR:STATIC=/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process
+
+//Value Computed by CMake
+pnc_map_creator_BINARY_DIR:STATIC=/home/miao/planning_with_ROS2_ws/build/planning/src/pnc_map_creator
+
+//Value Computed by CMake
+pnc_map_creator_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+pnc_map_creator_SOURCE_DIR:STATIC=/home/miao/planning_with_ROS2_ws/src/planning/src/pnc_map_creator
+
 //The directory containing a CMake configuration file for rcl.
 rcl_DIR:PATH=/opt/ros/humble/share/rcl/cmake
+
+//The directory containing a CMake configuration file for rcl_action.
+rcl_action_DIR:PATH=/opt/ros/humble/share/rcl_action/cmake
 
 //The directory containing a CMake configuration file for rcl_interfaces.
 rcl_interfaces_DIR:PATH=/opt/ros/humble/share/rcl_interfaces/cmake
@@ -418,11 +520,26 @@ rcl_yaml_param_parser_DIR:PATH=/opt/ros/humble/share/rcl_yaml_param_parser/cmake
 //The directory containing a CMake configuration file for rclcpp.
 rclcpp_DIR:PATH=/opt/ros/humble/share/rclcpp/cmake
 
+//The directory containing a CMake configuration file for rclcpp_action.
+rclcpp_action_DIR:PATH=/opt/ros/humble/share/rclcpp_action/cmake
+
+//The directory containing a CMake configuration file for rclcpp_components.
+rclcpp_components_DIR:PATH=/opt/ros/humble/share/rclcpp_components/cmake
+
 //The directory containing a CMake configuration file for rcpputils.
 rcpputils_DIR:PATH=/opt/ros/humble/share/rcpputils/cmake
 
 //The directory containing a CMake configuration file for rcutils.
 rcutils_DIR:PATH=/opt/ros/humble/share/rcutils/cmake
+
+//Value Computed by CMake
+reference_line_BINARY_DIR:STATIC=/home/miao/planning_with_ROS2_ws/build/planning/src/reference_line
+
+//Value Computed by CMake
+reference_line_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+reference_line_SOURCE_DIR:STATIC=/home/miao/planning_with_ROS2_ws/src/planning/src/reference_line
 
 //The directory containing a CMake configuration file for rmw.
 rmw_DIR:PATH=/opt/ros/humble/share/rmw/cmake
@@ -487,6 +604,9 @@ rosidl_typesupport_introspection_c_DIR:PATH=/opt/ros/humble/share/rosidl_typesup
 //The directory containing a CMake configuration file for rosidl_typesupport_introspection_cpp.
 rosidl_typesupport_introspection_cpp_DIR:PATH=/opt/ros/humble/share/rosidl_typesupport_introspection_cpp/cmake
 
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/opt/ros/humble/share/sensor_msgs/cmake
+
 //The directory containing a CMake configuration file for spdlog.
 spdlog_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/spdlog
 
@@ -499,11 +619,38 @@ statistics_msgs_DIR:PATH=/opt/ros/humble/share/statistics_msgs/cmake
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/humble/share/std_msgs/cmake
 
+//The directory containing a CMake configuration file for tf2.
+tf2_DIR:PATH=/opt/ros/humble/share/tf2/cmake
+
+//The directory containing a CMake configuration file for tf2_msgs.
+tf2_msgs_DIR:PATH=/opt/ros/humble/share/tf2_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2_ros.
+tf2_ros_DIR:PATH=/opt/ros/humble/share/tf2_ros/cmake
+
 //The directory containing a CMake configuration file for tracetools.
 tracetools_DIR:PATH=/opt/ros/humble/share/tracetools/cmake
 
+//The directory containing a CMake configuration file for unique_identifier_msgs.
+unique_identifier_msgs_DIR:PATH=/opt/ros/humble/share/unique_identifier_msgs/cmake
+
+//Value Computed by CMake
+vehicle_info_BINARY_DIR:STATIC=/home/miao/planning_with_ROS2_ws/build/planning/src/vehicle_info
+
+//Value Computed by CMake
+vehicle_info_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+vehicle_info_SOURCE_DIR:STATIC=/home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info
+
+//The directory containing a CMake configuration file for visualization_msgs.
+visualization_msgs_DIR:PATH=/opt/ros/humble/share/visualization_msgs/cmake
+
 //Path to a program.
 xmllint_BIN:FILEPATH=/usr/bin/xmllint
+
+//The directory containing a CMake configuration file for yaml-cpp.
+yaml-cpp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/yaml-cpp
 
 //The directory containing a CMake configuration file for yaml.
 yaml_DIR:PATH=/opt/ros/humble/cmake
@@ -617,7 +764,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -1,4 +1,4 @@
-/home/miao/planning_with_ROS2_ws/install/planning/lib/planning/planning_node
+/home/miao/planning_with_ROS2_ws/install/planning/lib/planning_node
 /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
 /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
 /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/ament_prefix_path.sh

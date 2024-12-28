@@ -1,0 +1,33 @@
+[0.007s] Invoking command in '/home/miao/planning_with_ROS2_ws/build/base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble /usr/bin/cmake --build /home/miao/planning_with_ROS2_ws/build/base_msgs -- -j20 -l20
+[0.022s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.103s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.104s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.105s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.123s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.135s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.171s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.179s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.215s] -- Added test 'lint_cmake' to check CMake code style
+[0.215s] -- Added test 'xmllint' to check XML markup files
+[0.215s] -- Configuring done
+[0.217s] -- Generating done
+[0.218s] -- Build files have been written to: /home/miao/planning_with_ROS2_ws/build/base_msgs
+[0.234s] Invoked command in '/home/miao/planning_with_ROS2_ws/build/base_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble /usr/bin/cmake --build /home/miao/planning_with_ROS2_ws/build/base_msgs -- -j20 -l20
+[0.242s] Invoking command in '/home/miao/planning_with_ROS2_ws/build/base_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble /usr/bin/cmake --install /home/miao/planning_with_ROS2_ws/build/base_msgs
+[0.245s] -- Install configuration: ""
+[0.246s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/ament_index/resource_index/package_run_dependencies/base_msgs
+[0.246s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/ament_index/resource_index/parent_prefix_path/base_msgs
+[0.246s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/ament_prefix_path.sh
+[0.246s] -- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/ament_prefix_path.dsv
+[0.246s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/path.sh
+[0.246s] -- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/path.dsv
+[0.246s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.bash
+[0.246s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.sh
+[0.246s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.zsh
+[0.246s] -- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.dsv
+[0.246s] -- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/package.dsv
+[0.246s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/ament_index/resource_index/packages/base_msgs
+[0.246s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgsConfig.cmake
+[0.246s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgsConfig-version.cmake
+[0.246s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/package.xml
+[0.247s] Invoked command in '/home/miao/planning_with_ROS2_ws/build/base_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble /usr/bin/cmake --install /home/miao/planning_with_ROS2_ws/build/base_msgs
