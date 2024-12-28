@@ -11,7 +11,7 @@ set(DEPENDS
 )
 
 
-#添加节点
+#添加节点/可执行文件
 add_executable(planning_node
   ${CMAKE_CURRENT_SOURCE_DIR}/planning_node.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/planning_process.cpp
@@ -33,7 +33,7 @@ ament_target_dependencies(${target}
 
 #添加依赖
 
-#安装动态库、节点、相关目录
+#安装动态库、节点、相关目录/可执行文件
 install(TARGETS
   ${target}
   DESTINATION lib/${PLANNING_PACKAGE_NAME}

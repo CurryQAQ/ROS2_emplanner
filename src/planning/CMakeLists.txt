@@ -26,9 +26,10 @@ endif()
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 #设置包名，让子目录节点安装时使用
-set(PLANNING_PACKAGE_NAME ${PROJRCT_NAME})
+set(PLANNING_PACKAGE_NAME ${PROJECT_NAME})
 
 # 包含头文件的目录
+
 include_directories(
   /usr/local/include/eigen
   src/common/config_reader

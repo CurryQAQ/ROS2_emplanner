@@ -460,9 +460,6 @@ move_cmd_SOURCE_DIR:STATIC=/home/miao/planning_with_ROS2_ws/src/planning/src/mov
 //The directory containing a CMake configuration file for nav_msgs.
 nav_msgs_DIR:PATH=/opt/ros/humble/share/nav_msgs/cmake
 
-//The directory containing a CMake configuration file for osqpEigen.
-osqpEigen_DIR:PATH=osqpEigen_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for osqp.
 osqp_DIR:PATH=/usr/local/lib/cmake/osqp
 
