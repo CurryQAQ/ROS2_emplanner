@@ -1,0 +1,48 @@
+[35m[1mConsolidate compiler generated dependencies of target car_move_cmd[0m
+[35m[1mConsolidate compiler generated dependencies of target obs_move_cmd[0m
+[  8%] Built target global_path_server
+[ 17%] Built target config_reader
+[ 21%] [32mBuilding CXX object src/move_cmd/CMakeFiles/car_move_cmd.dir/car_move_cmd.cpp.o[0m
+[ 30%] Built target decision_center
+[ 52%] Built target local_planner
+[ 65%] Built target planning_node
+[ 73%] Built target global_planner
+[ 86%] Built target mathlibs
+[ 91%] [32mBuilding CXX object src/move_cmd/CMakeFiles/obs_move_cmd.dir/obs_move_cmd.cpp.o[0m
+[ 95%] [32m[1mLinking CXX executable obs_move_cmd[0m
+[100%] [32m[1mLinking CXX executable car_move_cmd[0m
+[100%] Built target obs_move_cmd
+[100%] Built target car_move_cmd
+-- Install configuration: ""
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/libconfig_reader.so
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/libmathlibs.so
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/libdecision_center.so
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/libglobal_planner.so
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/global_path_server
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/liblocal_planner.so
+-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/car_move_cmd
+-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/planning/car_move_cmd" to ""
+-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/obs_move_cmd
+-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/planning/obs_move_cmd" to ""
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/planning_node
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/config
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/launch
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/rviz
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/main_car
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/obs_car
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/ament_prefix_path.sh
+-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/path.sh
+-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/path.dsv
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.bash
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.sh
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.zsh
+-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.dsv
+-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/package.dsv
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/packages/planning
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/cmake/planningConfig.cmake
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/cmake/planningConfig-version.cmake
+-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/package.xml

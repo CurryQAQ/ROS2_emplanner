@@ -171,6 +171,82 @@ depend:
 	cd /home/miao/planning_with_ROS2_ws/build/planning && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/move_cmd/CMakeFiles/car_move_cmd.dir/rule:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/move_cmd/CMakeFiles/car_move_cmd.dir/rule
+.PHONY : src/move_cmd/CMakeFiles/car_move_cmd.dir/rule
+
+# Convenience name for target.
+car_move_cmd: src/move_cmd/CMakeFiles/car_move_cmd.dir/rule
+.PHONY : car_move_cmd
+
+# fast build rule for target.
+car_move_cmd/fast:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/move_cmd/CMakeFiles/car_move_cmd.dir/build.make src/move_cmd/CMakeFiles/car_move_cmd.dir/build
+.PHONY : car_move_cmd/fast
+
+# Convenience name for target.
+src/move_cmd/CMakeFiles/obs_move_cmd.dir/rule:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/move_cmd/CMakeFiles/obs_move_cmd.dir/rule
+.PHONY : src/move_cmd/CMakeFiles/obs_move_cmd.dir/rule
+
+# Convenience name for target.
+obs_move_cmd: src/move_cmd/CMakeFiles/obs_move_cmd.dir/rule
+.PHONY : obs_move_cmd
+
+# fast build rule for target.
+obs_move_cmd/fast:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/move_cmd/CMakeFiles/obs_move_cmd.dir/build.make src/move_cmd/CMakeFiles/obs_move_cmd.dir/build
+.PHONY : obs_move_cmd/fast
+
+car_move_cmd.o: car_move_cmd.cpp.o
+.PHONY : car_move_cmd.o
+
+# target to build an object file
+car_move_cmd.cpp.o:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/move_cmd/CMakeFiles/car_move_cmd.dir/build.make src/move_cmd/CMakeFiles/car_move_cmd.dir/car_move_cmd.cpp.o
+.PHONY : car_move_cmd.cpp.o
+
+car_move_cmd.i: car_move_cmd.cpp.i
+.PHONY : car_move_cmd.i
+
+# target to preprocess a source file
+car_move_cmd.cpp.i:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/move_cmd/CMakeFiles/car_move_cmd.dir/build.make src/move_cmd/CMakeFiles/car_move_cmd.dir/car_move_cmd.cpp.i
+.PHONY : car_move_cmd.cpp.i
+
+car_move_cmd.s: car_move_cmd.cpp.s
+.PHONY : car_move_cmd.s
+
+# target to generate assembly for a file
+car_move_cmd.cpp.s:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/move_cmd/CMakeFiles/car_move_cmd.dir/build.make src/move_cmd/CMakeFiles/car_move_cmd.dir/car_move_cmd.cpp.s
+.PHONY : car_move_cmd.cpp.s
+
+obs_move_cmd.o: obs_move_cmd.cpp.o
+.PHONY : obs_move_cmd.o
+
+# target to build an object file
+obs_move_cmd.cpp.o:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/move_cmd/CMakeFiles/obs_move_cmd.dir/build.make src/move_cmd/CMakeFiles/obs_move_cmd.dir/obs_move_cmd.cpp.o
+.PHONY : obs_move_cmd.cpp.o
+
+obs_move_cmd.i: obs_move_cmd.cpp.i
+.PHONY : obs_move_cmd.i
+
+# target to preprocess a source file
+obs_move_cmd.cpp.i:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/move_cmd/CMakeFiles/obs_move_cmd.dir/build.make src/move_cmd/CMakeFiles/obs_move_cmd.dir/obs_move_cmd.cpp.i
+.PHONY : obs_move_cmd.cpp.i
+
+obs_move_cmd.s: obs_move_cmd.cpp.s
+.PHONY : obs_move_cmd.s
+
+# target to generate assembly for a file
+obs_move_cmd.cpp.s:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/move_cmd/CMakeFiles/obs_move_cmd.dir/build.make src/move_cmd/CMakeFiles/obs_move_cmd.dir/obs_move_cmd.cpp.s
+.PHONY : obs_move_cmd.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -184,6 +260,14 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... car_move_cmd"
+	@echo "... obs_move_cmd"
+	@echo "... car_move_cmd.o"
+	@echo "... car_move_cmd.i"
+	@echo "... car_move_cmd.s"
+	@echo "... obs_move_cmd.o"
+	@echo "... obs_move_cmd.i"
+	@echo "... obs_move_cmd.s"
 .PHONY : help
 
 

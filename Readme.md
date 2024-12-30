@@ -79,4 +79,13 @@ set(PLANNING_PACKAGE_NAME ${PROJRCT_NAME})<br>
 🍀安装辅助目录，planning下的config launch rviz urdf放进share文件夹下
 
 3、子目录下的cmakelist编写<br>
-给src下的每一个子文件都加一个cmakelist------设置依赖添加、添加动态库/节点、安装动态库/节点/相关目录
+给src下的每一个子文件都加一个cmakelist------设置依赖添加、添加动态库/节点、安装动态库/节点/相关目录<br>
+
+4、planning_process下.cpp文件编写,plannig_node入口文件，cmakelist添加执行文件、绑定依赖、安装可执行文件
+
+5、common文件下.cpp/.h编写，均未继承节点,cmakelist编写，添加成动态库/绑定依赖/链接第三方库/安装动态库到指定位置<br>
+6、decision_center文件下.cpp/.h文件编写,未继承节点,cmakelist编写，添加成动态库/绑定依赖/链接第三方库/安装动态库到指定位置<br>
+7、<br>
+🕐global_planner----基类的.h文件创建，noraml.h/.cpp文件创建（继承基类，做成动态库），服务节点.cpp/.h文件创建(可执行文件),cmakelist编写<br>
+🕑local_planner----path/speeds/combiner都做成动态库，cmakelist编写<br>
+

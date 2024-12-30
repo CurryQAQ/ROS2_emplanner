@@ -171,6 +171,44 @@ depend:
 	cd /home/miao/planning_with_ROS2_ws/build/planning && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/decision_center/CMakeFiles/decision_center.dir/rule:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/decision_center/CMakeFiles/decision_center.dir/rule
+.PHONY : src/decision_center/CMakeFiles/decision_center.dir/rule
+
+# Convenience name for target.
+decision_center: src/decision_center/CMakeFiles/decision_center.dir/rule
+.PHONY : decision_center
+
+# fast build rule for target.
+decision_center/fast:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/decision_center/CMakeFiles/decision_center.dir/build.make src/decision_center/CMakeFiles/decision_center.dir/build
+.PHONY : decision_center/fast
+
+decision_center.o: decision_center.cpp.o
+.PHONY : decision_center.o
+
+# target to build an object file
+decision_center.cpp.o:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/decision_center/CMakeFiles/decision_center.dir/build.make src/decision_center/CMakeFiles/decision_center.dir/decision_center.cpp.o
+.PHONY : decision_center.cpp.o
+
+decision_center.i: decision_center.cpp.i
+.PHONY : decision_center.i
+
+# target to preprocess a source file
+decision_center.cpp.i:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/decision_center/CMakeFiles/decision_center.dir/build.make src/decision_center/CMakeFiles/decision_center.dir/decision_center.cpp.i
+.PHONY : decision_center.cpp.i
+
+decision_center.s: decision_center.cpp.s
+.PHONY : decision_center.s
+
+# target to generate assembly for a file
+decision_center.cpp.s:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/decision_center/CMakeFiles/decision_center.dir/build.make src/decision_center/CMakeFiles/decision_center.dir/decision_center.cpp.s
+.PHONY : decision_center.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -184,6 +222,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... decision_center"
+	@echo "... decision_center.o"
+	@echo "... decision_center.i"
+	@echo "... decision_center.s"
 .PHONY : help
 
 

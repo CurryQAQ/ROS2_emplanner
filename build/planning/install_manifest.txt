@@ -1,4 +1,14 @@
+/home/miao/planning_with_ROS2_ws/install/planning/lib/libconfig_reader.so
+/home/miao/planning_with_ROS2_ws/install/planning/lib/libmathlibs.so
+/home/miao/planning_with_ROS2_ws/install/planning/lib/libdecision_center.so
+/home/miao/planning_with_ROS2_ws/install/planning/lib/libglobal_planner.so
+/home/miao/planning_with_ROS2_ws/install/planning/lib/planning/global_path_server
+/home/miao/planning_with_ROS2_ws/install/planning/lib/liblocal_planner.so
+/home/miao/planning_with_ROS2_ws/install/planning/lib/planning/car_move_cmd
+/home/miao/planning_with_ROS2_ws/install/planning/lib/planning/obs_move_cmd
 /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/planning_node
+/home/miao/planning_with_ROS2_ws/install/planning/lib/libpnc_map.so
+/home/miao/planning_with_ROS2_ws/install/planning/lib/planning/pnc_map_server
 /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
 /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
 /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/ament_prefix_path.sh
