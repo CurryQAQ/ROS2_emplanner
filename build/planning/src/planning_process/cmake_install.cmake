@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/planning_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/planning_node"
-         OLD_RPATH "/opt/ros/humble/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/home/miao/planning_with_ROS2_ws/build/planning/src/reference_line:/home/miao/planning_with_ROS2_ws/build/planning/src/local_planner:/usr/local/lib:/home/miao/planning_with_ROS2_ws/build/planning/src/decision_center:/home/miao/planning_with_ROS2_ws/build/planning/src/vehicle_info:/home/miao/planning_with_ROS2_ws/build/planning/src/common:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/planning/planning_node")

@@ -2,6 +2,9 @@
 #define LOCAL_TRAJECTORY_H_
 
 #include "rclcpp/rclcpp.hpp"
+#include "config_reader.h"
+
+
 
 namespace Planning
 {

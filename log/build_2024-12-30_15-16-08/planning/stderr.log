@@ -1,0 +1,5 @@
+[31mCMake Error at src/reference_line/CMakeLists.txt:31 (install):
+  install TARGETS given target "LIBRART" which does not exist.
+
+[0m
+gmake: *** [Makefile:380：cmake_check_build_system] 错误 1

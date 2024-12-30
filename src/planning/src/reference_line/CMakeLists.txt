@@ -8,12 +8,27 @@ set(DEPENDS
   "visualization_msgs"
   "base_msgs"
 )
-
-
-#添加动态库
-
-#添加节点
-
+#添加动态库,指定为shared才会是动态库
+add_library(reference_line SHARED
+  ${CMAKE_CURRENT_SOURCE_DIR}/reference_line_creator.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/reference_line_smoother.cpp
+)
+set(target
+  reference_line
+)
 #添加依赖
-
-#安装动态库、节点、相关目录
+ament_target_dependencies(${target}
+  ${DEPENDS}
+)
+#绑定第三方库
+target_link_libraries(${target}
+  config_reader
+  mathlibs
+  Eigen3::Eigen
+  OsqpEigen::OsqpEigen
+)
+#安装动态库
+install(TARGETS
+  ${target}
+  LIBRARY DESTINATION lib
+)

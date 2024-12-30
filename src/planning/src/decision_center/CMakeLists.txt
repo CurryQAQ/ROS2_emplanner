@@ -21,11 +21,11 @@ ament_target_dependencies(${target}
 )
            
 #连接第三方的依赖
-#target_link_libraries(${target}
-#  config_reader
-#  vehicle_info
-#)
-#安装动态库、节点、相关目录
+target_link_libraries(${target}
+  config_reader
+  vehicle_info
+)
+#安装动态库
 install(TARGETS
   ${target}
   LIBRARY DESTINATION lib

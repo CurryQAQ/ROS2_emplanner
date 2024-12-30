@@ -88,4 +88,8 @@ set(PLANNING_PACKAGE_NAME ${PROJRCT_NAME})<br>
 7、<br>
 🕐global_planner----基类的.h文件创建，noraml.h/.cpp文件创建（继承基类，做成动态库），服务节点.cpp/.h文件创建(可执行文件),cmakelist编写<br>
 🕑local_planner----path/speeds/combiner都做成动态库，cmakelist编写<br>
+🕒pnc_map-------同global，基类的.h文件创建，两种道路类型.h/.cpp文件创建（继承基类，做成动态库），服务节点.cpp/.h文件<br>
+🍀reference_line----creater/smoother 都是动态库<br>
+🕔vehicle_info----车辆基类创建,main/obs都是继承基类的动态库<br>
 
+8、planning中各个模块头文件包含

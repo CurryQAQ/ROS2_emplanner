@@ -171,6 +171,68 @@ depend:
 	cd /home/miao/planning_with_ROS2_ws/build/planning && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/vehicle_info/CMakeFiles/vehicle_info.dir/rule:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/vehicle_info/CMakeFiles/vehicle_info.dir/rule
+.PHONY : src/vehicle_info/CMakeFiles/vehicle_info.dir/rule
+
+# Convenience name for target.
+vehicle_info: src/vehicle_info/CMakeFiles/vehicle_info.dir/rule
+.PHONY : vehicle_info
+
+# fast build rule for target.
+vehicle_info/fast:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/vehicle_info/CMakeFiles/vehicle_info.dir/build.make src/vehicle_info/CMakeFiles/vehicle_info.dir/build
+.PHONY : vehicle_info/fast
+
+main_car/main_car.o: main_car/main_car.cpp.o
+.PHONY : main_car/main_car.o
+
+# target to build an object file
+main_car/main_car.cpp.o:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/vehicle_info/CMakeFiles/vehicle_info.dir/build.make src/vehicle_info/CMakeFiles/vehicle_info.dir/main_car/main_car.cpp.o
+.PHONY : main_car/main_car.cpp.o
+
+main_car/main_car.i: main_car/main_car.cpp.i
+.PHONY : main_car/main_car.i
+
+# target to preprocess a source file
+main_car/main_car.cpp.i:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/vehicle_info/CMakeFiles/vehicle_info.dir/build.make src/vehicle_info/CMakeFiles/vehicle_info.dir/main_car/main_car.cpp.i
+.PHONY : main_car/main_car.cpp.i
+
+main_car/main_car.s: main_car/main_car.cpp.s
+.PHONY : main_car/main_car.s
+
+# target to generate assembly for a file
+main_car/main_car.cpp.s:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/vehicle_info/CMakeFiles/vehicle_info.dir/build.make src/vehicle_info/CMakeFiles/vehicle_info.dir/main_car/main_car.cpp.s
+.PHONY : main_car/main_car.cpp.s
+
+obs_car/obs_car.o: obs_car/obs_car.cpp.o
+.PHONY : obs_car/obs_car.o
+
+# target to build an object file
+obs_car/obs_car.cpp.o:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/vehicle_info/CMakeFiles/vehicle_info.dir/build.make src/vehicle_info/CMakeFiles/vehicle_info.dir/obs_car/obs_car.cpp.o
+.PHONY : obs_car/obs_car.cpp.o
+
+obs_car/obs_car.i: obs_car/obs_car.cpp.i
+.PHONY : obs_car/obs_car.i
+
+# target to preprocess a source file
+obs_car/obs_car.cpp.i:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/vehicle_info/CMakeFiles/vehicle_info.dir/build.make src/vehicle_info/CMakeFiles/vehicle_info.dir/obs_car/obs_car.cpp.i
+.PHONY : obs_car/obs_car.cpp.i
+
+obs_car/obs_car.s: obs_car/obs_car.cpp.s
+.PHONY : obs_car/obs_car.s
+
+# target to generate assembly for a file
+obs_car/obs_car.cpp.s:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/vehicle_info/CMakeFiles/vehicle_info.dir/build.make src/vehicle_info/CMakeFiles/vehicle_info.dir/obs_car/obs_car.cpp.s
+.PHONY : obs_car/obs_car.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -184,6 +246,13 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... vehicle_info"
+	@echo "... main_car/main_car.o"
+	@echo "... main_car/main_car.i"
+	@echo "... main_car/main_car.s"
+	@echo "... obs_car/obs_car.o"
+	@echo "... obs_car/obs_car.i"
+	@echo "... obs_car/obs_car.s"
 .PHONY : help
 
 

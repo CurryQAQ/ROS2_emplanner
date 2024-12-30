@@ -217,7 +217,7 @@ src/pnc_map_creator/clean: src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/cle
 # Directory level rules for directory src/reference_line
 
 # Recursive "all" directory target.
-src/reference_line/all:
+src/reference_line/all: src/reference_line/CMakeFiles/reference_line.dir/all
 .PHONY : src/reference_line/all
 
 # Recursive "preinstall" directory target.
@@ -225,14 +225,14 @@ src/reference_line/preinstall:
 .PHONY : src/reference_line/preinstall
 
 # Recursive "clean" directory target.
-src/reference_line/clean:
+src/reference_line/clean: src/reference_line/CMakeFiles/reference_line.dir/clean
 .PHONY : src/reference_line/clean
 
 #=============================================================================
 # Directory level rules for directory src/vehicle_info
 
 # Recursive "all" directory target.
-src/vehicle_info/all:
+src/vehicle_info/all: src/vehicle_info/CMakeFiles/vehicle_info.dir/all
 .PHONY : src/vehicle_info/all
 
 # Recursive "preinstall" directory target.
@@ -240,7 +240,7 @@ src/vehicle_info/preinstall:
 .PHONY : src/vehicle_info/preinstall
 
 # Recursive "clean" directory target.
-src/vehicle_info/clean:
+src/vehicle_info/clean: src/vehicle_info/CMakeFiles/vehicle_info.dir/clean
 .PHONY : src/vehicle_info/clean
 
 #=============================================================================
@@ -351,7 +351,9 @@ src/common/CMakeFiles/mathlibs.dir/clean:
 # Target rules for target src/decision_center/CMakeFiles/decision_center.dir
 
 # All Build rule for target.
-src/decision_center/CMakeFiles/decision_center.dir/all:
+src/decision_center/CMakeFiles/decision_center.dir/all: src/common/CMakeFiles/config_reader.dir/all
+src/decision_center/CMakeFiles/decision_center.dir/all: src/common/CMakeFiles/mathlibs.dir/all
+src/decision_center/CMakeFiles/decision_center.dir/all: src/vehicle_info/CMakeFiles/vehicle_info.dir/all
 	$(MAKE) $(MAKESILENT) -f src/decision_center/CMakeFiles/decision_center.dir/build.make src/decision_center/CMakeFiles/decision_center.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/decision_center/CMakeFiles/decision_center.dir/build.make src/decision_center/CMakeFiles/decision_center.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles --progress-num=5,6 "Built target decision_center"
@@ -359,7 +361,7 @@ src/decision_center/CMakeFiles/decision_center.dir/all:
 
 # Build rule for subdir invocation for target.
 src/decision_center/CMakeFiles/decision_center.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/decision_center/CMakeFiles/decision_center.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 0
 .PHONY : src/decision_center/CMakeFiles/decision_center.dir/rule
@@ -403,7 +405,8 @@ src/global_planner/CMakeFiles/global_planner.dir/clean:
 # Target rules for target src/global_planner/CMakeFiles/global_path_server.dir
 
 # All Build rule for target.
-src/global_planner/CMakeFiles/global_path_server.dir/all:
+src/global_planner/CMakeFiles/global_path_server.dir/all: src/common/CMakeFiles/config_reader.dir/all
+src/global_planner/CMakeFiles/global_path_server.dir/all: src/global_planner/CMakeFiles/global_planner.dir/all
 	$(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_path_server.dir/build.make src/global_planner/CMakeFiles/global_path_server.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/global_planner/CMakeFiles/global_path_server.dir/build.make src/global_planner/CMakeFiles/global_path_server.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles --progress-num=7,8 "Built target global_path_server"
@@ -411,7 +414,7 @@ src/global_planner/CMakeFiles/global_path_server.dir/all:
 
 # Build rule for subdir invocation for target.
 src/global_planner/CMakeFiles/global_path_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/global_planner/CMakeFiles/global_path_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 0
 .PHONY : src/global_planner/CMakeFiles/global_path_server.dir/rule
@@ -429,7 +432,10 @@ src/global_planner/CMakeFiles/global_path_server.dir/clean:
 # Target rules for target src/local_planner/CMakeFiles/local_planner.dir
 
 # All Build rule for target.
-src/local_planner/CMakeFiles/local_planner.dir/all:
+src/local_planner/CMakeFiles/local_planner.dir/all: src/common/CMakeFiles/config_reader.dir/all
+src/local_planner/CMakeFiles/local_planner.dir/all: src/common/CMakeFiles/mathlibs.dir/all
+src/local_planner/CMakeFiles/local_planner.dir/all: src/decision_center/CMakeFiles/decision_center.dir/all
+src/local_planner/CMakeFiles/local_planner.dir/all: src/vehicle_info/CMakeFiles/vehicle_info.dir/all
 	$(MAKE) $(MAKESILENT) -f src/local_planner/CMakeFiles/local_planner.dir/build.make src/local_planner/CMakeFiles/local_planner.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/local_planner/CMakeFiles/local_planner.dir/build.make src/local_planner/CMakeFiles/local_planner.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles --progress-num=11,12,13,14,15 "Built target local_planner"
@@ -437,7 +443,7 @@ src/local_planner/CMakeFiles/local_planner.dir/all:
 
 # Build rule for subdir invocation for target.
 src/local_planner/CMakeFiles/local_planner.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/local_planner/CMakeFiles/local_planner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 0
 .PHONY : src/local_planner/CMakeFiles/local_planner.dir/rule
@@ -455,7 +461,9 @@ src/local_planner/CMakeFiles/local_planner.dir/clean:
 # Target rules for target src/move_cmd/CMakeFiles/car_move_cmd.dir
 
 # All Build rule for target.
-src/move_cmd/CMakeFiles/car_move_cmd.dir/all:
+src/move_cmd/CMakeFiles/car_move_cmd.dir/all: src/common/CMakeFiles/config_reader.dir/all
+src/move_cmd/CMakeFiles/car_move_cmd.dir/all: src/common/CMakeFiles/mathlibs.dir/all
+src/move_cmd/CMakeFiles/car_move_cmd.dir/all: src/vehicle_info/CMakeFiles/vehicle_info.dir/all
 	$(MAKE) $(MAKESILENT) -f src/move_cmd/CMakeFiles/car_move_cmd.dir/build.make src/move_cmd/CMakeFiles/car_move_cmd.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/move_cmd/CMakeFiles/car_move_cmd.dir/build.make src/move_cmd/CMakeFiles/car_move_cmd.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles --progress-num=1,2 "Built target car_move_cmd"
@@ -463,7 +471,7 @@ src/move_cmd/CMakeFiles/car_move_cmd.dir/all:
 
 # Build rule for subdir invocation for target.
 src/move_cmd/CMakeFiles/car_move_cmd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/move_cmd/CMakeFiles/car_move_cmd.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 0
 .PHONY : src/move_cmd/CMakeFiles/car_move_cmd.dir/rule
@@ -481,7 +489,9 @@ src/move_cmd/CMakeFiles/car_move_cmd.dir/clean:
 # Target rules for target src/move_cmd/CMakeFiles/obs_move_cmd.dir
 
 # All Build rule for target.
-src/move_cmd/CMakeFiles/obs_move_cmd.dir/all:
+src/move_cmd/CMakeFiles/obs_move_cmd.dir/all: src/common/CMakeFiles/config_reader.dir/all
+src/move_cmd/CMakeFiles/obs_move_cmd.dir/all: src/common/CMakeFiles/mathlibs.dir/all
+src/move_cmd/CMakeFiles/obs_move_cmd.dir/all: src/vehicle_info/CMakeFiles/vehicle_info.dir/all
 	$(MAKE) $(MAKESILENT) -f src/move_cmd/CMakeFiles/obs_move_cmd.dir/build.make src/move_cmd/CMakeFiles/obs_move_cmd.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/move_cmd/CMakeFiles/obs_move_cmd.dir/build.make src/move_cmd/CMakeFiles/obs_move_cmd.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles --progress-num=19,20 "Built target obs_move_cmd"
@@ -489,7 +499,7 @@ src/move_cmd/CMakeFiles/obs_move_cmd.dir/all:
 
 # Build rule for subdir invocation for target.
 src/move_cmd/CMakeFiles/obs_move_cmd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/move_cmd/CMakeFiles/obs_move_cmd.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 0
 .PHONY : src/move_cmd/CMakeFiles/obs_move_cmd.dir/rule
@@ -507,7 +517,12 @@ src/move_cmd/CMakeFiles/obs_move_cmd.dir/clean:
 # Target rules for target src/planning_process/CMakeFiles/planning_node.dir
 
 # All Build rule for target.
-src/planning_process/CMakeFiles/planning_node.dir/all:
+src/planning_process/CMakeFiles/planning_node.dir/all: src/common/CMakeFiles/config_reader.dir/all
+src/planning_process/CMakeFiles/planning_node.dir/all: src/common/CMakeFiles/mathlibs.dir/all
+src/planning_process/CMakeFiles/planning_node.dir/all: src/decision_center/CMakeFiles/decision_center.dir/all
+src/planning_process/CMakeFiles/planning_node.dir/all: src/local_planner/CMakeFiles/local_planner.dir/all
+src/planning_process/CMakeFiles/planning_node.dir/all: src/reference_line/CMakeFiles/reference_line.dir/all
+src/planning_process/CMakeFiles/planning_node.dir/all: src/vehicle_info/CMakeFiles/vehicle_info.dir/all
 	$(MAKE) $(MAKESILENT) -f src/planning_process/CMakeFiles/planning_node.dir/build.make src/planning_process/CMakeFiles/planning_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/planning_process/CMakeFiles/planning_node.dir/build.make src/planning_process/CMakeFiles/planning_node.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles --progress-num=21,22,23 "Built target planning_node"
@@ -515,7 +530,7 @@ src/planning_process/CMakeFiles/planning_node.dir/all:
 
 # Build rule for subdir invocation for target.
 src/planning_process/CMakeFiles/planning_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 21
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/planning_process/CMakeFiles/planning_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 0
 .PHONY : src/planning_process/CMakeFiles/planning_node.dir/rule
@@ -581,6 +596,60 @@ pnc_map_server: src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/rule
 src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/clean:
 	$(MAKE) $(MAKESILENT) -f src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/clean
 .PHONY : src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/clean
+
+#=============================================================================
+# Target rules for target src/reference_line/CMakeFiles/reference_line.dir
+
+# All Build rule for target.
+src/reference_line/CMakeFiles/reference_line.dir/all: src/common/CMakeFiles/config_reader.dir/all
+src/reference_line/CMakeFiles/reference_line.dir/all: src/common/CMakeFiles/mathlibs.dir/all
+	$(MAKE) $(MAKESILENT) -f src/reference_line/CMakeFiles/reference_line.dir/build.make src/reference_line/CMakeFiles/reference_line.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/reference_line/CMakeFiles/reference_line.dir/build.make src/reference_line/CMakeFiles/reference_line.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles --progress-num=29,30,31 "Built target reference_line"
+.PHONY : src/reference_line/CMakeFiles/reference_line.dir/all
+
+# Build rule for subdir invocation for target.
+src/reference_line/CMakeFiles/reference_line.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/reference_line/CMakeFiles/reference_line.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 0
+.PHONY : src/reference_line/CMakeFiles/reference_line.dir/rule
+
+# Convenience name for target.
+reference_line: src/reference_line/CMakeFiles/reference_line.dir/rule
+.PHONY : reference_line
+
+# clean rule for target.
+src/reference_line/CMakeFiles/reference_line.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/reference_line/CMakeFiles/reference_line.dir/build.make src/reference_line/CMakeFiles/reference_line.dir/clean
+.PHONY : src/reference_line/CMakeFiles/reference_line.dir/clean
+
+#=============================================================================
+# Target rules for target src/vehicle_info/CMakeFiles/vehicle_info.dir
+
+# All Build rule for target.
+src/vehicle_info/CMakeFiles/vehicle_info.dir/all: src/common/CMakeFiles/config_reader.dir/all
+src/vehicle_info/CMakeFiles/vehicle_info.dir/all: src/common/CMakeFiles/mathlibs.dir/all
+	$(MAKE) $(MAKESILENT) -f src/vehicle_info/CMakeFiles/vehicle_info.dir/build.make src/vehicle_info/CMakeFiles/vehicle_info.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/vehicle_info/CMakeFiles/vehicle_info.dir/build.make src/vehicle_info/CMakeFiles/vehicle_info.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles --progress-num=32,33,34 "Built target vehicle_info"
+.PHONY : src/vehicle_info/CMakeFiles/vehicle_info.dir/all
+
+# Build rule for subdir invocation for target.
+src/vehicle_info/CMakeFiles/vehicle_info.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/vehicle_info/CMakeFiles/vehicle_info.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/miao/planning_with_ROS2_ws/build/planning/CMakeFiles 0
+.PHONY : src/vehicle_info/CMakeFiles/vehicle_info.dir/rule
+
+# Convenience name for target.
+vehicle_info: src/vehicle_info/CMakeFiles/vehicle_info.dir/rule
+.PHONY : vehicle_info
+
+# clean rule for target.
+src/vehicle_info/CMakeFiles/vehicle_info.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/vehicle_info/CMakeFiles/vehicle_info.dir/build.make src/vehicle_info/CMakeFiles/vehicle_info.dir/clean
+.PHONY : src/vehicle_info/CMakeFiles/vehicle_info.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

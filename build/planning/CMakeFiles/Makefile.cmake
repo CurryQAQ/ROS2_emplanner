@@ -962,4 +962,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/planning_process/CMakeFiles/planning_node.dir/DependInfo.cmake"
   "src/pnc_map_creator/CMakeFiles/pnc_map.dir/DependInfo.cmake"
   "src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/DependInfo.cmake"
+  "src/reference_line/CMakeFiles/reference_line.dir/DependInfo.cmake"
+  "src/vehicle_info/CMakeFiles/vehicle_info.dir/DependInfo.cmake"
   )

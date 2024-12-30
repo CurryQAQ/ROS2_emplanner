@@ -171,6 +171,68 @@ depend:
 	cd /home/miao/planning_with_ROS2_ws/build/planning && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/reference_line/CMakeFiles/reference_line.dir/rule:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/reference_line/CMakeFiles/reference_line.dir/rule
+.PHONY : src/reference_line/CMakeFiles/reference_line.dir/rule
+
+# Convenience name for target.
+reference_line: src/reference_line/CMakeFiles/reference_line.dir/rule
+.PHONY : reference_line
+
+# fast build rule for target.
+reference_line/fast:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/reference_line/CMakeFiles/reference_line.dir/build.make src/reference_line/CMakeFiles/reference_line.dir/build
+.PHONY : reference_line/fast
+
+reference_line_creator.o: reference_line_creator.cpp.o
+.PHONY : reference_line_creator.o
+
+# target to build an object file
+reference_line_creator.cpp.o:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/reference_line/CMakeFiles/reference_line.dir/build.make src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.o
+.PHONY : reference_line_creator.cpp.o
+
+reference_line_creator.i: reference_line_creator.cpp.i
+.PHONY : reference_line_creator.i
+
+# target to preprocess a source file
+reference_line_creator.cpp.i:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/reference_line/CMakeFiles/reference_line.dir/build.make src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.i
+.PHONY : reference_line_creator.cpp.i
+
+reference_line_creator.s: reference_line_creator.cpp.s
+.PHONY : reference_line_creator.s
+
+# target to generate assembly for a file
+reference_line_creator.cpp.s:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/reference_line/CMakeFiles/reference_line.dir/build.make src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.s
+.PHONY : reference_line_creator.cpp.s
+
+reference_line_smoother.o: reference_line_smoother.cpp.o
+.PHONY : reference_line_smoother.o
+
+# target to build an object file
+reference_line_smoother.cpp.o:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/reference_line/CMakeFiles/reference_line.dir/build.make src/reference_line/CMakeFiles/reference_line.dir/reference_line_smoother.cpp.o
+.PHONY : reference_line_smoother.cpp.o
+
+reference_line_smoother.i: reference_line_smoother.cpp.i
+.PHONY : reference_line_smoother.i
+
+# target to preprocess a source file
+reference_line_smoother.cpp.i:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/reference_line/CMakeFiles/reference_line.dir/build.make src/reference_line/CMakeFiles/reference_line.dir/reference_line_smoother.cpp.i
+.PHONY : reference_line_smoother.cpp.i
+
+reference_line_smoother.s: reference_line_smoother.cpp.s
+.PHONY : reference_line_smoother.s
+
+# target to generate assembly for a file
+reference_line_smoother.cpp.s:
+	cd /home/miao/planning_with_ROS2_ws/build/planning && $(MAKE) $(MAKESILENT) -f src/reference_line/CMakeFiles/reference_line.dir/build.make src/reference_line/CMakeFiles/reference_line.dir/reference_line_smoother.cpp.s
+.PHONY : reference_line_smoother.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -184,6 +246,13 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... reference_line"
+	@echo "... reference_line_creator.o"
+	@echo "... reference_line_creator.i"
+	@echo "... reference_line_creator.s"
+	@echo "... reference_line_smoother.o"
+	@echo "... reference_line_smoother.i"
+	@echo "... reference_line_smoother.s"
 .PHONY : help
 
 

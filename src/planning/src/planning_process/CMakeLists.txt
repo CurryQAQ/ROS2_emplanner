@@ -27,9 +27,13 @@ ament_target_dependencies(${target}
   ${DEPENDS}
 )
 
-#target_link_libraries(${target}
-
-#)
+target_link_libraries(${target}
+  config_reader
+  decision_center
+  reference_line
+  local_planner
+  vehicle_info
+)
 
 
 #添加依赖

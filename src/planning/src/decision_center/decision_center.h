@@ -2,6 +2,10 @@
 #define DECISION_CENTER_H_
 
 #include "rclcpp/rclcpp.hpp"
+#include "config_reader.h"
+#include "main_car.h"
+#include "obs_car.h"
+
 
 namespace Planning
 {

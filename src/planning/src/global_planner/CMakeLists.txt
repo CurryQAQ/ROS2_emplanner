@@ -33,6 +33,12 @@ foreach(target ${PROJECT_TARGETS})
   )
 endforeach()
 
+target_link_libraries(global_path_server
+  config_reader
+  global_planner
+)
+
+
 #安装动态库、节点/可执行文件
 install(TARGETS
   global_planner
