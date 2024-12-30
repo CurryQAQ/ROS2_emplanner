@@ -93,3 +93,17 @@ set(PLANNING_PACKAGE_NAME ${PROJRCT_NAME})<br>
 🕔vehicle_info----车辆基类创建,main/obs都是继承基类的动态库<br>
 
 8、planning中各个模块头文件包含
+
+### 配置文件.h的编写
+1、config目录下的.yaml文件编写<br>
+2、config_reader.h下写结构体，去初始化.yaml文件中出现的东西<br>
+3、config_reader.h类中声明结构体类型的变量,obs障碍物用键值对来表示unordered_map，利用(const auto& [key, value] : obs_pair_)可去遍历这个键值对<br>
+4、yaml::Node 
+
+### 配置文件.h的读取
+1、车辆信息/全局路径/局部路径等等 这些东西的读取成员函数 （读取配置+获取变量）<br>
+2、inline（函数体不复杂的时候可以用，以提高运行性能） 内联函数用于返回成员变量，const表示函数改变不了成员变量<br>
+
+### config_reader.cpp编写
+1、构造函数----ament_index_cpp路径读取,YAML::loadfile得到config中.yaml文件
+2、read_config函数编写，主要就是把.yaml中的数据读取出来

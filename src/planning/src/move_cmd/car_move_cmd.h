@@ -7,11 +7,11 @@
 
 namespace Planning
 {
-class CarMoveCmd: public rclcpp::Node
-{
-public:
-    CarMoveCmd();
-private:
+    class CarMoveCmd: public rclcpp::Node
+    {
+    public:
+        CarMoveCmd();
+    private:
 
 };
 }  // namespace Planning

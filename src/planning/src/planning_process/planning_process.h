@@ -24,6 +24,9 @@ public:
   PlanningProcess();
 
   bool process();//规划总流程
+
+private:
+  std::unique_ptr<ConfigReader> process_config_; //智能指针，流程配置
 };
 }  // namespace Planning
 #endif  //PLANNING_PROCESS_H_ 

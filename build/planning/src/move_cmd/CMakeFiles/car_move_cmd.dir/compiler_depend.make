@@ -721,7 +721,8 @@ src/move_cmd/CMakeFiles/car_move_cmd.dir/car_move_cmd.cpp.o: /home/miao/planning
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/get_package_share_directory.hpp \
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/main_car/main_car.h \
-  /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/vehicle_info_base.h
+  /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/vehicle_info_base.h \
+  /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/curve.h
 
 
 /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/main_car/main_car.h:
@@ -1433,6 +1434,8 @@ src/move_cmd/CMakeFiles/car_move_cmd.dir/car_move_cmd.cpp.o: /home/miao/planning
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/c++/11/bits/predefined_ops.h:
+
+/home/miao/planning_with_ROS2_ws/src/planning/src/common/math/curve.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
 

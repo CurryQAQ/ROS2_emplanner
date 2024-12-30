@@ -723,4 +723,5 @@ src/move_cmd/CMakeFiles/obs_move_cmd.dir/obs_move_cmd.cpp.o
  /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/obs_car/obs_car.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/vehicle_info_base.h
+ /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/curve.h
 

@@ -723,12 +723,10 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_node.cpp.o
  /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/main_car/main_car.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/vehicle_info_base.h
+ /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/curve.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/obs_car/obs_car.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/reference_line/reference_line_creator.h
- /home/miao/planning_with_ROS2_ws/src/planning/src/decision_center/decision_center.h
- /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path/local_path_planner.h
- /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/curve.h
- /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/polynomial_curve.h
+ /home/miao/planning_with_ROS2_ws/src/planning/src/reference_line/reference_line_smoother.h
  /usr/local/include/eigen/Eigen/Dense
  /usr/local/include/eigen/Eigen/Core
  /usr/local/include/eigen/Eigen/src/Core/util/DisableStupidWarnings.h
@@ -958,6 +956,105 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_node.cpp.o
  /usr/local/include/eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
  /usr/local/include/eigen/Eigen/src/Eigenvalues/RealQZ.h
  /usr/local/include/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ /usr/local/include/OsqpEigen/OsqpEigen.h
+ /usr/local/include/OsqpEigen/Constants.hpp
+ /usr/local/include/OsqpEigen/Compat.hpp
+ /usr/local/include/osqp/osqp.h
+ /usr/local/include/osqp/osqp_configure.h
+ /usr/local/include/osqp/osqp_api_constants.h
+ /usr/local/include/osqp/osqp_api_types.h
+ /usr/local/include/osqp/osqp_api_functions.h
+ /usr/local/include/osqp/osqp_export_define.h
+ /usr/local/include/osqp/osqp_api_utils.h
+ /usr/local/include/OsqpEigen/Data.hpp
+ /usr/local/include/OsqpEigen/SparseMatrixHelper.hpp
+ /usr/local/include/eigen/Eigen/Sparse
+ /usr/local/include/eigen/Eigen/SparseCore
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseUtil.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/InternalHeaderCheck.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseMatrixBase.h
+ /usr/local/include/eigen/Eigen/src/plugins/CommonCwiseUnaryOps.inc
+ /usr/local/include/eigen/Eigen/src/plugins/CommonCwiseBinaryOps.inc
+ /usr/local/include/eigen/Eigen/src/plugins/MatrixCwiseUnaryOps.inc
+ /usr/local/include/eigen/Eigen/src/plugins/MatrixCwiseBinaryOps.inc
+ /usr/local/include/eigen/Eigen/src/plugins/BlockMethods.inc
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseAssign.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/CompressedStorage.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/AmbiVector.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseCompressedBase.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseMatrix.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseMap.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseVector.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseRef.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseCwiseUnaryOp.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseCwiseBinaryOp.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseTranspose.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseBlock.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseDot.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseRedux.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseView.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseDiagonalProduct.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseSparseProductWithPruning.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseProduct.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseDenseProduct.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseSelfAdjointView.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseTriangularView.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/TriangularSolver.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparsePermutation.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseFuzzy.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseSolverBase.h
+ /usr/local/include/eigen/Eigen/OrderingMethods
+ /usr/local/include/eigen/Eigen/src/OrderingMethods/Amd.h
+ /usr/local/include/eigen/Eigen/src/OrderingMethods/InternalHeaderCheck.h
+ /usr/local/include/eigen/Eigen/src/OrderingMethods/Ordering.h
+ /usr/local/include/eigen/Eigen/src/OrderingMethods/Eigen_Colamd.h
+ /usr/local/include/eigen/Eigen/SparseCholesky
+ /usr/local/include/eigen/Eigen/src/SparseCholesky/SimplicialCholesky.h
+ /usr/local/include/eigen/Eigen/src/SparseCholesky/InternalHeaderCheck.h
+ /usr/local/include/eigen/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h
+ /usr/local/include/eigen/Eigen/SparseLU
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Structs.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/InternalHeaderCheck.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLUImpl.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseColEtree.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Memory.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_relax_snode.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_pivotL.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_panel_dfs.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_kernel_bmod.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_panel_bmod.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_column_dfs.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_column_bmod.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_pruneL.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Utils.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU.h
+ /usr/local/include/eigen/Eigen/SparseQR
+ /usr/local/include/eigen/Eigen/src/SparseQR/SparseQR.h
+ /usr/local/include/eigen/Eigen/src/SparseQR/InternalHeaderCheck.h
+ /usr/local/include/eigen/Eigen/IterativeLinearSolvers
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/InternalHeaderCheck.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h
+ /usr/local/include/OsqpEigen/SparseMatrixHelper.tpp
+ /usr/local/include/OsqpEigen/Debug.hpp
+ /usr/local/include/OsqpEigen/Data.tpp
+ /usr/local/include/OsqpEigen/Settings.hpp
+ /usr/local/include/OsqpEigen/Solver.hpp
+ /usr/local/include/OsqpEigen/Solver.tpp
+ /usr/local/include/OsqpEigen/Debug.hpp
+ /home/miao/planning_with_ROS2_ws/src/planning/src/decision_center/decision_center.h
+ /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path/local_path_planner.h
+ /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/polynomial_curve.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path/local_path_smoother.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_speeds/local_speeds_planner.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_speeds/local_speeds_smoother.h
@@ -1685,12 +1782,10 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o
  /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/main_car/main_car.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/vehicle_info_base.h
+ /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/curve.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/obs_car/obs_car.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/reference_line/reference_line_creator.h
- /home/miao/planning_with_ROS2_ws/src/planning/src/decision_center/decision_center.h
- /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path/local_path_planner.h
- /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/curve.h
- /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/polynomial_curve.h
+ /home/miao/planning_with_ROS2_ws/src/planning/src/reference_line/reference_line_smoother.h
  /usr/local/include/eigen/Eigen/Dense
  /usr/local/include/eigen/Eigen/Core
  /usr/local/include/eigen/Eigen/src/Core/util/DisableStupidWarnings.h
@@ -1920,6 +2015,105 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o
  /usr/local/include/eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
  /usr/local/include/eigen/Eigen/src/Eigenvalues/RealQZ.h
  /usr/local/include/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ /usr/local/include/OsqpEigen/OsqpEigen.h
+ /usr/local/include/OsqpEigen/Constants.hpp
+ /usr/local/include/OsqpEigen/Compat.hpp
+ /usr/local/include/osqp/osqp.h
+ /usr/local/include/osqp/osqp_configure.h
+ /usr/local/include/osqp/osqp_api_constants.h
+ /usr/local/include/osqp/osqp_api_types.h
+ /usr/local/include/osqp/osqp_api_functions.h
+ /usr/local/include/osqp/osqp_export_define.h
+ /usr/local/include/osqp/osqp_api_utils.h
+ /usr/local/include/OsqpEigen/Data.hpp
+ /usr/local/include/OsqpEigen/SparseMatrixHelper.hpp
+ /usr/local/include/eigen/Eigen/Sparse
+ /usr/local/include/eigen/Eigen/SparseCore
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseUtil.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/InternalHeaderCheck.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseMatrixBase.h
+ /usr/local/include/eigen/Eigen/src/plugins/CommonCwiseUnaryOps.inc
+ /usr/local/include/eigen/Eigen/src/plugins/CommonCwiseBinaryOps.inc
+ /usr/local/include/eigen/Eigen/src/plugins/MatrixCwiseUnaryOps.inc
+ /usr/local/include/eigen/Eigen/src/plugins/MatrixCwiseBinaryOps.inc
+ /usr/local/include/eigen/Eigen/src/plugins/BlockMethods.inc
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseAssign.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/CompressedStorage.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/AmbiVector.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseCompressedBase.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseMatrix.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseMap.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseVector.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseRef.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseCwiseUnaryOp.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseCwiseBinaryOp.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseTranspose.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseBlock.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseDot.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseRedux.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseView.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseDiagonalProduct.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseSparseProductWithPruning.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseProduct.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseDenseProduct.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseSelfAdjointView.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseTriangularView.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/TriangularSolver.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparsePermutation.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseFuzzy.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseSolverBase.h
+ /usr/local/include/eigen/Eigen/OrderingMethods
+ /usr/local/include/eigen/Eigen/src/OrderingMethods/Amd.h
+ /usr/local/include/eigen/Eigen/src/OrderingMethods/InternalHeaderCheck.h
+ /usr/local/include/eigen/Eigen/src/OrderingMethods/Ordering.h
+ /usr/local/include/eigen/Eigen/src/OrderingMethods/Eigen_Colamd.h
+ /usr/local/include/eigen/Eigen/SparseCholesky
+ /usr/local/include/eigen/Eigen/src/SparseCholesky/SimplicialCholesky.h
+ /usr/local/include/eigen/Eigen/src/SparseCholesky/InternalHeaderCheck.h
+ /usr/local/include/eigen/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h
+ /usr/local/include/eigen/Eigen/SparseLU
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Structs.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/InternalHeaderCheck.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLUImpl.h
+ /usr/local/include/eigen/Eigen/src/SparseCore/SparseColEtree.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Memory.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_relax_snode.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_pivotL.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_panel_dfs.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_kernel_bmod.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_panel_bmod.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_column_dfs.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_column_bmod.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_pruneL.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Utils.h
+ /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU.h
+ /usr/local/include/eigen/Eigen/SparseQR
+ /usr/local/include/eigen/Eigen/src/SparseQR/SparseQR.h
+ /usr/local/include/eigen/Eigen/src/SparseQR/InternalHeaderCheck.h
+ /usr/local/include/eigen/Eigen/IterativeLinearSolvers
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/InternalHeaderCheck.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h
+ /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h
+ /usr/local/include/OsqpEigen/SparseMatrixHelper.tpp
+ /usr/local/include/OsqpEigen/Debug.hpp
+ /usr/local/include/OsqpEigen/Data.tpp
+ /usr/local/include/OsqpEigen/Settings.hpp
+ /usr/local/include/OsqpEigen/Solver.hpp
+ /usr/local/include/OsqpEigen/Solver.tpp
+ /usr/local/include/OsqpEigen/Debug.hpp
+ /home/miao/planning_with_ROS2_ws/src/planning/src/decision_center/decision_center.h
+ /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path/local_path_planner.h
+ /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/polynomial_curve.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path/local_path_smoother.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_speeds/local_speeds_planner.h
  /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_speeds/local_speeds_smoother.h

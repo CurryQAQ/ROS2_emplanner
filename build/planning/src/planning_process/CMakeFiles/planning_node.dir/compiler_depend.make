@@ -722,12 +722,10 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_node.cpp.o: /home/mia
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/main_car/main_car.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/vehicle_info_base.h \
+  /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/curve.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/obs_car/obs_car.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/reference_line/reference_line_creator.h \
-  /home/miao/planning_with_ROS2_ws/src/planning/src/decision_center/decision_center.h \
-  /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path/local_path_planner.h \
-  /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/curve.h \
-  /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/polynomial_curve.h \
+  /home/miao/planning_with_ROS2_ws/src/planning/src/reference_line/reference_line_smoother.h \
   /usr/local/include/eigen/Eigen/Dense \
   /usr/local/include/eigen/Eigen/Core \
   /usr/local/include/eigen/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -957,6 +955,105 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_node.cpp.o: /home/mia
   /usr/local/include/eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/local/include/eigen/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/local/include/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+  /usr/local/include/OsqpEigen/OsqpEigen.h \
+  /usr/local/include/OsqpEigen/Constants.hpp \
+  /usr/local/include/OsqpEigen/Compat.hpp \
+  /usr/local/include/osqp/osqp.h \
+  /usr/local/include/osqp/osqp_configure.h \
+  /usr/local/include/osqp/osqp_api_constants.h \
+  /usr/local/include/osqp/osqp_api_types.h \
+  /usr/local/include/osqp/osqp_api_functions.h \
+  /usr/local/include/osqp/osqp_export_define.h \
+  /usr/local/include/osqp/osqp_api_utils.h \
+  /usr/local/include/OsqpEigen/Data.hpp \
+  /usr/local/include/OsqpEigen/SparseMatrixHelper.hpp \
+  /usr/local/include/eigen/Eigen/Sparse \
+  /usr/local/include/eigen/Eigen/SparseCore \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseUtil.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/InternalHeaderCheck.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseMatrixBase.h \
+  /usr/local/include/eigen/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
+  /usr/local/include/eigen/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
+  /usr/local/include/eigen/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
+  /usr/local/include/eigen/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
+  /usr/local/include/eigen/Eigen/src/plugins/BlockMethods.inc \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseAssign.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/CompressedStorage.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/AmbiVector.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseCompressedBase.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseMatrix.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseMap.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseVector.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseRef.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseCwiseUnaryOp.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseCwiseBinaryOp.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseTranspose.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseBlock.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseDot.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseRedux.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseView.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseDiagonalProduct.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseSparseProductWithPruning.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseProduct.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseDenseProduct.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseSelfAdjointView.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseTriangularView.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/TriangularSolver.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparsePermutation.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseFuzzy.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseSolverBase.h \
+  /usr/local/include/eigen/Eigen/OrderingMethods \
+  /usr/local/include/eigen/Eigen/src/OrderingMethods/Amd.h \
+  /usr/local/include/eigen/Eigen/src/OrderingMethods/InternalHeaderCheck.h \
+  /usr/local/include/eigen/Eigen/src/OrderingMethods/Ordering.h \
+  /usr/local/include/eigen/Eigen/src/OrderingMethods/Eigen_Colamd.h \
+  /usr/local/include/eigen/Eigen/SparseCholesky \
+  /usr/local/include/eigen/Eigen/src/SparseCholesky/SimplicialCholesky.h \
+  /usr/local/include/eigen/Eigen/src/SparseCholesky/InternalHeaderCheck.h \
+  /usr/local/include/eigen/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h \
+  /usr/local/include/eigen/Eigen/SparseLU \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Structs.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/InternalHeaderCheck.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLUImpl.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseColEtree.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Memory.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_relax_snode.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_pivotL.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_panel_dfs.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_kernel_bmod.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_panel_bmod.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_column_dfs.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_column_bmod.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_pruneL.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Utils.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU.h \
+  /usr/local/include/eigen/Eigen/SparseQR \
+  /usr/local/include/eigen/Eigen/src/SparseQR/SparseQR.h \
+  /usr/local/include/eigen/Eigen/src/SparseQR/InternalHeaderCheck.h \
+  /usr/local/include/eigen/Eigen/IterativeLinearSolvers \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/InternalHeaderCheck.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h \
+  /usr/local/include/OsqpEigen/SparseMatrixHelper.tpp \
+  /usr/local/include/OsqpEigen/Debug.hpp \
+  /usr/local/include/OsqpEigen/Data.tpp \
+  /usr/local/include/OsqpEigen/Settings.hpp \
+  /usr/local/include/OsqpEigen/Solver.hpp \
+  /usr/local/include/OsqpEigen/Solver.tpp \
+  /usr/local/include/OsqpEigen/Debug.hpp \
+  /home/miao/planning_with_ROS2_ws/src/planning/src/decision_center/decision_center.h \
+  /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path/local_path_planner.h \
+  /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/polynomial_curve.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path/local_path_smoother.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_speeds/local_speeds_planner.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_speeds/local_speeds_smoother.h \
@@ -1683,12 +1780,10 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
   /opt/ros/humble/include/ament_index_cpp/ament_index_cpp/visibility_control.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/main_car/main_car.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/vehicle_info_base.h \
+  /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/curve.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/obs_car/obs_car.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/reference_line/reference_line_creator.h \
-  /home/miao/planning_with_ROS2_ws/src/planning/src/decision_center/decision_center.h \
-  /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path/local_path_planner.h \
-  /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/curve.h \
-  /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/polynomial_curve.h \
+  /home/miao/planning_with_ROS2_ws/src/planning/src/reference_line/reference_line_smoother.h \
   /usr/local/include/eigen/Eigen/Dense \
   /usr/local/include/eigen/Eigen/Core \
   /usr/local/include/eigen/Eigen/src/Core/util/DisableStupidWarnings.h \
@@ -1918,6 +2013,105 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
   /usr/local/include/eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
   /usr/local/include/eigen/Eigen/src/Eigenvalues/RealQZ.h \
   /usr/local/include/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+  /usr/local/include/OsqpEigen/OsqpEigen.h \
+  /usr/local/include/OsqpEigen/Constants.hpp \
+  /usr/local/include/OsqpEigen/Compat.hpp \
+  /usr/local/include/osqp/osqp.h \
+  /usr/local/include/osqp/osqp_configure.h \
+  /usr/local/include/osqp/osqp_api_constants.h \
+  /usr/local/include/osqp/osqp_api_types.h \
+  /usr/local/include/osqp/osqp_api_functions.h \
+  /usr/local/include/osqp/osqp_export_define.h \
+  /usr/local/include/osqp/osqp_api_utils.h \
+  /usr/local/include/OsqpEigen/Data.hpp \
+  /usr/local/include/OsqpEigen/SparseMatrixHelper.hpp \
+  /usr/local/include/eigen/Eigen/Sparse \
+  /usr/local/include/eigen/Eigen/SparseCore \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseUtil.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/InternalHeaderCheck.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseMatrixBase.h \
+  /usr/local/include/eigen/Eigen/src/plugins/CommonCwiseUnaryOps.inc \
+  /usr/local/include/eigen/Eigen/src/plugins/CommonCwiseBinaryOps.inc \
+  /usr/local/include/eigen/Eigen/src/plugins/MatrixCwiseUnaryOps.inc \
+  /usr/local/include/eigen/Eigen/src/plugins/MatrixCwiseBinaryOps.inc \
+  /usr/local/include/eigen/Eigen/src/plugins/BlockMethods.inc \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseAssign.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/CompressedStorage.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/AmbiVector.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseCompressedBase.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseMatrix.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseMap.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseVector.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseRef.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseCwiseUnaryOp.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseCwiseBinaryOp.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseTranspose.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseBlock.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseDot.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseRedux.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseView.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseDiagonalProduct.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseSparseProductWithPruning.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseProduct.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseDenseProduct.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseSelfAdjointView.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseTriangularView.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/TriangularSolver.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparsePermutation.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseFuzzy.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseSolverBase.h \
+  /usr/local/include/eigen/Eigen/OrderingMethods \
+  /usr/local/include/eigen/Eigen/src/OrderingMethods/Amd.h \
+  /usr/local/include/eigen/Eigen/src/OrderingMethods/InternalHeaderCheck.h \
+  /usr/local/include/eigen/Eigen/src/OrderingMethods/Ordering.h \
+  /usr/local/include/eigen/Eigen/src/OrderingMethods/Eigen_Colamd.h \
+  /usr/local/include/eigen/Eigen/SparseCholesky \
+  /usr/local/include/eigen/Eigen/src/SparseCholesky/SimplicialCholesky.h \
+  /usr/local/include/eigen/Eigen/src/SparseCholesky/InternalHeaderCheck.h \
+  /usr/local/include/eigen/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h \
+  /usr/local/include/eigen/Eigen/SparseLU \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Structs.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/InternalHeaderCheck.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLUImpl.h \
+  /usr/local/include/eigen/Eigen/src/SparseCore/SparseColEtree.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Memory.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_relax_snode.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_pivotL.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_panel_dfs.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_kernel_bmod.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_panel_bmod.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_column_dfs.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_column_bmod.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_pruneL.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Utils.h \
+  /usr/local/include/eigen/Eigen/src/SparseLU/SparseLU.h \
+  /usr/local/include/eigen/Eigen/SparseQR \
+  /usr/local/include/eigen/Eigen/src/SparseQR/SparseQR.h \
+  /usr/local/include/eigen/Eigen/src/SparseQR/InternalHeaderCheck.h \
+  /usr/local/include/eigen/Eigen/IterativeLinearSolvers \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/InternalHeaderCheck.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h \
+  /usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h \
+  /usr/local/include/OsqpEigen/SparseMatrixHelper.tpp \
+  /usr/local/include/OsqpEigen/Debug.hpp \
+  /usr/local/include/OsqpEigen/Data.tpp \
+  /usr/local/include/OsqpEigen/Settings.hpp \
+  /usr/local/include/OsqpEigen/Solver.hpp \
+  /usr/local/include/OsqpEigen/Solver.tpp \
+  /usr/local/include/OsqpEigen/Debug.hpp \
+  /home/miao/planning_with_ROS2_ws/src/planning/src/decision_center/decision_center.h \
+  /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path/local_path_planner.h \
+  /home/miao/planning_with_ROS2_ws/src/planning/src/common/math/polynomial_curve.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path/local_path_smoother.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_speeds/local_speeds_planner.h \
   /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_speeds/local_speeds_smoother.h \
@@ -1926,7 +2120,79 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:
 
+/home/miao/planning_with_ROS2_ws/src/planning/src/decision_center/decision_center.h:
+
+/usr/local/include/OsqpEigen/Solver.tpp:
+
+/usr/local/include/OsqpEigen/Settings.hpp:
+
+/usr/local/include/OsqpEigen/Data.tpp:
+
+/usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h:
+
+/usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h:
+
+/usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h:
+
+/usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h:
+
+/usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h:
+
+/usr/local/include/eigen/Eigen/src/SparseQR/InternalHeaderCheck.h:
+
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU.h:
+
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_pruneL.h:
+
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_kernel_bmod.h:
+
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h:
+
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Memory.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseColEtree.h:
+
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLUImpl.h:
+
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h:
+
+/usr/local/include/eigen/Eigen/src/SparseLU/InternalHeaderCheck.h:
+
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Structs.h:
+
+/usr/local/include/eigen/Eigen/src/OrderingMethods/Eigen_Colamd.h:
+
+/usr/local/include/eigen/Eigen/src/OrderingMethods/InternalHeaderCheck.h:
+
+/usr/local/include/eigen/Eigen/OrderingMethods:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseSolverBase.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseFuzzy.h:
+
 /home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_speeds/local_speeds_smoother.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseSelfAdjointView.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseSparseProductWithPruning.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseView.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseRedux.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseTranspose.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseRef.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseCompressedBase.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/CompressedStorage.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseAssign.h:
+
+/usr/local/include/osqp/osqp_api_utils.h:
+
+/usr/local/include/osqp/osqp_api_functions.h:
 
 /usr/local/include/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
 
@@ -1956,11 +2222,15 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/local/include/eigen/Eigen/src/Geometry/RotationBase.h:
 
+/usr/local/include/eigen/Eigen/src/SparseQR/SparseQR.h:
+
 /usr/local/include/eigen/Eigen/src/Geometry/EulerAngles.h:
 
 /usr/local/include/eigen/Eigen/src/Geometry/InternalHeaderCheck.h:
 
 /usr/local/include/eigen/Eigen/src/SVD/JacobiSVD.h:
+
+/usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h:
 
 /usr/local/include/eigen/Eigen/src/SVD/InternalHeaderCheck.h:
 
@@ -1970,7 +2240,11 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/local/include/eigen/Eigen/src/QR/InternalHeaderCheck.h:
 
+/usr/local/include/OsqpEigen/Debug.hpp:
+
 /usr/local/include/eigen/Eigen/src/QR/HouseholderQR.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseTriangularView.h:
 
 /usr/local/include/eigen/Eigen/src/Householder/InternalHeaderCheck.h:
 
@@ -1998,6 +2272,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/local/include/eigen/Eigen/src/Core/CoreIterators.h:
 
+/usr/local/include/eigen/Eigen/src/OrderingMethods/Amd.h:
+
 /usr/local/include/eigen/Eigen/src/Core/BandMatrix.h:
 
 /usr/local/include/eigen/Eigen/src/Core/products/TriangularSolverVector.h:
@@ -2006,15 +2282,21 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/local/include/eigen/Eigen/src/Core/products/TriangularMatrixMatrix.h:
 
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseMap.h:
+
 /usr/local/include/eigen/Eigen/src/Core/products/SelfadjointRank2Update.h:
 
 /usr/local/include/eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h:
 
 /usr/local/include/eigen/Eigen/src/Core/ProductEvaluators.h:
 
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_column_dfs.h:
+
 /usr/local/include/eigen/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
 
 /usr/local/include/eigen/Eigen/src/Core/PermutationMatrix.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/InternalHeaderCheck.h:
 
 /usr/local/include/eigen/Eigen/src/Core/Solve.h:
 
@@ -2044,6 +2326,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/local/include/eigen/Eigen/src/Core/CwiseUnaryOp.h:
 
+/usr/local/include/OsqpEigen/Compat.hpp:
+
 /usr/local/include/eigen/Eigen/src/Core/CwiseBinaryOp.h:
 
 /usr/local/include/eigen/Eigen/src/Core/Fill.h:
@@ -2052,9 +2336,13 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/local/include/eigen/Eigen/src/Core/Matrix.h:
 
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseUtil.h:
+
 /usr/local/include/eigen/Eigen/src/Core/ReturnByValue.h:
 
 /usr/local/include/eigen/Eigen/src/Core/NestByValue.h:
+
+/usr/local/include/osqp/osqp_configure.h:
 
 /usr/local/include/eigen/Eigen/src/plugins/ArrayCwiseBinaryOps.inc:
 
@@ -2081,6 +2369,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /usr/local/include/eigen/Eigen/src/Core/arch/SSE/MathFunctions.h:
 
 /usr/local/include/eigen/Eigen/src/Core/arch/Default/Half.h:
+
+/usr/local/include/osqp/osqp_api_constants.h:
 
 /usr/local/include/eigen/Eigen/src/Core/MathFunctionsImpl.h:
 
@@ -2116,9 +2406,13 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
+/usr/local/include/eigen/Eigen/SparseLU:
+
 /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseDot.h:
 
 /usr/include/c++/11/climits:
 
@@ -2135,8 +2429,6 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /usr/local/include/eigen/Eigen/Core:
 
 /usr/local/include/eigen/Eigen/Dense:
-
-/home/miao/planning_with_ROS2_ws/src/planning/src/decision_center/decision_center.h:
 
 /home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/obs_car/obs_car.h:
 
@@ -2204,6 +2496,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/thread_safe_synchronization.hpp:
 
+/usr/local/include/eigen/Eigen/src/SparseCore/TriangularSolver.h:
+
 /usr/local/include/eigen/Eigen/src/Core/Reverse.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
@@ -2242,7 +2536,11 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:
 
+/usr/local/include/osqp/osqp_export_define.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseProduct.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameters__type_support.hpp:
 
@@ -2272,6 +2570,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/static_executor_entities_collector.hpp:
 
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_panel_bmod.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
 
 /usr/local/include/eigen/Eigen/src/Core/SelfCwiseBinaryOp.h:
@@ -2281,6 +2581,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /usr/local/include/eigen/Eigen/src/Core/util/Memory.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_timer.hpp:
+
+/usr/local/include/OsqpEigen/SparseMatrixHelper.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters__type_support.hpp:
 
@@ -2305,6 +2607,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /usr/local/include/eigen/Eigen/src/Core/ConditionEstimator.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_waitables_interface.hpp:
+
+/usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/InternalHeaderCheck.h:
 
 /usr/local/include/eigen/Eigen/src/Core/Ref.h:
 
@@ -2338,11 +2642,15 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_factory.hpp:
 
+/usr/local/include/eigen/Eigen/src/SparseCore/SparsePermutation.h:
+
 /usr/include/yaml-cpp/node/emit.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/shared_library.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseMatrixBase.h:
 
 /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
 
@@ -2416,6 +2724,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/c++/11/bits/stl_bvector.h:
 
+/usr/local/include/OsqpEigen/SparseMatrixHelper.tpp:
+
 /usr/local/include/eigen/Eigen/src/misc/RealSvd2x2.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
@@ -2434,7 +2744,11 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/c++/11/bits/std_abs.h:
 
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_Utils.h:
+
 /usr/include/c++/11/pstl/execution_defs.h:
+
+/usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h:
 
 /usr/include/c++/11/bits/stl_algo.h:
 
@@ -2480,6 +2794,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/usr/local/include/eigen/Eigen/src/OrderingMethods/Ordering.h:
+
 /usr/include/stdlib.h:
 
 /usr/include/yaml-cpp/node/impl.h:
@@ -2518,6 +2834,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseVector.h:
+
 /usr/include/c++/11/bits/localefwd.h:
 
 /usr/include/c++/11/bits/std_thread.h:
@@ -2551,6 +2869,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /usr/local/include/eigen/Eigen/src/Core/util/XprHelper.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/set_parameters_atomically__type_support.hpp:
 
@@ -2594,11 +2914,17 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/c++/11/cstdio:
 
+/usr/local/include/eigen/Eigen/src/SparseCore/AmbiVector.h:
+
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseCwiseBinaryOp.h:
+
 /usr/include/c++/11/bits/atomic_lockfree_defines.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseDiagonalProduct.h:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
@@ -2674,6 +3000,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/c++/11/bits/unordered_map.h:
 
+/usr/local/include/eigen/Eigen/SparseCore:
+
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/c++/11/ext/alloc_traits.h:
@@ -2742,6 +3070,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
+/usr/local/include/eigen/Eigen/SparseQR:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /usr/include/c++/11/bits/exception_defines.h:
@@ -2762,6 +3092,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
+/usr/local/include/eigen/Eigen/SparseCholesky:
+
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
@@ -2775,6 +3107,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:
 
 /usr/include/c++/11/bits/basic_string.tcc:
+
+/home/miao/planning_with_ROS2_ws/src/planning/src/reference_line/reference_line_smoother.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigaction.h:
 
@@ -2804,11 +3138,15 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
 
+/usr/local/include/OsqpEigen/Constants.hpp:
+
 /usr/local/include/eigen/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
 
 /usr/include/linux/errno.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h:
+
+/usr/local/include/eigen/Eigen/Sparse:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:
 
@@ -2819,6 +3157,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_relax_snode.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
@@ -2837,6 +3177,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
+/usr/local/include/osqp/osqp_api_types.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h:
 
@@ -2912,6 +3254,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
 
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_pivotL.h:
+
 /usr/include/c++/11/tr1/special_function_util.h:
 
 /usr/include/c++/11/bits/shared_ptr.h:
@@ -2961,6 +3305,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /usr/local/include/eigen/Eigen/src/Core/arch/SSE/Complex.h:
 
 /usr/include/c++/11/cstdlib:
+
+/usr/local/include/eigen/Eigen/src/SparseCholesky/SimplicialCholesky.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h:
 
@@ -3043,6 +3389,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
 /usr/include/c++/11/tuple:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseDenseProduct.h:
 
 /opt/ros/humble/include/rcl/rcl/network_flow_endpoints.h:
 
@@ -3156,6 +3504,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/c++/11/bits/stl_algobase.h:
 
+/usr/local/include/osqp/osqp.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/floating_point_range__struct.hpp:
 
 /usr/include/unistd.h:
@@ -3174,6 +3524,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/c++/11/cstring:
 
+/usr/local/include/eigen/Eigen/src/SparseCholesky/InternalHeaderCheck.h:
+
 /usr/include/c++/11/bits/charconv.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
@@ -3183,6 +3535,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
 
 /usr/include/math.h:
+
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_column_bmod.h:
 
 /usr/include/errno.h:
 
@@ -3230,6 +3584,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/c++/11/bits/node_handle.h:
 
+/usr/local/include/eigen/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h:
+
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
 /usr/include/c++/11/iostream:
@@ -3264,6 +3620,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
+/usr/local/include/OsqpEigen/OsqpEigen.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
 /usr/include/c++/11/istream:
@@ -3297,6 +3655,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /opt/ros/humble/include/rcl/rcl/guard_condition.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
+
+/usr/local/include/OsqpEigen/Data.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp:
 
@@ -3341,6 +3701,10 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/moving_average_statistics/moving_average.hpp:
 
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseCwiseUnaryOp.h:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseMatrix.h:
 
 /usr/local/include/eigen/Eigen/src/Geometry/Transform.h:
 
@@ -3395,6 +3759,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /usr/include/c++/11/bits/ostream.tcc:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/buffers/ring_buffer_implementation.hpp:
+
+/usr/local/include/eigen/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h:
 
 /usr/local/include/eigen/Eigen/src/Geometry/Umeyama.h:
 
@@ -3516,6 +3882,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /opt/ros/humble/include/rcl/rcl/publisher.h:
 
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h:
+
 /opt/ros/humble/include/rcpputils/rcpputils/scope_exit.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:
@@ -3626,6 +3994,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
 
+/usr/local/include/OsqpEigen/Solver.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:
@@ -3702,6 +4072,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
+/usr/local/include/eigen/Eigen/src/SparseLU/SparseLU_panel_dfs.h:
+
 /opt/ros/humble/include/tracetools/tracetools/utils.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp:
@@ -3719,6 +4091,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
+
+/usr/local/include/eigen/Eigen/src/SparseCore/SparseBlock.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_generic_subscription.hpp:
 
@@ -3777,6 +4151,8 @@ src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o: /home/
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/local/include/eigen/Eigen/IterativeLinearSolvers:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 

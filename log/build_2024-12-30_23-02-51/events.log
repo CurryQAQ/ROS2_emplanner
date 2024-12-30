@@ -1,0 +1,270 @@
+[0.000000] (-) TimerEvent: {}
+[0.000521] (base_msgs) JobQueued: {'identifier': 'base_msgs', 'dependencies': OrderedDict()}
+[0.000612] (data_plot) JobQueued: {'identifier': 'data_plot', 'dependencies': OrderedDict([('base_msgs', '/home/miao/planning_with_ROS2_ws/install/base_msgs')])}
+[0.000673] (planning) JobQueued: {'identifier': 'planning', 'dependencies': OrderedDict([('base_msgs', '/home/miao/planning_with_ROS2_ws/install/base_msgs')])}
+[0.000702] (base_msgs) JobStarted: {'identifier': 'base_msgs'}
+[0.005074] (base_msgs) JobProgress: {'identifier': 'base_msgs', 'progress': 'cmake'}
+[0.005309] (base_msgs) JobProgress: {'identifier': 'base_msgs', 'progress': 'build'}
+[0.005681] (base_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/miao/planning_with_ROS2_ws/build/base_msgs', '--', '-j20', '-l20'], 'cwd': '/home/miao/planning_with_ROS2_ws/build/base_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'miao'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/miao'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\u@\\h \\[\\033[01;36m\\]\\W\\[\\033[01;32m\\]$(git_branch)\\[\\033[00m\\] \\$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1681'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=26360f779cf2c7838e25d48d67728115'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5556'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'miao'), ('JOURNAL_STREAM', '8:365'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'miao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/miao:@/tmp/.ICE-unix/1681,unix/miao:/tmp/.ICE-unix/1681'), ('INVOCATION_ID', '7f054be260794c68b4c3b51d0686d9b0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.H5X2Z2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2fdf40f226.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/home/miao/planning_with_ROS2_ws/install/base_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS2_PLANNING_WS', '/home/miao/planning_with_ROS2_ws/install'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/miao/planning_with_ROS2_ws/build/base_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=26360f779cf2c7838e25d48d67728115'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble')]), 'shell': False}
+[0.033791] (base_msgs) CommandEnded: {'returncode': 0}
+[0.034222] (base_msgs) JobProgress: {'identifier': 'base_msgs', 'progress': 'install'}
+[0.039911] (base_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/miao/planning_with_ROS2_ws/build/base_msgs'], 'cwd': '/home/miao/planning_with_ROS2_ws/build/base_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'miao'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/miao'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\u@\\h \\[\\033[01;36m\\]\\W\\[\\033[01;32m\\]$(git_branch)\\[\\033[00m\\] \\$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1681'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=26360f779cf2c7838e25d48d67728115'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5556'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'miao'), ('JOURNAL_STREAM', '8:365'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'miao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/miao:@/tmp/.ICE-unix/1681,unix/miao:/tmp/.ICE-unix/1681'), ('INVOCATION_ID', '7f054be260794c68b4c3b51d0686d9b0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.H5X2Z2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2fdf40f226.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/home/miao/planning_with_ROS2_ws/install/base_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS2_PLANNING_WS', '/home/miao/planning_with_ROS2_ws/install'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/miao/planning_with_ROS2_ws/build/base_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=26360f779cf2c7838e25d48d67728115'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble')]), 'shell': False}
+[0.044957] (base_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.045016] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/ament_index/resource_index/package_run_dependencies/base_msgs\n'}
+[0.045049] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/ament_index/resource_index/parent_prefix_path/base_msgs\n'}
+[0.045074] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/ament_prefix_path.sh\n'}
+[0.045105] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/ament_prefix_path.dsv\n'}
+[0.045130] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/path.sh\n'}
+[0.045155] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/path.dsv\n'}
+[0.045180] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.bash\n'}
+[0.045229] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.sh\n'}
+[0.045297] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.zsh\n'}
+[0.045323] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.dsv\n'}
+[0.045346] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/package.dsv\n'}
+[0.045370] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/ament_index/resource_index/packages/base_msgs\n'}
+[0.045397] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgsConfig.cmake\n'}
+[0.045418] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgsConfig-version.cmake\n'}
+[0.045439] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/package.xml\n'}
+[0.046200] (base_msgs) CommandEnded: {'returncode': 0}
+[0.053834] (base_msgs) JobEnded: {'identifier': 'base_msgs', 'rc': 0}
+[0.054497] (data_plot) JobStarted: {'identifier': 'data_plot'}
+[0.056578] (planning) JobStarted: {'identifier': 'planning'}
+[0.099834] (-) TimerEvent: {}
+[0.200125] (planning) JobProgress: {'identifier': 'planning', 'progress': 'cmake'}
+[0.200170] (-) TimerEvent: {}
+[0.200555] (planning) JobProgress: {'identifier': 'planning', 'progress': 'build'}
+[0.200781] (planning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/miao/planning_with_ROS2_ws/build/planning', '--', '-j20', '-l20'], 'cwd': '/home/miao/planning_with_ROS2_ws/build/planning', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'miao'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/miao'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\u@\\h \\[\\033[01;36m\\]\\W\\[\\033[01;32m\\]$(git_branch)\\[\\033[00m\\] \\$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1681'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=26360f779cf2c7838e25d48d67728115'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5556'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'miao'), ('JOURNAL_STREAM', '8:365'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'miao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/miao:@/tmp/.ICE-unix/1681,unix/miao:/tmp/.ICE-unix/1681'), ('INVOCATION_ID', '7f054be260794c68b4c3b51d0686d9b0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.H5X2Z2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2fdf40f226.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/home/miao/planning_with_ROS2_ws/install/base_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS2_PLANNING_WS', '/home/miao/planning_with_ROS2_ws/install'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/miao/planning_with_ROS2_ws/build/planning'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=26360f779cf2c7838e25d48d67728115'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble')]), 'shell': False}
+[0.230106] (planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target global_planner\x1b[0m\n'}
+[0.230949] (planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target config_reader\x1b[0m\n'}
+[0.232181] (planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pnc_map\x1b[0m\n'}
+[0.239828] (planning) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o\x1b[0m\n'}
+[0.243657] (planning) StdoutLine: {'line': b'[ 11%] Built target mathlibs\n'}
+[0.244234] (planning) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object src/common/CMakeFiles/config_reader.dir/config_reader/config_reader.cpp.o\x1b[0m\n'}
+[0.244981] (planning) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map.dir/pnc_map_straight/pnc_map_straight.cpp.o\x1b[0m\n'}
+[0.245809] (planning) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map.dir/pnc_map_sturn/pnc_map_sturn.cpp.o\x1b[0m\n'}
+[0.300347] (-) TimerEvent: {}
+[0.364058] (data_plot) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/data_plot', 'build', '--build-base', '/home/miao/planning_with_ROS2_ws/build/data_plot/build', 'install', '--record', '/home/miao/planning_with_ROS2_ws/build/data_plot/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/miao/planning_with_ROS2_ws/src/data_plot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'zh_CN:zh', 'USER': 'miao', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/miao', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'TERM_PROGRAM_VERSION': '1.86.2', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'PS1': '\\[\x1b]633;A\x07\\]\\u@\\h \\[\\033[01;36m\\]\\W\\[\\033[01;32m\\]$(git_branch)\\[\\033[00m\\] \\$ \\[\x1b]633;B\x07\\]', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1554', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1681', 'IM_CONFIG_CHECK_ENV': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=26360f779cf2c7838e25d48d67728115', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '5556', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/miao/planning_with_ROS2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'miao', 'JOURNAL_STREAM': '8:365', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'miao', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/miao:@/tmp/.ICE-unix/1681,unix/miao:/tmp/.ICE-unix/1681', 'INVOCATION_ID': '7f054be260794c68b4c3b51d0686d9b0', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.H5X2Z2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-2fdf40f226.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/home/miao/planning_with_ROS2_ws/install/base_msgs:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS2_PLANNING_WS': '/home/miao/planning_with_ROS2_ws/install', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/miao/planning_with_ROS2_ws/build/data_plot', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=26360f779cf2c7838e25d48d67728115', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/miao/planning_with_ROS2_ws/build/data_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages:/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning'}, 'shell': False}
+[0.400451] (-) TimerEvent: {}
+[0.479580] (data_plot) StdoutLine: {'line': b'running egg_info\n'}
+[0.479950] (data_plot) StdoutLine: {'line': b'writing ../../build/data_plot/data_plot.egg-info/PKG-INFO\n'}
+[0.480105] (data_plot) StdoutLine: {'line': b'writing dependency_links to ../../build/data_plot/data_plot.egg-info/dependency_links.txt\n'}
+[0.480207] (data_plot) StdoutLine: {'line': b'writing entry points to ../../build/data_plot/data_plot.egg-info/entry_points.txt\n'}
+[0.480268] (data_plot) StdoutLine: {'line': b'writing requirements to ../../build/data_plot/data_plot.egg-info/requires.txt\n'}
+[0.480336] (data_plot) StdoutLine: {'line': b'writing top-level names to ../../build/data_plot/data_plot.egg-info/top_level.txt\n'}
+[0.481218] (data_plot) StdoutLine: {'line': b"reading manifest file '../../build/data_plot/data_plot.egg-info/SOURCES.txt'\n"}
+[0.481310] (data_plot) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.481529] (data_plot) StdoutLine: {'line': b"writing manifest file '../../build/data_plot/data_plot.egg-info/SOURCES.txt'\n"}
+[0.481650] (data_plot) StdoutLine: {'line': b'running build\n'}
+[0.481707] (data_plot) StdoutLine: {'line': b'running build_py\n'}
+[0.481789] (data_plot) StdoutLine: {'line': b'running install\n'}
+[0.481915] (data_plot) StdoutLine: {'line': b'running install_lib\n'}
+[0.482490] (data_plot) StdoutLine: {'line': b'running install_data\n'}
+[0.482569] (data_plot) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.483527] (data_plot) StdoutLine: {'line': b"removing '/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages/data_plot-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.483675] (data_plot) StdoutLine: {'line': b'Copying ../../build/data_plot/data_plot.egg-info to /home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages/data_plot-0.0.0-py3.10.egg-info\n'}
+[0.484011] (data_plot) StdoutLine: {'line': b'running install_scripts\n'}
+[0.496581] (data_plot) StdoutLine: {'line': b'Installing data_plot script to /home/miao/planning_with_ROS2_ws/install/data_plot/lib/data_plot\n'}
+[0.496840] (data_plot) StdoutLine: {'line': b"writing list of installed files to '/home/miao/planning_with_ROS2_ws/build/data_plot/install.log'\n"}
+[0.500522] (-) TimerEvent: {}
+[0.512184] (data_plot) CommandEnded: {'returncode': 0}
+[0.516214] (data_plot) JobEnded: {'identifier': 'data_plot', 'rc': 0}
+[0.600645] (-) TimerEvent: {}
+[0.700931] (-) TimerEvent: {}
+[0.801204] (-) TimerEvent: {}
+[0.901497] (-) TimerEvent: {}
+[1.001796] (-) TimerEvent: {}
+[1.102075] (-) TimerEvent: {}
+[1.202394] (-) TimerEvent: {}
+[1.302692] (-) TimerEvent: {}
+[1.403022] (-) TimerEvent: {}
+[1.503322] (-) TimerEvent: {}
+[1.603637] (-) TimerEvent: {}
+[1.703970] (-) TimerEvent: {}
+[1.804260] (-) TimerEvent: {}
+[1.822824] (planning) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking CXX shared library libglobal_planner.so\x1b[0m\n'}
+[1.835518] (planning) StdoutLine: {'line': b'[ 26%] \x1b[32m\x1b[1mLinking CXX shared library libpnc_map.so\x1b[0m\n'}
+[1.888974] (planning) StdoutLine: {'line': b'[ 26%] Built target global_planner\n'}
+[1.904507] (-) TimerEvent: {}
+[1.912875] (planning) StdoutLine: {'line': b'[ 26%] Built target pnc_map\n'}
+[2.004673] (-) TimerEvent: {}
+[2.104955] (-) TimerEvent: {}
+[2.205220] (-) TimerEvent: {}
+[2.305463] (-) TimerEvent: {}
+[2.364423] (planning) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking CXX shared library libconfig_reader.so\x1b[0m\n'}
+[2.405574] (-) TimerEvent: {}
+[2.435583] (planning) StdoutLine: {'line': b'[ 29%] Built target config_reader\n'}
+[2.445341] (planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pnc_map_server\x1b[0m\n'}
+[2.445541] (planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target global_path_server\x1b[0m\n'}
+[2.445693] (planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vehicle_info\x1b[0m\n'}
+[2.446176] (planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target reference_line\x1b[0m\n'}
+[2.456380] (planning) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/obs_car/obs_car.cpp.o\x1b[0m\n'}
+[2.457070] (planning) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.o\x1b[0m\n'}
+[2.457861] (planning) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.o\x1b[0m\n'}
+[2.457978] (planning) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/main_car/main_car.cpp.o\x1b[0m\n'}
+[2.458046] (planning) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o\x1b[0m\n'}
+[2.458558] (planning) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_smoother.cpp.o\x1b[0m\n'}
+[2.505763] (-) TimerEvent: {}
+[2.606116] (-) TimerEvent: {}
+[2.706438] (-) TimerEvent: {}
+[2.806762] (-) TimerEvent: {}
+[2.907085] (-) TimerEvent: {}
+[3.007430] (-) TimerEvent: {}
+[3.107759] (-) TimerEvent: {}
+[3.208089] (-) TimerEvent: {}
+[3.308423] (-) TimerEvent: {}
+[3.408751] (-) TimerEvent: {}
+[3.509083] (-) TimerEvent: {}
+[3.609489] (-) TimerEvent: {}
+[3.709830] (-) TimerEvent: {}
+[3.810169] (-) TimerEvent: {}
+[3.910517] (-) TimerEvent: {}
+[4.010843] (-) TimerEvent: {}
+[4.111212] (-) TimerEvent: {}
+[4.113479] (planning) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libvehicle_info.so\x1b[0m\n'}
+[4.167372] (planning) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX executable pnc_map_server\x1b[0m\n'}
+[4.183291] (planning) StdoutLine: {'line': b'[ 52%] Built target vehicle_info\n'}
+[4.194910] (planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target decision_center\x1b[0m\n'}
+[4.195086] (planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target car_move_cmd\x1b[0m\n'}
+[4.195153] (planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target obs_move_cmd\x1b[0m\n'}
+[4.208183] (planning) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object src/decision_center/CMakeFiles/decision_center.dir/decision_center.cpp.o\x1b[0m\n'}
+[4.209457] (planning) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object src/move_cmd/CMakeFiles/car_move_cmd.dir/car_move_cmd.cpp.o\x1b[0m\n'}
+[4.209575] (planning) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object src/move_cmd/CMakeFiles/obs_move_cmd.dir/obs_move_cmd.cpp.o\x1b[0m\n'}
+[4.211285] (-) TimerEvent: {}
+[4.242016] (planning) StdoutLine: {'line': b'[ 61%] Built target pnc_map_server\n'}
+[4.311353] (-) TimerEvent: {}
+[4.411636] (-) TimerEvent: {}
+[4.421071] (planning) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX executable global_path_server\x1b[0m\n'}
+[4.503307] (planning) StdoutLine: {'line': b'[ 64%] Built target global_path_server\n'}
+[4.511780] (-) TimerEvent: {}
+[4.612158] (-) TimerEvent: {}
+[4.712565] (-) TimerEvent: {}
+[4.812896] (-) TimerEvent: {}
+[4.911431] (planning) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libreference_line.so\x1b[0m\n'}
+[4.912987] (-) TimerEvent: {}
+[4.987855] (planning) StdoutLine: {'line': b'[ 67%] Built target reference_line\n'}
+[5.013130] (-) TimerEvent: {}
+[5.113466] (-) TimerEvent: {}
+[5.213838] (-) TimerEvent: {}
+[5.314151] (-) TimerEvent: {}
+[5.414554] (-) TimerEvent: {}
+[5.514883] (-) TimerEvent: {}
+[5.615203] (-) TimerEvent: {}
+[5.715541] (-) TimerEvent: {}
+[5.815885] (-) TimerEvent: {}
+[5.880835] (planning) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable obs_move_cmd\x1b[0m\n'}
+[5.916026] (-) TimerEvent: {}
+[5.916587] (planning) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libdecision_center.so\x1b[0m\n'}
+[5.937125] (planning) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX executable car_move_cmd\x1b[0m\n'}
+[5.959425] (planning) StdoutLine: {'line': b'[ 76%] Built target obs_move_cmd\n'}
+[5.980712] (planning) StdoutLine: {'line': b'[ 76%] Built target decision_center\n'}
+[5.993529] (planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target local_planner\x1b[0m\n'}
+[6.010903] (planning) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_speeds/local_speeds_planner.cpp.o\x1b[0m\n'}
+[6.011825] (planning) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_path/local_path_planner.cpp.o\x1b[0m\n'}
+[6.011893] (planning) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_path/local_path_smoother.cpp.o\x1b[0m\n'}
+[6.011939] (planning) StdoutLine: {'line': b'[ 85%] Built target car_move_cmd\n'}
+[6.012766] (planning) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_speeds/local_speeds_smoother.cpp.o\x1b[0m\n'}
+[6.016101] (-) TimerEvent: {}
+[6.116361] (-) TimerEvent: {}
+[6.216673] (-) TimerEvent: {}
+[6.316950] (-) TimerEvent: {}
+[6.417205] (-) TimerEvent: {}
+[6.517488] (-) TimerEvent: {}
+[6.617753] (-) TimerEvent: {}
+[6.718052] (-) TimerEvent: {}
+[6.818359] (-) TimerEvent: {}
+[6.918639] (-) TimerEvent: {}
+[7.018911] (-) TimerEvent: {}
+[7.119196] (-) TimerEvent: {}
+[7.219461] (-) TimerEvent: {}
+[7.319745] (-) TimerEvent: {}
+[7.420022] (-) TimerEvent: {}
+[7.520306] (-) TimerEvent: {}
+[7.620582] (-) TimerEvent: {}
+[7.720884] (-) TimerEvent: {}
+[7.821203] (-) TimerEvent: {}
+[7.921454] (-) TimerEvent: {}
+[7.947135] (planning) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared library liblocal_planner.so\x1b[0m\n'}
+[8.012122] (planning) StdoutLine: {'line': b'[ 91%] Built target local_planner\n'}
+[8.021557] (-) TimerEvent: {}
+[8.022370] (planning) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target planning_node\x1b[0m\n'}
+[8.041416] (planning) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object src/planning_process/CMakeFiles/planning_node.dir/planning_node.cpp.o\x1b[0m\n'}
+[8.041593] (planning) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o\x1b[0m\n'}
+[8.121676] (-) TimerEvent: {}
+[8.221931] (-) TimerEvent: {}
+[8.322176] (-) TimerEvent: {}
+[8.422400] (-) TimerEvent: {}
+[8.522623] (-) TimerEvent: {}
+[8.622880] (-) TimerEvent: {}
+[8.723176] (-) TimerEvent: {}
+[8.823412] (-) TimerEvent: {}
+[8.923714] (-) TimerEvent: {}
+[9.024020] (-) TimerEvent: {}
+[9.124308] (-) TimerEvent: {}
+[9.224547] (-) TimerEvent: {}
+[9.324784] (-) TimerEvent: {}
+[9.425043] (-) TimerEvent: {}
+[9.525307] (-) TimerEvent: {}
+[9.625591] (-) TimerEvent: {}
+[9.725854] (-) TimerEvent: {}
+[9.826118] (-) TimerEvent: {}
+[9.926379] (-) TimerEvent: {}
+[10.026626] (-) TimerEvent: {}
+[10.126885] (-) TimerEvent: {}
+[10.227205] (-) TimerEvent: {}
+[10.314372] (planning) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable planning_node\x1b[0m\n'}
+[10.327391] (-) TimerEvent: {}
+[10.396644] (planning) StdoutLine: {'line': b'[100%] Built target planning_node\n'}
+[10.404302] (planning) CommandEnded: {'returncode': 0}
+[10.404732] (planning) JobProgress: {'identifier': 'planning', 'progress': 'install'}
+[10.404868] (planning) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/miao/planning_with_ROS2_ws/build/planning'], 'cwd': '/home/miao/planning_with_ROS2_ws/build/planning', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'miao'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/miao'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\u@\\h \\[\\033[01;36m\\]\\W\\[\\033[01;32m\\]$(git_branch)\\[\\033[00m\\] \\$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1554'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1681'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=26360f779cf2c7838e25d48d67728115'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '5556'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'miao'), ('JOURNAL_STREAM', '8:365'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'miao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/miao:@/tmp/.ICE-unix/1681,unix/miao:/tmp/.ICE-unix/1681'), ('INVOCATION_ID', '7f054be260794c68b4c3b51d0686d9b0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.H5X2Z2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2fdf40f226.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/home/miao/planning_with_ROS2_ws/install/base_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS2_PLANNING_WS', '/home/miao/planning_with_ROS2_ws/install'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/miao/planning_with_ROS2_ws/build/planning'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=26360f779cf2c7838e25d48d67728115'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble')]), 'shell': False}
+[10.411499] (planning) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.411703] (planning) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/libconfig_reader.so\n'}
+[10.412599] (planning) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/libconfig_reader.so" to ""\n'}
+[10.412668] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/libmathlibs.so\n'}
+[10.412909] (planning) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/libdecision_center.so\n'}
+[10.413202] (planning) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/libdecision_center.so" to ""\n'}
+[10.413564] (planning) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/libglobal_planner.so\n'}
+[10.413798] (planning) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/libglobal_planner.so" to ""\n'}
+[10.413885] (planning) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/global_path_server\n'}
+[10.414034] (planning) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/planning/global_path_server" to ""\n'}
+[10.414078] (planning) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/liblocal_planner.so\n'}
+[10.414259] (planning) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/liblocal_planner.so" to ""\n'}
+[10.414421] (planning) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/car_move_cmd\n'}
+[10.414550] (planning) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/planning/car_move_cmd" to ""\n'}
+[10.414641] (planning) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/obs_move_cmd\n'}
+[10.414725] (planning) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/planning/obs_move_cmd" to ""\n'}
+[10.414841] (planning) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/planning_node\n'}
+[10.415029] (planning) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/planning/planning_node" to ""\n'}
+[10.415152] (planning) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/libpnc_map.so\n'}
+[10.415291] (planning) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/libpnc_map.so" to ""\n'}
+[10.415358] (planning) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/pnc_map_server\n'}
+[10.415522] (planning) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/planning/pnc_map_server" to ""\n'}
+[10.415639] (planning) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/libreference_line.so\n'}
+[10.415773] (planning) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/libreference_line.so" to ""\n'}
+[10.415885] (planning) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/libvehicle_info.so\n'}
+[10.416016] (planning) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/libvehicle_info.so" to ""\n'}
+[10.416074] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/config\n'}
+[10.416099] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/config/planning_static_obs_config.yaml\n'}
+[10.416123] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/launch\n'}
+[10.416159] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/rviz\n'}
+[10.416183] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf\n'}
+[10.416235] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/main_car\n'}
+[10.416260] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/obs_car\n'}
+[10.416284] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/package_run_dependencies/planning\n'}
+[10.416312] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/parent_prefix_path/planning\n'}
+[10.416362] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/ament_prefix_path.sh\n'}
+[10.416388] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/ament_prefix_path.dsv\n'}
+[10.416411] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/path.sh\n'}
+[10.416437] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/path.dsv\n'}
+[10.416460] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.bash\n'}
+[10.416485] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.sh\n'}
+[10.416534] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.zsh\n'}
+[10.416557] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.dsv\n'}
+[10.416578] (planning) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/package.dsv\n'}
+[10.416598] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/packages/planning\n'}
+[10.416619] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/cmake/planningConfig.cmake\n'}
+[10.416639] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/cmake/planningConfig-version.cmake\n'}
+[10.416659] (planning) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/package.xml\n'}
+[10.417467] (planning) CommandEnded: {'returncode': 0}
+[10.424828] (planning) JobEnded: {'identifier': 'planning', 'rc': 0}
+[10.425133] (-) EventReactorShutdown: {}
