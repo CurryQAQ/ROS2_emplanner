@@ -12,6 +12,13 @@
 /home/miao/planning_with_ROS2_ws/install/planning/lib/libreference_line.so
 /home/miao/planning_with_ROS2_ws/install/planning/lib/libvehicle_info.so
 /home/miao/planning_with_ROS2_ws/install/planning/share/planning/config/planning_static_obs_config.yaml
+/home/miao/planning_with_ROS2_ws/install/planning/share/planning/launch/planning_launch.py
+/home/miao/planning_with_ROS2_ws/install/planning/share/planning/launch/move_cmd_launch.py
+/home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/main_car/car_radar.xacro
+/home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/main_car/car.xacro
+/home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/main_car/car_camera.xacro
+/home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/main_car/car_wheels.xacro
+/home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/main_car/car_base.xacro
 /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
 /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
 /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/ament_prefix_path.sh

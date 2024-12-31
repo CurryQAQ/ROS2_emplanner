@@ -105,5 +105,9 @@ set(PLANNING_PACKAGE_NAME ${PROJRCT_NAME})<br>
 2、inline（函数体不复杂的时候可以用，以提高运行性能） 内联函数用于返回成员变量，const表示函数改变不了成员变量<br>
 
 ### config_reader.cpp编写
-1、构造函数----ament_index_cpp路径读取,YAML::loadfile得到config中.yaml文件
+1、构造函数----ament_index_cpp路径读取,YAML::loadfile得到config中.yaml文件<br>
 2、read_config函数编写，主要就是把.yaml中的数据读取出来
+
+## 车辆模型和launch文件
+1、车辆xacro文件<br>
+2、planning_launch文件编写(套路编写即可)
