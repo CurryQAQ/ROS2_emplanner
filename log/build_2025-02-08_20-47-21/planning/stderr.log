@@ -1,0 +1,15 @@
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp:[m[K In member function ‘[01m[Kvirtual Planning::Path Planning::GlobalPlannerNormal::search_global_path(const PncMap&)[m[K’:
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/global_planner/global_planner_normal/global_planner_normal.cpp:8:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpnc_map[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    8 |     Path GlobalPlannerNormal::search_global_path([01;35m[Kconst PncMap &pnc_map[m[K)
+      |                                                  [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/global_planner/global_path_server.cpp:[m[K In member function ‘[01m[Kvoid Planning::GlobalPathServer::response_global_path_callback(std::shared_ptr<base_msgs::srv::GlobalPathService_Request_<std::allocator<void> > >, std::shared_ptr<base_msgs::srv::GlobalPathService_Response_<std::allocator<void> > >)[m[K’:
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/global_planner/global_path_server.cpp:17:108:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Krequest[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 |     void GlobalPathServer::response_global_path_callback([01;35m[Kconst std::shared_ptr<GlobalPathService::Request> request[m[K,
+      |                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/global_planner/global_path_server.cpp:18:109:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kresponse[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   18 |                                                          [01;35m[Kconst std::shared_ptr<GlobalPathService::Response> response[m[K)
+      |                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/global_planner/global_path_server.cpp:[m[K In member function ‘[01m[KPlanning::Marker Planning::GlobalPathServer::path2marker(const Path&)[m[K’:
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/global_planner/global_path_server.cpp:24:54:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpath[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   24 |     Marker GlobalPathServer::path2marker([01;35m[Kconst Path &path[m[K)
+      |                                          [01;35m[K~~~~~~~~~~~~^~~~[m[K

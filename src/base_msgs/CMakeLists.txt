@@ -29,6 +29,29 @@ find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(nav_msgs REQUIRED)
 
+# 添加依赖
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/LocalPath.msg"
+  "msg/LocalPathPoint.msg"
+  "msg/LocalSpeeds.msg"
+  "msg/LocalSpeedsPoint.msg"
+  "msg/LocalTrajectory.msg"
+  "msg/LocalTrajectoryPoint.msg"
+  "msg/ObsInfo.msg"
+  "msg/PlotInfo.msg"
+  "msg/PNCMap.msg"
+  "msg/Referline.msg"
+  "msg/ReferlinePoint.msg"
+  "srv/GlobalPathService.srv"
+  "srv/PNCMapService.srv"  
+  
+  DEPENDENCIES
+  std_msgs
+  geometry_msgs
+  nav_msgs
+  visualization_msgs
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

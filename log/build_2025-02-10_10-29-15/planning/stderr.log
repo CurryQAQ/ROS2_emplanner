@@ -1,0 +1,12 @@
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:[m[K In member function ‘[01m[Kbool Planning::PlanningProcess::connect_server(const T&)[m[K’:
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:80:78:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   80 |      if constexpr (std::is_same<T, rclcpp::Client<PNCMapService>::SharedPtr>[01;31m[K)[m[K
+      |                                                                             [01;31m[K^[m[K
+
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:84:87:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   84 |  if constexpr (std::is_same<T, rclcpp::Client<GlobalPathService>::SharedPtr>[01;31m[K)[m[K
+      |                                                                             [01;31m[K^[m[K
+
+gmake[2]: *** [src/planning_process/CMakeFiles/planning_node.dir/build.make:90：src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:527：src/planning_process/CMakeFiles/planning_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

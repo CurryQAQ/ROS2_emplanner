@@ -108,6 +108,15 @@ set(PLANNING_PACKAGE_NAME ${PROJRCT_NAME})<br>
 1、构造函数----ament_index_cpp路径读取,YAML::loadfile得到config中.yaml文件<br>
 2、read_config函数编写，主要就是把.yaml中的数据读取出来
 
-## 车辆模型和launch文件
+### 车辆模型和launch文件
 1、车辆xacro文件<br>
-2、planning_launch文件编写(套路编写即可)
+2、planning_launch文件编写(套路编写即可)<br>
+
+## base_msgs消息
+对话题消息类型和服务消息类型进行编写，msgs和srv<br>
+注意在cmakelists上要添加上依赖<br>
+
+## pnc_map服务器编写
+1、.h写地图的回调函数和成员变量(创建器、发布器、服务器)
+2、在server.cpp文件中，构造函数(地图发布器赋值，服务器赋值)，回调函数（创建/发布地图），其中在基类里写强枚举类型，创建地图的具体实现在直道和弯道的.cpp文件中实现
+3、

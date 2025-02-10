@@ -1,0 +1,18 @@
+{
+  "package_name": "base_msgs",
+  "non_idl_tuples": [
+    "/home/miao/planning_with_ROS2_ws/src/base_msgs:msg/LocalPath.msg",
+    "/home/miao/planning_with_ROS2_ws/src/base_msgs:msg/LocalPathPoint.msg",
+    "/home/miao/planning_with_ROS2_ws/src/base_msgs:msg/LocalSpeeds.msg",
+    "/home/miao/planning_with_ROS2_ws/src/base_msgs:msg/LocalSpeedsPoint.msg",
+    "/home/miao/planning_with_ROS2_ws/src/base_msgs:msg/LocalTrajectory.msg",
+    "/home/miao/planning_with_ROS2_ws/src/base_msgs:msg/LocalTrajectoryPoint.msg",
+    "/home/miao/planning_with_ROS2_ws/src/base_msgs:msg/ObsInfo.msg",
+    "/home/miao/planning_with_ROS2_ws/src/base_msgs:msg/PlotInfo.msg",
+    "/home/miao/planning_with_ROS2_ws/src/base_msgs:msg/PNCMap.msg",
+    "/home/miao/planning_with_ROS2_ws/src/base_msgs:msg/Referline.msg",
+    "/home/miao/planning_with_ROS2_ws/src/base_msgs:msg/ReferlinePoint.msg",
+    "/home/miao/planning_with_ROS2_ws/src/base_msgs:srv/GlobalPathService.srv",
+    "/home/miao/planning_with_ROS2_ws/src/base_msgs:srv/PNCMapService.srv"
+  ]
+}

@@ -1,0 +1,900 @@
+[0.000000] (-) TimerEvent: {}
+[0.000358] (base_msgs) JobQueued: {'identifier': 'base_msgs', 'dependencies': OrderedDict()}
+[0.000520] (data_plot) JobQueued: {'identifier': 'data_plot', 'dependencies': OrderedDict([('base_msgs', '/home/miao/planning_with_ROS2_ws/install/base_msgs')])}
+[0.000711] (planning) JobQueued: {'identifier': 'planning', 'dependencies': OrderedDict([('base_msgs', '/home/miao/planning_with_ROS2_ws/install/base_msgs')])}
+[0.000860] (base_msgs) JobStarted: {'identifier': 'base_msgs'}
+[0.005551] (base_msgs) JobProgress: {'identifier': 'base_msgs', 'progress': 'cmake'}
+[0.005842] (base_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/miao/planning_with_ROS2_ws/src/base_msgs', '-DCMAKE_INSTALL_PREFIX=/home/miao/planning_with_ROS2_ws/install/base_msgs'], 'cwd': '/home/miao/planning_with_ROS2_ws/build/base_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'miao'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/miao'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.96.3'), ('DESKTOP_SESSION', 'ubuntu'), ('DEBUGPY_ADAPTER_ENDPOINTS', '/tmp/noConfigDebugAdapterEndpoints-09e50827da67e0c7043d/debuggerAdapterEndpoint.txt'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\u@\\h \\[\\033[01;36m\\]\\W\\[\\033[01;32m\\]$(git_branch)\\[\\033[00m\\] \\$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1278'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1596'), ('BUNDLED_DEBUGPY_PATH', '/home/miao/.vscode/extensions/ms-python.debugpy-2025.0.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6f2b092b0da406978badeb7367a6b265'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7414'), ('COLCON_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'miao'), ('JOURNAL_STREAM', '8:15000'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'miao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/miao/.local/bin:/opt/ros/humble/bin:/home/miao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/miao/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/miao/.vscode/extensions/ms-python.debugpy-2025.0.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/miao:@/tmp/.ICE-unix/1596,unix/miao:/tmp/.ICE-unix/1596'), ('INVOCATION_ID', '30d6065837aa4584925aa263fc0f8d45'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2fdf40f226.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/home/miao/planning_with_ROS2_ws/install/base_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS2_PLANNING_WS', '/home/miao/planning_with_ROS2_ws/install'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/miao/planning_with_ROS2_ws/build/base_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6f2b092b0da406978badeb7367a6b265'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages:/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble')]), 'shell': False}
+[0.096628] (base_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 12.3.0\n'}
+[0.100040] (-) TimerEvent: {}
+[0.137360] (base_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.143458] (base_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.197540] (base_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.200160] (-) TimerEvent: {}
+[0.204208] (base_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.205162] (base_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.205706] (base_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.208768] (base_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.265849] (base_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.270110] (base_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.270287] (base_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.270405] (base_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.272745] (base_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300262] (-) TimerEvent: {}
+[0.384334] (base_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400356] (-) TimerEvent: {}
+[0.447831] (base_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.451007] (base_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.455759] (base_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.481217] (base_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500439] (-) TimerEvent: {}
+[0.500815] (base_msgs) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[0.551781] (base_msgs) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.600612] (-) TimerEvent: {}
+[0.700824] (-) TimerEvent: {}
+[0.781285] (base_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.800941] (-) TimerEvent: {}
+[0.901144] (-) TimerEvent: {}
+[0.954342] (base_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.001240] (-) TimerEvent: {}
+[1.101512] (-) TimerEvent: {}
+[1.191740] (base_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.201639] (-) TimerEvent: {}
+[1.207897] (base_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.209092] (base_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.226361] (base_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.226494] (base_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.226532] (base_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.226559] (base_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.239445] (base_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.284531] (base_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.297035] (base_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.297759] (base_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.299011] (base_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.301693] (-) TimerEvent: {}
+[1.331016] (base_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.339179] (base_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/miao/planning_with_ROS2_ws/build/base_msgs\n'}
+[1.345247] (base_msgs) CommandEnded: {'returncode': 0}
+[1.345649] (base_msgs) JobProgress: {'identifier': 'base_msgs', 'progress': 'build'}
+[1.346039] (base_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/miao/planning_with_ROS2_ws/build/base_msgs', '--', '-j20', '-l20'], 'cwd': '/home/miao/planning_with_ROS2_ws/build/base_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'miao'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/miao'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.96.3'), ('DESKTOP_SESSION', 'ubuntu'), ('DEBUGPY_ADAPTER_ENDPOINTS', '/tmp/noConfigDebugAdapterEndpoints-09e50827da67e0c7043d/debuggerAdapterEndpoint.txt'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\u@\\h \\[\\033[01;36m\\]\\W\\[\\033[01;32m\\]$(git_branch)\\[\\033[00m\\] \\$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1278'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1596'), ('BUNDLED_DEBUGPY_PATH', '/home/miao/.vscode/extensions/ms-python.debugpy-2025.0.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6f2b092b0da406978badeb7367a6b265'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7414'), ('COLCON_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'miao'), ('JOURNAL_STREAM', '8:15000'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'miao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/miao/.local/bin:/opt/ros/humble/bin:/home/miao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/miao/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/miao/.vscode/extensions/ms-python.debugpy-2025.0.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/miao:@/tmp/.ICE-unix/1596,unix/miao:/tmp/.ICE-unix/1596'), ('INVOCATION_ID', '30d6065837aa4584925aa263fc0f8d45'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2fdf40f226.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/home/miao/planning_with_ROS2_ws/install/base_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS2_PLANNING_WS', '/home/miao/planning_with_ROS2_ws/install'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/miao/planning_with_ROS2_ws/build/base_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6f2b092b0da406978badeb7367a6b265'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages:/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble')]), 'shell': False}
+[1.377449] (base_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.386111] (base_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.390836] (base_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_base_msgs\n'}
+[1.401801] (-) TimerEvent: {}
+[1.502059] (-) TimerEvent: {}
+[1.514739] (base_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.515047] (base_msgs) StdoutLine: {'line': b'creating base_msgs.egg-info\n'}
+[1.515269] (base_msgs) StdoutLine: {'line': b'writing base_msgs.egg-info/PKG-INFO\n'}
+[1.515354] (base_msgs) StdoutLine: {'line': b'writing dependency_links to base_msgs.egg-info/dependency_links.txt\n'}
+[1.515503] (base_msgs) StdoutLine: {'line': b'writing top-level names to base_msgs.egg-info/top_level.txt\n'}
+[1.515621] (base_msgs) StdoutLine: {'line': b"writing manifest file 'base_msgs.egg-info/SOURCES.txt'\n"}
+[1.516383] (base_msgs) StdoutLine: {'line': b"reading manifest file 'base_msgs.egg-info/SOURCES.txt'\n"}
+[1.516620] (base_msgs) StdoutLine: {'line': b"writing manifest file 'base_msgs.egg-info/SOURCES.txt'\n"}
+[1.538363] (base_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_build_base_msgs_egg\n'}
+[1.602170] (-) TimerEvent: {}
+[1.702491] (-) TimerEvent: {}
+[1.802754] (-) TimerEvent: {}
+[1.903094] (-) TimerEvent: {}
+[2.003347] (-) TimerEvent: {}
+[2.103680] (-) TimerEvent: {}
+[2.146248] (base_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_c.dir/rosidl_generator_c/base_msgs/msg/detail/local_path__functions.c.o\x1b[0m\n'}
+[2.146565] (base_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_c.dir/rosidl_generator_c/base_msgs/msg/detail/local_path_point__functions.c.o\x1b[0m\n'}
+[2.147098] (base_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_c.dir/rosidl_generator_c/base_msgs/msg/detail/local_speeds__functions.c.o\x1b[0m\n'}
+[2.149819] (base_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_c.dir/rosidl_generator_c/base_msgs/msg/detail/local_speeds_point__functions.c.o\x1b[0m\n'}
+[2.150972] (base_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_c.dir/rosidl_generator_c/base_msgs/msg/detail/local_trajectory__functions.c.o\x1b[0m\n'}
+[2.151638] (base_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_c.dir/rosidl_generator_c/base_msgs/msg/detail/obs_info__functions.c.o\x1b[0m\n'}
+[2.151777] (base_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_c.dir/rosidl_generator_c/base_msgs/msg/detail/local_trajectory_point__functions.c.o\x1b[0m\n'}
+[2.151920] (base_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_c.dir/rosidl_generator_c/base_msgs/msg/detail/plot_info__functions.c.o\x1b[0m\n'}
+[2.152217] (base_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_c.dir/rosidl_generator_c/base_msgs/msg/detail/pnc_map__functions.c.o\x1b[0m\n'}
+[2.156431] (base_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_c.dir/rosidl_generator_c/base_msgs/msg/detail/referline__functions.c.o\x1b[0m\n'}
+[2.157777] (base_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_c.dir/rosidl_generator_c/base_msgs/srv/detail/global_path_service__functions.c.o\x1b[0m\n'}
+[2.159208] (base_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_c.dir/rosidl_generator_c/base_msgs/srv/detail/pnc_map_service__functions.c.o\x1b[0m\n'}
+[2.159401] (base_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_c.dir/rosidl_generator_c/base_msgs/msg/detail/referline_point__functions.c.o\x1b[0m\n'}
+[2.176410] (base_msgs) StdoutLine: {'line': b'[ 11%] Built target base_msgs__cpp\n'}
+[2.185058] (base_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.185281] (base_msgs) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.185428] (base_msgs) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.203762] (-) TimerEvent: {}
+[2.215365] (base_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32m\x1b[1mLinking C shared library libbase_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.243554] (base_msgs) StdoutLine: {'line': b'[ 14%] Built target base_msgs__rosidl_generator_c\n'}
+[2.251040] (base_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.251919] (base_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.252041] (base_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.303864] (-) TimerEvent: {}
+[2.404155] (-) TimerEvent: {}
+[2.504533] (-) TimerEvent: {}
+[2.604780] (-) TimerEvent: {}
+[2.705072] (-) TimerEvent: {}
+[2.787189] (base_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/base_msgs/msg/local_trajectory__type_support.cpp.o\x1b[0m\n'}
+[2.787417] (base_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/base_msgs/msg/local_speeds_point__type_support.cpp.o\x1b[0m\n'}
+[2.787515] (base_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/base_msgs/msg/obs_info__type_support.cpp.o\x1b[0m\n'}
+[2.787652] (base_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/base_msgs/msg/local_path__type_support.cpp.o\x1b[0m\n'}
+[2.787721] (base_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/base_msgs/msg/local_path_point__type_support.cpp.o\x1b[0m\n'}
+[2.787785] (base_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/base_msgs/msg/local_speeds__type_support.cpp.o\x1b[0m\n'}
+[2.787848] (base_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/base_msgs/msg/pnc_map__type_support.cpp.o\x1b[0m\n'}
+[2.787917] (base_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/base_msgs/msg/local_trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[2.787982] (base_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/base_msgs/srv/global_path_service__type_support.cpp.o\x1b[0m\n'}
+[2.788041] (base_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/base_msgs/msg/plot_info__type_support.cpp.o\x1b[0m\n'}
+[2.788097] (base_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/base_msgs/msg/referline__type_support.cpp.o\x1b[0m\n'}
+[2.788152] (base_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/base_msgs/msg/referline_point__type_support.cpp.o\x1b[0m\n'}
+[2.788208] (base_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/base_msgs/srv/pnc_map_service__type_support.cpp.o\x1b[0m\n'}
+[2.805190] (-) TimerEvent: {}
+[2.862274] (base_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/base_msgs/msg/local_path__type_support.cpp.o\x1b[0m\n'}
+[2.878355] (base_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/base_msgs/msg/local_path_point__type_support.cpp.o\x1b[0m\n'}
+[2.883605] (base_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/base_msgs/msg/local_speeds__type_support.cpp.o\x1b[0m\n'}
+[2.905301] (-) TimerEvent: {}
+[2.910837] (base_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/base_msgs/msg/local_speeds_point__type_support.cpp.o\x1b[0m\n'}
+[2.921752] (base_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/base_msgs/msg/local_trajectory__type_support.cpp.o\x1b[0m\n'}
+[2.924324] (base_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/base_msgs/msg/local_trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[2.951105] (base_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/base_msgs/msg/obs_info__type_support.cpp.o\x1b[0m\n'}
+[2.951317] (base_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/base_msgs/msg/plot_info__type_support.cpp.o\x1b[0m\n'}
+[2.966598] (base_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/base_msgs/msg/pnc_map__type_support.cpp.o\x1b[0m\n'}
+[2.981740] (base_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/base_msgs/msg/referline__type_support.cpp.o\x1b[0m\n'}
+[2.985200] (base_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/base_msgs/msg/referline_point__type_support.cpp.o\x1b[0m\n'}
+[3.004495] (base_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/base_msgs/srv/global_path_service__type_support.cpp.o\x1b[0m\n'}
+[3.004734] (base_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/base_msgs/msg/detail/local_path__type_support.cpp.o\x1b[0m\n'}
+[3.005374] (-) TimerEvent: {}
+[3.005923] (base_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/base_msgs/srv/pnc_map_service__type_support.cpp.o\x1b[0m\n'}
+[3.019666] (base_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/base_msgs/msg/detail/local_path_point__type_support.cpp.o\x1b[0m\n'}
+[3.022081] (base_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/base_msgs/msg/detail/local_speeds__type_support.cpp.o\x1b[0m\n'}
+[3.022363] (base_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/base_msgs/msg/detail/local_speeds_point__type_support.cpp.o\x1b[0m\n'}
+[3.027592] (base_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/base_msgs/msg/detail/local_trajectory__type_support.cpp.o\x1b[0m\n'}
+[3.032419] (base_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/base_msgs/msg/detail/local_trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[3.040294] (base_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/base_msgs/msg/detail/obs_info__type_support.cpp.o\x1b[0m\n'}
+[3.040465] (base_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/base_msgs/msg/detail/plot_info__type_support.cpp.o\x1b[0m\n'}
+[3.046031] (base_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libbase_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.054436] (base_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/base_msgs/msg/detail/pnc_map__type_support.cpp.o\x1b[0m\n'}
+[3.055774] (base_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/base_msgs/msg/detail/referline__type_support.cpp.o\x1b[0m\n'}
+[3.058380] (base_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/base_msgs/msg/detail/referline_point__type_support.cpp.o\x1b[0m\n'}
+[3.061966] (base_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libbase_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.063667] (base_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/base_msgs/srv/detail/global_path_service__type_support.cpp.o\x1b[0m\n'}
+[3.070180] (base_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/base_msgs/srv/detail/pnc_map_service__type_support.cpp.o\x1b[0m\n'}
+[3.086287] (base_msgs) StdoutLine: {'line': b'[ 50%] Built target base_msgs__rosidl_typesupport_c\n'}
+[3.105501] (-) TimerEvent: {}
+[3.108781] (base_msgs) StdoutLine: {'line': b'[ 50%] Built target base_msgs__rosidl_typesupport_cpp\n'}
+[3.115946] (base_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/base_msgs/msg/detail/dds_fastrtps/local_path__type_support.cpp.o\x1b[0m\n'}
+[3.117113] (base_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/base_msgs/msg/detail/dds_fastrtps/local_speeds_point__type_support.cpp.o\x1b[0m\n'}
+[3.118327] (base_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/base_msgs/msg/detail/dds_fastrtps/local_path_point__type_support.cpp.o\x1b[0m\n'}
+[3.119016] (base_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/base_msgs/msg/detail/dds_fastrtps/local_trajectory__type_support.cpp.o\x1b[0m\n'}
+[3.119914] (base_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/base_msgs/msg/detail/dds_fastrtps/local_speeds__type_support.cpp.o\x1b[0m\n'}
+[3.128600] (base_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/base_msgs/msg/detail/local_path__type_support.c.o\x1b[0m\n'}
+[3.166616] (base_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/base_msgs/msg/detail/local_path_point__type_support.c.o\x1b[0m\n'}
+[3.202404] (base_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/base_msgs/msg/detail/local_speeds__type_support.c.o\x1b[0m\n'}
+[3.206596] (-) TimerEvent: {}
+[3.240849] (base_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/base_msgs/msg/detail/local_speeds_point__type_support.c.o\x1b[0m\n'}
+[3.274667] (base_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/base_msgs/msg/detail/local_trajectory__type_support.c.o\x1b[0m\n'}
+[3.306723] (-) TimerEvent: {}
+[3.325598] (base_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/base_msgs/msg/detail/local_trajectory_point__type_support.c.o\x1b[0m\n'}
+[3.325988] (base_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/base_msgs/msg/detail/local_path__type_support_c.cpp.o\x1b[0m\n'}
+[3.357933] (base_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/base_msgs/msg/detail/obs_info__type_support.c.o\x1b[0m\n'}
+[3.392275] (base_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/base_msgs/msg/detail/plot_info__type_support.c.o\x1b[0m\n'}
+[3.398583] (base_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/base_msgs/msg/detail/local_path_point__type_support_c.cpp.o\x1b[0m\n'}
+[3.406824] (-) TimerEvent: {}
+[3.411965] (base_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/base_msgs/msg/detail/dds_fastrtps/local_trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[3.412238] (base_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/base_msgs/msg/detail/dds_fastrtps/obs_info__type_support.cpp.o\x1b[0m\n'}
+[3.416110] (base_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/base_msgs/msg/detail/pnc_map__type_support.c.o\x1b[0m\n'}
+[3.416309] (base_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/base_msgs/msg/detail/local_speeds__type_support_c.cpp.o\x1b[0m\n'}
+[3.427080] (base_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/base_msgs/msg/detail/dds_fastrtps/plot_info__type_support.cpp.o\x1b[0m\n'}
+[3.435476] (base_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/base_msgs/msg/detail/dds_fastrtps/pnc_map__type_support.cpp.o\x1b[0m\n'}
+[3.435700] (base_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/base_msgs/msg/detail/local_speeds_point__type_support_c.cpp.o\x1b[0m\n'}
+[3.442351] (base_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/base_msgs/msg/detail/dds_fastrtps/referline__type_support.cpp.o\x1b[0m\n'}
+[3.458623] (base_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/base_msgs/msg/detail/referline__type_support.c.o\x1b[0m\n'}
+[3.476724] (base_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/base_msgs/msg/detail/local_trajectory__type_support_c.cpp.o\x1b[0m\n'}
+[3.482003] (base_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/base_msgs/msg/detail/dds_fastrtps/referline_point__type_support.cpp.o\x1b[0m\n'}
+[3.493070] (base_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/base_msgs/msg/detail/referline_point__type_support.c.o\x1b[0m\n'}
+[3.506936] (-) TimerEvent: {}
+[3.518377] (base_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/base_msgs/srv/detail/pnc_map_service__type_support.c.o\x1b[0m\n'}
+[3.520408] (base_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/base_msgs/srv/detail/global_path_service__type_support.c.o\x1b[0m\n'}
+[3.521485] (base_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/base_msgs/msg/detail/local_trajectory_point__type_support_c.cpp.o\x1b[0m\n'}
+[3.531583] (base_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/base_msgs/srv/detail/dds_fastrtps/global_path_service__type_support.cpp.o\x1b[0m\n'}
+[3.544253] (base_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/base_msgs/srv/detail/dds_fastrtps/pnc_map_service__type_support.cpp.o\x1b[0m\n'}
+[3.549059] (base_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libbase_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.557154] (base_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/base_msgs/msg/detail/obs_info__type_support_c.cpp.o\x1b[0m\n'}
+[3.571115] (base_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/base_msgs/msg/detail/pnc_map__type_support_c.cpp.o\x1b[0m\n'}
+[3.571373] (base_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/base_msgs/msg/detail/plot_info__type_support_c.cpp.o\x1b[0m\n'}
+[3.581896] (base_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library libbase_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.608592] (-) TimerEvent: {}
+[3.617793] (base_msgs) StdoutLine: {'line': b'[ 80%] Built target base_msgs__rosidl_typesupport_introspection_c\n'}
+[3.625306] (base_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/base_msgs/msg/detail/referline__type_support_c.cpp.o\x1b[0m\n'}
+[3.659833] (base_msgs) StdoutLine: {'line': b'[ 81%] Built target base_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.668723] (base_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/base_msgs/msg/detail/referline_point__type_support_c.cpp.o\x1b[0m\n'}
+[3.693572] (base_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/base_msgs/srv/detail/global_path_service__type_support_c.cpp.o\x1b[0m\n'}
+[3.707411] (base_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/base_msgs/srv/detail/pnc_map_service__type_support_c.cpp.o\x1b[0m\n'}
+[3.708688] (-) TimerEvent: {}
+[3.808982] (-) TimerEvent: {}
+[3.909272] (-) TimerEvent: {}
+[3.928186] (base_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libbase_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.945308] (base_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX shared library libbase_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.978654] (base_msgs) StdoutLine: {'line': b'[ 84%] Built target base_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.997236] (base_msgs) StdoutLine: {'line': b'[ 84%] Built target base_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.009393] (-) TimerEvent: {}
+[4.012833] (base_msgs) StdoutLine: {'line': b'[ 84%] Built target base_msgs\n'}
+[4.027234] (base_msgs) StdoutLine: {'line': b'[ 85%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.109571] (-) TimerEvent: {}
+[4.209847] (-) TimerEvent: {}
+[4.310148] (-) TimerEvent: {}
+[4.410458] (-) TimerEvent: {}
+[4.510760] (-) TimerEvent: {}
+[4.611067] (-) TimerEvent: {}
+[4.711364] (-) TimerEvent: {}
+[4.811671] (-) TimerEvent: {}
+[4.911941] (-) TimerEvent: {}
+[5.012233] (-) TimerEvent: {}
+[5.112566] (-) TimerEvent: {}
+[5.212835] (-) TimerEvent: {}
+[5.313127] (-) TimerEvent: {}
+[5.344730] (base_msgs) StdoutLine: {'line': b'[ 85%] Built target base_msgs__py\n'}
+[5.358518] (base_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/msg/_local_path_point_s.c.o\x1b[0m\n'}
+[5.358722] (base_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/msg/_local_trajectory_s.c.o\x1b[0m\n'}
+[5.358808] (base_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/msg/_local_speeds_s.c.o\x1b[0m\n'}
+[5.358983] (base_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/msg/_obs_info_s.c.o\x1b[0m\n'}
+[5.359214] (base_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/msg/_referline_s.c.o\x1b[0m\n'}
+[5.359935] (base_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/msg/_local_path_s.c.o\x1b[0m\n'}
+[5.360384] (base_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/srv/_pnc_map_service_s.c.o\x1b[0m\n'}
+[5.360498] (base_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/msg/_local_speeds_point_s.c.o\x1b[0m\n'}
+[5.360920] (base_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/msg/_local_trajectory_point_s.c.o\x1b[0m\n'}
+[5.361068] (base_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/msg/_plot_info_s.c.o\x1b[0m\n'}
+[5.361232] (base_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/srv/_global_path_service_s.c.o\x1b[0m\n'}
+[5.361465] (base_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/msg/_pnc_map_s.c.o\x1b[0m\n'}
+[5.362094] (base_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_generator_py.dir/rosidl_generator_py/base_msgs/msg/_referline_point_s.c.o\x1b[0m\n'}
+[5.413237] (-) TimerEvent: {}
+[5.481776] (base_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/base_msgs/libbase_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[5.513348] (-) TimerEvent: {}
+[5.514895] (base_msgs) StdoutLine: {'line': b'[ 96%] Built target base_msgs__rosidl_generator_py\n'}
+[5.530547] (base_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/base_msgs/_base_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.530725] (base_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/base_msgs/_base_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.530832] (base_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/base_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/base_msgs/_base_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.613461] (-) TimerEvent: {}
+[5.618441] (base_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/base_msgs/base_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.619273] (base_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/base_msgs/base_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.619355] (base_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/base_msgs/base_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.650463] (base_msgs) StdoutLine: {'line': b'[100%] Built target base_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.650750] (base_msgs) StdoutLine: {'line': b'[100%] Built target base_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.652744] (base_msgs) StdoutLine: {'line': b'[100%] Built target base_msgs__rosidl_typesupport_c__pyext\n'}
+[5.664082] (base_msgs) CommandEnded: {'returncode': 0}
+[5.664878] (base_msgs) JobProgress: {'identifier': 'base_msgs', 'progress': 'install'}
+[5.670900] (base_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/miao/planning_with_ROS2_ws/build/base_msgs'], 'cwd': '/home/miao/planning_with_ROS2_ws/build/base_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'miao'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/miao'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.96.3'), ('DESKTOP_SESSION', 'ubuntu'), ('DEBUGPY_ADAPTER_ENDPOINTS', '/tmp/noConfigDebugAdapterEndpoints-09e50827da67e0c7043d/debuggerAdapterEndpoint.txt'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\u@\\h \\[\\033[01;36m\\]\\W\\[\\033[01;32m\\]$(git_branch)\\[\\033[00m\\] \\$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1278'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1596'), ('BUNDLED_DEBUGPY_PATH', '/home/miao/.vscode/extensions/ms-python.debugpy-2025.0.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6f2b092b0da406978badeb7367a6b265'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7414'), ('COLCON_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'miao'), ('JOURNAL_STREAM', '8:15000'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'miao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/miao/.local/bin:/opt/ros/humble/bin:/home/miao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/miao/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/miao/.vscode/extensions/ms-python.debugpy-2025.0.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/miao:@/tmp/.ICE-unix/1596,unix/miao:/tmp/.ICE-unix/1596'), ('INVOCATION_ID', '30d6065837aa4584925aa263fc0f8d45'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2fdf40f226.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/home/miao/planning_with_ROS2_ws/install/base_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS2_PLANNING_WS', '/home/miao/planning_with_ROS2_ws/install'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/miao/planning_with_ROS2_ws/build/base_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6f2b092b0da406978badeb7367a6b265'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages:/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble')]), 'shell': False}
+[5.675622] (base_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.675762] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/ament_index/resource_index/rosidl_interfaces/base_msgs\n'}
+[5.675809] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs\n'}
+[5.675861] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv\n'}
+[5.675886] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/global_path_service.h\n'}
+[5.675924] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/pnc_map_service.h\n'}
+[5.675952] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail\n'}
+[5.675989] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__struct.h\n'}
+[5.676011] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__functions.c\n'}
+[5.676040] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__struct.h\n'}
+[5.676071] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__functions.h\n'}
+[5.676108] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__type_support.h\n'}
+[5.676141] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__functions.h\n'}
+[5.676176] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__functions.c\n'}
+[5.676211] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__type_support.h\n'}
+[5.676245] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg\n'}
+[5.676280] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/local_path.h\n'}
+[5.676310] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/plot_info.h\n'}
+[5.676341] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/local_trajectory_point.h\n'}
+[5.676375] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/referline.h\n'}
+[5.676411] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.676444] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail\n'}
+[5.676476] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__functions.c\n'}
+[5.676508] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__functions.h\n'}
+[5.676547] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__struct.h\n'}
+[5.676583] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__type_support.h\n'}
+[5.676617] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__struct.h\n'}
+[5.676657] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__functions.c\n'}
+[5.676681] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__functions.c\n'}
+[5.676713] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__struct.h\n'}
+[5.676746] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__struct.h\n'}
+[5.676779] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__functions.c\n'}
+[5.676812] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__type_support.h\n'}
+[5.676845] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__struct.h\n'}
+[5.676881] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__functions.c\n'}
+[5.676912] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__functions.c\n'}
+[5.676943] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__struct.h\n'}
+[5.676971] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__type_support.h\n'}
+[5.677003] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__type_support.h\n'}
+[5.677034] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__functions.h\n'}
+[5.677066] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__type_support.h\n'}
+[5.677103] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__struct.h\n'}
+[5.677125] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__functions.h\n'}
+[5.677156] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__functions.h\n'}
+[5.677187] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__type_support.h\n'}
+[5.677221] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__functions.c\n'}
+[5.677254] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__functions.h\n'}
+[5.677285] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__functions.h\n'}
+[5.677319] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__functions.c\n'}
+[5.677349] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__functions.c\n'}
+[5.677381] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__functions.h\n'}
+[5.677412] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__functions.h\n'}
+[5.677447] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__struct.h\n'}
+[5.677477] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__type_support.h\n'}
+[5.677510] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__struct.h\n'}
+[5.677555] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__type_support.h\n'}
+[5.677591] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__type_support.h\n'}
+[5.677624] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__struct.h\n'}
+[5.677656] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__functions.c\n'}
+[5.677689] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__type_support.h\n'}
+[5.677720] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__type_support.h\n'}
+[5.677752] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__functions.h\n'}
+[5.677786] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__functions.h\n'}
+[5.677893] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__functions.h\n'}
+[5.677931] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__struct.h\n'}
+[5.677961] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__functions.c\n'}
+[5.677998] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/obs_info.h\n'}
+[5.678032] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/pnc_map.h\n'}
+[5.678066] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/local_speeds.h\n'}
+[5.678097] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/local_trajectory.h\n'}
+[5.678127] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/local_path_point.h\n'}
+[5.678158] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/referline_point.h\n'}
+[5.678193] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/local_speeds_point.h\n'}
+[5.678302] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/library_path.sh\n'}
+[5.678411] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/library_path.dsv\n'}
+[5.678528] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_generator_c.so\n'}
+[5.678625] (base_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_generator_c.so" to ""\n'}
+[5.678707] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs\n'}
+[5.678835] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv\n'}
+[5.678890] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail\n'}
+[5.678943] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__rosidl_typesupport_fastrtps_c.h\n'}
+[5.678996] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__rosidl_typesupport_fastrtps_c.h\n'}
+[5.679048] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg\n'}
+[5.679102] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.679157] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail\n'}
+[5.679235] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__rosidl_typesupport_fastrtps_c.h\n'}
+[5.679290] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__rosidl_typesupport_fastrtps_c.h\n'}
+[5.679344] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__rosidl_typesupport_fastrtps_c.h\n'}
+[5.679456] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__rosidl_typesupport_fastrtps_c.h\n'}
+[5.679508] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__rosidl_typesupport_fastrtps_c.h\n'}
+[5.679597] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__rosidl_typesupport_fastrtps_c.h\n'}
+[5.679668] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__rosidl_typesupport_fastrtps_c.h\n'}
+[5.679722] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__rosidl_typesupport_fastrtps_c.h\n'}
+[5.679777] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__rosidl_typesupport_fastrtps_c.h\n'}
+[5.679831] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__rosidl_typesupport_fastrtps_c.h\n'}
+[5.679887] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__rosidl_typesupport_fastrtps_c.h\n'}
+[5.679941] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.679995] (base_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.680056] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs\n'}
+[5.680111] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv\n'}
+[5.680165] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail\n'}
+[5.680219] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__type_support.c\n'}
+[5.680273] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__rosidl_typesupport_introspection_c.h\n'}
+[5.680329] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__type_support.c\n'}
+[5.680385] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__rosidl_typesupport_introspection_c.h\n'}
+[5.680441] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg\n'}
+[5.680579] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.680654] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail\n'}
+[5.680711] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__type_support.c\n'}
+[5.680770] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__type_support.c\n'}
+[5.680830] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__type_support.c\n'}
+[5.680888] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__type_support.c\n'}
+[5.680950] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__rosidl_typesupport_introspection_c.h\n'}
+[5.681012] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__rosidl_typesupport_introspection_c.h\n'}
+[5.681074] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__rosidl_typesupport_introspection_c.h\n'}
+[5.681130] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__rosidl_typesupport_introspection_c.h\n'}
+[5.681185] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__type_support.c\n'}
+[5.681241] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__type_support.c\n'}
+[5.681300] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__rosidl_typesupport_introspection_c.h\n'}
+[5.681358] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__rosidl_typesupport_introspection_c.h\n'}
+[5.681415] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__rosidl_typesupport_introspection_c.h\n'}
+[5.681471] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__rosidl_typesupport_introspection_c.h\n'}
+[5.681532] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__type_support.c\n'}
+[5.681675] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__type_support.c\n'}
+[5.681731] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__rosidl_typesupport_introspection_c.h\n'}
+[5.681788] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__rosidl_typesupport_introspection_c.h\n'}
+[5.681845] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__type_support.c\n'}
+[5.681899] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__type_support.c\n'}
+[5.681982] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__rosidl_typesupport_introspection_c.h\n'}
+[5.682037] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__type_support.c\n'}
+[5.682090] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.682143] (base_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.682196] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_c.so\n'}
+[5.682279] (base_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_c.so" to ""\n'}
+[5.682334] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs\n'}
+[5.682388] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv\n'}
+[5.682470] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/global_path_service.hpp\n'}
+[5.682529] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail\n'}
+[5.682621] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__builder.hpp\n'}
+[5.682676] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__struct.hpp\n'}
+[5.682729] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__type_support.hpp\n'}
+[5.682783] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__struct.hpp\n'}
+[5.682836] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__traits.hpp\n'}
+[5.682888] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__type_support.hpp\n'}
+[5.682941] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__traits.hpp\n'}
+[5.682998] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__builder.hpp\n'}
+[5.683051] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/pnc_map_service.hpp\n'}
+[5.683105] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg\n'}
+[5.683157] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/referline_point.hpp\n'}
+[5.683211] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/pnc_map.hpp\n'}
+[5.683264] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.683330] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/obs_info.hpp\n'}
+[5.683382] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail\n'}
+[5.683435] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__type_support.hpp\n'}
+[5.683487] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__builder.hpp\n'}
+[5.683620] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__builder.hpp\n'}
+[5.683695] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__struct.hpp\n'}
+[5.683749] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__type_support.hpp\n'}
+[5.683802] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__traits.hpp\n'}
+[5.683855] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__traits.hpp\n'}
+[5.683907] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__type_support.hpp\n'}
+[5.683960] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__traits.hpp\n'}
+[5.684014] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__traits.hpp\n'}
+[5.684068] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__type_support.hpp\n'}
+[5.684150] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__struct.hpp\n'}
+[5.684203] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__type_support.hpp\n'}
+[5.684257] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__traits.hpp\n'}
+[5.684309] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__builder.hpp\n'}
+[5.684395] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__traits.hpp\n'}
+[5.684449] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__struct.hpp\n'}
+[5.684502] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__struct.hpp\n'}
+[5.684594] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__type_support.hpp\n'}
+[5.684649] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__struct.hpp\n'}
+[5.684702] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__builder.hpp\n'}
+[5.684884] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__struct.hpp\n'}
+[5.684940] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__traits.hpp\n'}
+[5.684995] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__struct.hpp\n'}
+[5.685049] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__traits.hpp\n'}
+[5.685101] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__type_support.hpp\n'}
+[5.685154] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__type_support.hpp\n'}
+[5.685208] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__type_support.hpp\n'}
+[5.685262] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__builder.hpp\n'}
+[5.685316] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__struct.hpp\n'}
+[5.685395] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__builder.hpp\n'}
+[5.685480] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__builder.hpp\n'}
+[5.685509] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__builder.hpp\n'}
+[5.685542] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__builder.hpp\n'}
+[5.685568] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__struct.hpp\n'}
+[5.685591] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__struct.hpp\n'}
+[5.685614] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__traits.hpp\n'}
+[5.685637] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__traits.hpp\n'}
+[5.685661] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__builder.hpp\n'}
+[5.685683] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__type_support.hpp\n'}
+[5.685737] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__struct.hpp\n'}
+[5.685761] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__builder.hpp\n'}
+[5.685783] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__traits.hpp\n'}
+[5.685806] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__type_support.hpp\n'}
+[5.685859] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/local_trajectory_point.hpp\n'}
+[5.685893] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/local_speeds.hpp\n'}
+[5.685917] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/referline.hpp\n'}
+[5.685940] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/local_path.hpp\n'}
+[5.685972] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/local_speeds_point.hpp\n'}
+[5.685995] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/plot_info.hpp\n'}
+[5.686019] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/local_path_point.hpp\n'}
+[5.686042] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/local_trajectory.hpp\n'}
+[5.686077] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs\n'}
+[5.686116] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv\n'}
+[5.686138] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail\n'}
+[5.686160] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.686184] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/dds_fastrtps\n'}
+[5.686215] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.686248] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg\n'}
+[5.686267] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail\n'}
+[5.686298] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.686319] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.686341] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/dds_fastrtps\n'}
+[5.686363] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.686385] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.686406] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.686428] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.686461] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.686482] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.686539] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.686562] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.686587] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.686612] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.686636] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.686658] (base_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.686681] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs\n'}
+[5.686705] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv\n'}
+[5.686730] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail\n'}
+[5.686752] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.686775] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/pnc_map_service__type_support.cpp\n'}
+[5.686797] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__type_support.cpp\n'}
+[5.686820] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/srv/detail/global_path_service__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.686842] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg\n'}
+[5.686864] (base_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail\n'}
+[5.686886] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__type_support.cpp\n'}
+[5.686921] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__type_support.cpp\n'}
+[5.686944] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__type_support.cpp\n'}
+[5.686967] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__type_support.cpp\n'}
+[5.686989] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.687016] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_path_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.687047] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__type_support.cpp\n'}
+[5.687071] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__type_support.cpp\n'}
+[5.687098] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__type_support.cpp\n'}
+[5.687121] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__type_support.cpp\n'}
+[5.687142] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.687193] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/pnc_map__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.687216] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory_point__type_support.cpp\n'}
+[5.687240] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/obs_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.687262] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.687284] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.687307] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds_point__type_support.cpp\n'}
+[5.687329] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.687357] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/referline_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.687379] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_speeds__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.687401] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/plot_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.687425] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/include/base_msgs/base_msgs/msg/detail/local_trajectory__type_support.cpp\n'}
+[5.687469] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.687492] (base_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.687542] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_cpp.so\n'}
+[5.687568] (base_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[5.687590] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/pythonpath.sh\n'}
+[5.687612] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/pythonpath.dsv\n'}
+[5.687634] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs-0.0.0-py3.10.egg-info\n'}
+[5.687655] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.687677] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.687700] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.687722] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.687745] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs\n'}
+[5.687766] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/srv\n'}
+[5.687788] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/srv/__init__.py\n'}
+[5.687809] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/srv/_global_path_service_s.c\n'}
+[5.687831] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/srv/_pnc_map_service.py\n'}
+[5.687857] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/srv/_global_path_service.py\n'}
+[5.687878] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/srv/_pnc_map_service_s.c\n'}
+[5.687900] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/__init__.py\n'}
+[5.687923] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/_base_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[5.687945] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/base_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.687967] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/_base_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.687988] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/_base_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.688009] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/base_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.688031] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg\n'}
+[5.688052] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_speeds_s.c\n'}
+[5.688072] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/__init__.py\n'}
+[5.688092] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_plot_info.py\n'}
+[5.688113] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_plot_info_s.c\n'}
+[5.688133] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_obs_info_s.c\n'}
+[5.688157] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_trajectory_point_s.c\n'}
+[5.688177] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_path.py\n'}
+[5.688197] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_trajectory.py\n'}
+[5.688217] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_trajectory_point.py\n'}
+[5.688237] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_referline.py\n'}
+[5.688257] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_speeds_point.py\n'}
+[5.688279] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_obs_info.py\n'}
+[5.688299] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_referline_point.py\n'}
+[5.688318] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_pnc_map_s.c\n'}
+[5.688337] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_referline_point_s.c\n'}
+[5.688356] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_pnc_map.py\n'}
+[5.688376] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_path_s.c\n'}
+[5.688396] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_speeds.py\n'}
+[5.688415] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_path_point_s.c\n'}
+[5.688434] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_trajectory_s.c\n'}
+[5.688453] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_referline_s.c\n'}
+[5.688472] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_path_point.py\n'}
+[5.688494] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_speeds_point_s.c\n'}
+[5.688515] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/base_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.688541] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/libbase_msgs__rosidl_generator_py.so\n'}
+[5.713566] (-) TimerEvent: {}
+[5.715814] (base_msgs) StdoutLine: {'line': b"Listing '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs'...\n"}
+[5.715960] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/__init__.py'...\n"}
+[5.715991] (base_msgs) StdoutLine: {'line': b"Listing '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg'...\n"}
+[5.716015] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/__init__.py'...\n"}
+[5.716039] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_path.py'...\n"}
+[5.716062] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_path_point.py'...\n"}
+[5.716084] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_speeds.py'...\n"}
+[5.716106] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_speeds_point.py'...\n"}
+[5.716128] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_trajectory.py'...\n"}
+[5.716149] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_local_trajectory_point.py'...\n"}
+[5.716177] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_obs_info.py'...\n"}
+[5.716199] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_plot_info.py'...\n"}
+[5.716217] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_pnc_map.py'...\n"}
+[5.716237] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_referline.py'...\n"}
+[5.716256] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/msg/_referline_point.py'...\n"}
+[5.716275] (base_msgs) StdoutLine: {'line': b"Listing '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/srv'...\n"}
+[5.716294] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/srv/__init__.py'...\n"}
+[5.716313] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/srv/_global_path_service.py'...\n"}
+[5.716332] (base_msgs) StdoutLine: {'line': b"Compiling '/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/srv/_pnc_map_service.py'...\n"}
+[5.718771] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/base_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.719049] (base_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/base_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.719153] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/base_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.719241] (base_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/base_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.719321] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/base_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.719400] (base_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages/base_msgs/base_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.719455] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_generator_py.so\n'}
+[5.719556] (base_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/base_msgs/lib/libbase_msgs__rosidl_generator_py.so" to ""\n'}
+[5.719632] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/LocalPath.idl\n'}
+[5.719709] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/LocalPathPoint.idl\n'}
+[5.719764] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/LocalSpeeds.idl\n'}
+[5.719833] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/LocalSpeedsPoint.idl\n'}
+[5.719916] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/LocalTrajectory.idl\n'}
+[5.719978] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/LocalTrajectoryPoint.idl\n'}
+[5.720032] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/ObsInfo.idl\n'}
+[5.720086] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/PlotInfo.idl\n'}
+[5.720140] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/PNCMap.idl\n'}
+[5.720255] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/Referline.idl\n'}
+[5.720296] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/ReferlinePoint.idl\n'}
+[5.720324] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/srv/GlobalPathService.idl\n'}
+[5.720350] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/srv/PNCMapService.idl\n'}
+[5.720375] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/LocalPath.msg\n'}
+[5.720399] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/LocalPathPoint.msg\n'}
+[5.720440] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/LocalSpeeds.msg\n'}
+[5.720500] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/LocalSpeedsPoint.msg\n'}
+[5.720536] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/LocalTrajectory.msg\n'}
+[5.720565] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/LocalTrajectoryPoint.msg\n'}
+[5.720607] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/ObsInfo.msg\n'}
+[5.720630] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/PlotInfo.msg\n'}
+[5.720666] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/PNCMap.msg\n'}
+[5.720704] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/Referline.msg\n'}
+[5.720730] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/msg/ReferlinePoint.msg\n'}
+[5.720758] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/srv/GlobalPathService.srv\n'}
+[5.720786] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/srv/GlobalPathService_Request.msg\n'}
+[5.720829] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/srv/GlobalPathService_Response.msg\n'}
+[5.720876] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/srv/PNCMapService.srv\n'}
+[5.720915] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/srv/PNCMapService_Request.msg\n'}
+[5.720950] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/srv/PNCMapService_Response.msg\n'}
+[5.720973] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/ament_index/resource_index/package_run_dependencies/base_msgs\n'}
+[5.721015] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/ament_index/resource_index/parent_prefix_path/base_msgs\n'}
+[5.721059] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/ament_prefix_path.sh\n'}
+[5.721098] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/ament_prefix_path.dsv\n'}
+[5.721145] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/path.sh\n'}
+[5.721191] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/environment/path.dsv\n'}
+[5.721238] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.bash\n'}
+[5.721283] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.sh\n'}
+[5.721329] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.zsh\n'}
+[5.721374] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/local_setup.dsv\n'}
+[5.721418] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/package.dsv\n'}
+[5.721483] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/ament_index/resource_index/packages/base_msgs\n'}
+[5.721554] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/export_base_msgs__rosidl_generator_cExport.cmake\n'}
+[5.721626] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/export_base_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.721692] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/export_base_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.721753] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/export_base_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.721807] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.721854] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.721910] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.721957] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.722008] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/export_base_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.722061] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/export_base_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.722113] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/export_base_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.722166] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.722221] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.722281] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.722328] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.722376] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/export_base_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.722424] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/export_base_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.722473] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.722525] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.722587] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.722640] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.722694] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.722739] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.722787] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.722836] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgsConfig.cmake\n'}
+[5.722871] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake/base_msgsConfig-version.cmake\n'}
+[5.722917] (base_msgs) StdoutLine: {'line': b'-- Installing: /home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/package.xml\n'}
+[5.724379] (base_msgs) CommandEnded: {'returncode': 0}
+[5.734553] (base_msgs) JobEnded: {'identifier': 'base_msgs', 'rc': 0}
+[5.735077] (data_plot) JobStarted: {'identifier': 'data_plot'}
+[5.737560] (planning) JobStarted: {'identifier': 'planning'}
+[5.813656] (-) TimerEvent: {}
+[5.870393] (planning) JobProgress: {'identifier': 'planning', 'progress': 'cmake'}
+[5.870803] (planning) Command: {'cmd': ['/usr/bin/cmake', '/home/miao/planning_with_ROS2_ws/src/planning', '-DCMAKE_INSTALL_PREFIX=/home/miao/planning_with_ROS2_ws/install/planning'], 'cwd': '/home/miao/planning_with_ROS2_ws/build/planning', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'miao'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/miao'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.96.3'), ('DESKTOP_SESSION', 'ubuntu'), ('DEBUGPY_ADAPTER_ENDPOINTS', '/tmp/noConfigDebugAdapterEndpoints-09e50827da67e0c7043d/debuggerAdapterEndpoint.txt'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\u@\\h \\[\\033[01;36m\\]\\W\\[\\033[01;32m\\]$(git_branch)\\[\\033[00m\\] \\$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1278'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1596'), ('BUNDLED_DEBUGPY_PATH', '/home/miao/.vscode/extensions/ms-python.debugpy-2025.0.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6f2b092b0da406978badeb7367a6b265'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7414'), ('COLCON_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'miao'), ('JOURNAL_STREAM', '8:15000'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'miao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/miao/.local/bin:/opt/ros/humble/bin:/home/miao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/miao/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/miao/.vscode/extensions/ms-python.debugpy-2025.0.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/miao:@/tmp/.ICE-unix/1596,unix/miao:/tmp/.ICE-unix/1596'), ('INVOCATION_ID', '30d6065837aa4584925aa263fc0f8d45'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2fdf40f226.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/home/miao/planning_with_ROS2_ws/install/base_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS2_PLANNING_WS', '/home/miao/planning_with_ROS2_ws/install'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/miao/planning_with_ROS2_ws/build/planning'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6f2b092b0da406978badeb7367a6b265'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages:/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble')]), 'shell': False}
+[5.913734] (-) TimerEvent: {}
+[5.914550] (planning) StdoutLine: {'line': b'-- The C compiler identification is GNU 12.3.0\n'}
+[5.953855] (planning) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.958704] (planning) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.013834] (-) TimerEvent: {}
+[6.015674] (planning) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.019625] (planning) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.019790] (planning) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.020091] (planning) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.021806] (planning) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.052683] (data_plot) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/data_plot', 'build', '--build-base', '/home/miao/planning_with_ROS2_ws/build/data_plot/build', 'install', '--record', '/home/miao/planning_with_ROS2_ws/build/data_plot/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/miao/planning_with_ROS2_ws/src/data_plot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'zh_CN:zh', 'USER': 'miao', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/miao', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.96.3', 'DESKTOP_SESSION': 'ubuntu', 'DEBUGPY_ADAPTER_ENDPOINTS': '/tmp/noConfigDebugAdapterEndpoints-09e50827da67e0c7043d/debuggerAdapterEndpoint.txt', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'PS1': '\\[\x1b]633;A\x07\\]\\u@\\h \\[\\033[01;36m\\]\\W\\[\\033[01;32m\\]$(git_branch)\\[\\033[00m\\] \\$ \\[\x1b]633;B\x07\\]', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1278', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '1596', 'BUNDLED_DEBUGPY_PATH': '/home/miao/.vscode/extensions/ms-python.debugpy-2025.0.0-linux-x64/bundled/libs/debugpy', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=6f2b092b0da406978badeb7367a6b265', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '7414', 'COLCON_PREFIX_PATH': '/home/miao/planning_with_ROS2_ws/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'miao', 'JOURNAL_STREAM': '8:15000', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'miao', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/miao/.local/bin:/opt/ros/humble/bin:/home/miao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/miao/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/miao/.vscode/extensions/ms-python.debugpy-2025.0.0-linux-x64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/miao:@/tmp/.ICE-unix/1596,unix/miao:/tmp/.ICE-unix/1596', 'INVOCATION_ID': '30d6065837aa4584925aa263fc0f8d45', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-2fdf40f226.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/home/miao/planning_with_ROS2_ws/install/base_msgs:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS2_PLANNING_WS': '/home/miao/planning_with_ROS2_ws/install', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/miao/planning_with_ROS2_ws/build/data_plot', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=6f2b092b0da406978badeb7367a6b265', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/miao/planning_with_ROS2_ws/build/data_plot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages:/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages:/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning'}, 'shell': False}
+[6.076435] (planning) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.080647] (planning) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.080855] (planning) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.081247] (planning) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.082410] (planning) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[6.113921] (-) TimerEvent: {}
+[6.171695] (data_plot) StdoutLine: {'line': b'running egg_info\n'}
+[6.171952] (data_plot) StdoutLine: {'line': b'creating ../../build/data_plot/data_plot.egg-info\n'}
+[6.172027] (data_plot) StdoutLine: {'line': b'writing ../../build/data_plot/data_plot.egg-info/PKG-INFO\n'}
+[6.172081] (data_plot) StdoutLine: {'line': b'writing dependency_links to ../../build/data_plot/data_plot.egg-info/dependency_links.txt\n'}
+[6.172138] (data_plot) StdoutLine: {'line': b'writing entry points to ../../build/data_plot/data_plot.egg-info/entry_points.txt\n'}
+[6.172181] (data_plot) StdoutLine: {'line': b'writing requirements to ../../build/data_plot/data_plot.egg-info/requires.txt\n'}
+[6.172204] (data_plot) StdoutLine: {'line': b'writing top-level names to ../../build/data_plot/data_plot.egg-info/top_level.txt\n'}
+[6.172238] (data_plot) StdoutLine: {'line': b"writing manifest file '../../build/data_plot/data_plot.egg-info/SOURCES.txt'\n"}
+[6.173077] (data_plot) StdoutLine: {'line': b"reading manifest file '../../build/data_plot/data_plot.egg-info/SOURCES.txt'\n"}
+[6.173120] (data_plot) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[6.173362] (data_plot) StdoutLine: {'line': b"writing manifest file '../../build/data_plot/data_plot.egg-info/SOURCES.txt'\n"}
+[6.173434] (data_plot) StdoutLine: {'line': b'running build\n'}
+[6.173472] (data_plot) StdoutLine: {'line': b'running build_py\n'}
+[6.173505] (data_plot) StdoutLine: {'line': b'creating /home/miao/planning_with_ROS2_ws/build/data_plot/build\n'}
+[6.173550] (data_plot) StdoutLine: {'line': b'creating /home/miao/planning_with_ROS2_ws/build/data_plot/build/lib\n'}
+[6.173577] (data_plot) StdoutLine: {'line': b'creating /home/miao/planning_with_ROS2_ws/build/data_plot/build/lib/data_plot\n'}
+[6.173611] (data_plot) StdoutLine: {'line': b'copying data_plot/__init__.py -> /home/miao/planning_with_ROS2_ws/build/data_plot/build/lib/data_plot\n'}
+[6.173647] (data_plot) StdoutLine: {'line': b'copying data_plot/data_plot.py -> /home/miao/planning_with_ROS2_ws/build/data_plot/build/lib/data_plot\n'}
+[6.175037] (data_plot) StdoutLine: {'line': b'running install\n'}
+[6.175186] (data_plot) StdoutLine: {'line': b'running install_lib\n'}
+[6.175644] (data_plot) StdoutLine: {'line': b'creating /home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages/data_plot\n'}
+[6.175686] (data_plot) StdoutLine: {'line': b'copying /home/miao/planning_with_ROS2_ws/build/data_plot/build/lib/data_plot/__init__.py -> /home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages/data_plot\n'}
+[6.175723] (data_plot) StdoutLine: {'line': b'copying /home/miao/planning_with_ROS2_ws/build/data_plot/build/lib/data_plot/data_plot.py -> /home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages/data_plot\n'}
+[6.175987] (data_plot) StdoutLine: {'line': b'byte-compiling /home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages/data_plot/__init__.py to __init__.cpython-310.pyc\n'}
+[6.176092] (data_plot) StdoutLine: {'line': b'byte-compiling /home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages/data_plot/data_plot.py to data_plot.cpython-310.pyc\n'}
+[6.176262] (data_plot) StdoutLine: {'line': b'running install_data\n'}
+[6.176331] (data_plot) StdoutLine: {'line': b'creating /home/miao/planning_with_ROS2_ws/install/data_plot/share/ament_index\n'}
+[6.176370] (data_plot) StdoutLine: {'line': b'creating /home/miao/planning_with_ROS2_ws/install/data_plot/share/ament_index/resource_index\n'}
+[6.176409] (data_plot) StdoutLine: {'line': b'creating /home/miao/planning_with_ROS2_ws/install/data_plot/share/ament_index/resource_index/packages\n'}
+[6.176435] (data_plot) StdoutLine: {'line': b'copying resource/data_plot -> /home/miao/planning_with_ROS2_ws/install/data_plot/share/ament_index/resource_index/packages\n'}
+[6.176473] (data_plot) StdoutLine: {'line': b'copying package.xml -> /home/miao/planning_with_ROS2_ws/install/data_plot/share/data_plot\n'}
+[6.176496] (data_plot) StdoutLine: {'line': b'running install_egg_info\n'}
+[6.176978] (planning) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.177418] (data_plot) StdoutLine: {'line': b'Copying ../../build/data_plot/data_plot.egg-info to /home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages/data_plot-0.0.0-py3.10.egg-info\n'}
+[6.177737] (data_plot) StdoutLine: {'line': b'running install_scripts\n'}
+[6.189636] (data_plot) StdoutLine: {'line': b'Installing data_plot script to /home/miao/planning_with_ROS2_ws/install/data_plot/lib/data_plot\n'}
+[6.189837] (data_plot) StdoutLine: {'line': b"writing list of installed files to '/home/miao/planning_with_ROS2_ws/build/data_plot/install.log'\n"}
+[6.205184] (data_plot) CommandEnded: {'returncode': 0}
+[6.207869] (data_plot) JobEnded: {'identifier': 'data_plot', 'rc': 0}
+[6.214030] (-) TimerEvent: {}
+[6.229392] (planning) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[6.254430] (planning) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.256826] (planning) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.261204] (planning) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.267552] (planning) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[6.275918] (planning) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.303318] (planning) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[6.305134] (planning) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[6.314123] (-) TimerEvent: {}
+[6.369185] (planning) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[6.386190] (planning) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.411730] (planning) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.414188] (-) TimerEvent: {}
+[6.418722] (planning) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.469828] (planning) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.470054] (planning) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.514318] (-) TimerEvent: {}
+[6.522781] (planning) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.523638] (planning) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.557341] (planning) StdoutLine: {'line': b'-- Found tf2: 0.25.9 (/opt/ros/humble/share/tf2/cmake)\n'}
+[6.571116] (planning) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[6.614428] (-) TimerEvent: {}
+[6.627615] (planning) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[6.636750] (planning) StdoutLine: {'line': b'-- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[6.656996] (planning) StdoutLine: {'line': b'-- Found base_msgs: 0.0.0 (/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake)\n'}
+[6.695153] (planning) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[6.714546] (-) TimerEvent: {}
+[6.739317] (planning) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.739819] (planning) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/miao/planning_with_ROS2_ws/src/planning/src/common/config_reader;/home/miao/planning_with_ROS2_ws/src/planning/src/common/math;/home/miao/planning_with_ROS2_ws/src/planning/src/decision_center;/home/miao/planning_with_ROS2_ws/src/planning/src/global_planner;/home/miao/planning_with_ROS2_ws/src/planning/src/global_planner/global_planner_normal;/home/miao/planning_with_ROS2_ws/src/planning/src/local_planner;/home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path;/home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_speeds;/home/miao/planning_with_ROS2_ws/src/planning/src/move_cmd;/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process;/home/miao/planning_with_ROS2_ws/src/planning/src/pnc_map_creator;/home/miao/planning_with_ROS2_ws/src/planning/src/pnc_map_creator/pnc_map_straight;/home/miao/planning_with_ROS2_ws/src/planning/src/pnc_map_creator/pnc_map_sturn;/home/miao/planning_with_ROS2_ws/src/planning/src/reference_line;/home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info;/home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/main_car;/home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/obs_car\n'}
+[6.739885] (planning) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.740447] (planning) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.741060] (planning) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.741451] (planning) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[6.742988] (planning) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.743016] (planning) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.743395] (planning) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.744323] (planning) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.782621] (planning) StdoutLine: {'line': b'-- Generating done\n'}
+[6.797217] (planning) StdoutLine: {'line': b'-- Build files have been written to: /home/miao/planning_with_ROS2_ws/build/planning\n'}
+[6.807282] (planning) CommandEnded: {'returncode': 0}
+[6.807771] (planning) JobProgress: {'identifier': 'planning', 'progress': 'build'}
+[6.808067] (planning) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/miao/planning_with_ROS2_ws/build/planning', '--', '-j20', '-l20'], 'cwd': '/home/miao/planning_with_ROS2_ws/build/planning', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'miao'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/miao'), ('CHROME_DESKTOP', 'code.desktop'), ('TERM_PROGRAM_VERSION', '1.96.3'), ('DESKTOP_SESSION', 'ubuntu'), ('DEBUGPY_ADAPTER_ENDPOINTS', '/tmp/noConfigDebugAdapterEndpoints-09e50827da67e0c7043d/debuggerAdapterEndpoint.txt'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\]\\u@\\h \\[\\033[01;36m\\]\\W\\[\\033[01;32m\\]$(git_branch)\\[\\033[00m\\] \\$ \\[\x1b]633;B\x07\\]'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1278'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1596'), ('BUNDLED_DEBUGPY_PATH', '/home/miao/.vscode/extensions/ms-python.debugpy-2025.0.0-linux-x64/bundled/libs/debugpy'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6f2b092b0da406978badeb7367a6b265'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '7414'), ('COLCON_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'miao'), ('JOURNAL_STREAM', '8:15000'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'miao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/miao/.local/bin:/opt/ros/humble/bin:/home/miao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/miao/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/miao/.vscode/extensions/ms-python.debugpy-2025.0.0-linux-x64/bundled/scripts/noConfigScripts'), ('SESSION_MANAGER', 'local/miao:@/tmp/.ICE-unix/1596,unix/miao:/tmp/.ICE-unix/1596'), ('INVOCATION_ID', '30d6065837aa4584925aa263fc0f8d45'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2fdf40f226.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/home/miao/planning_with_ROS2_ws/install/base_msgs:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('ROS2_PLANNING_WS', '/home/miao/planning_with_ROS2_ws/install'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/miao/planning_with_ROS2_ws/build/planning'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6f2b092b0da406978badeb7367a6b265'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/miao/planning_with_ROS2_ws/install/data_plot/lib/python3.10/site-packages:/home/miao/planning_with_ROS2_ws/install/base_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble')]), 'shell': False}
+[6.814635] (-) TimerEvent: {}
+[6.844205] (planning) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding CXX object src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o\x1b[0m\n'}
+[6.844396] (planning) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map.dir/pnc_map_sturn/pnc_map_sturn.cpp.o\x1b[0m\n'}
+[6.844461] (planning) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object src/common/CMakeFiles/mathlibs.dir/math/polynomial_curve.cpp.o\x1b[0m\n'}
+[6.844500] (planning) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object src/common/CMakeFiles/mathlibs.dir/math/curve.cpp.o\x1b[0m\n'}
+[6.845275] (planning) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object src/common/CMakeFiles/config_reader.dir/config_reader/config_reader.cpp.o\x1b[0m\n'}
+[6.845422] (planning) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map.dir/pnc_map_straight/pnc_map_straight.cpp.o\x1b[0m\n'}
+[6.914744] (-) TimerEvent: {}
+[7.015039] (-) TimerEvent: {}
+[7.115389] (-) TimerEvent: {}
+[7.215719] (-) TimerEvent: {}
+[7.316036] (-) TimerEvent: {}
+[7.416373] (-) TimerEvent: {}
+[7.516678] (-) TimerEvent: {}
+[7.617023] (-) TimerEvent: {}
+[7.717368] (-) TimerEvent: {}
+[7.817686] (-) TimerEvent: {}
+[7.918036] (-) TimerEvent: {}
+[8.018335] (-) TimerEvent: {}
+[8.118677] (-) TimerEvent: {}
+[8.219030] (-) TimerEvent: {}
+[8.319351] (-) TimerEvent: {}
+[8.419683] (-) TimerEvent: {}
+[8.519990] (-) TimerEvent: {}
+[8.616544] (planning) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking CXX shared library libglobal_planner.so\x1b[0m\n'}
+[8.620108] (-) TimerEvent: {}
+[8.696690] (planning) StdoutLine: {'line': b'[ 20%] Built target global_planner\n'}
+[8.720205] (-) TimerEvent: {}
+[8.773885] (planning) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking CXX shared library libpnc_map.so\x1b[0m\n'}
+[8.820323] (-) TimerEvent: {}
+[8.857733] (planning) StdoutLine: {'line': b'[ 23%] Built target pnc_map\n'}
+[8.885497] (planning) StdoutLine: {'line': b'[ 26%] \x1b[32m\x1b[1mLinking CXX shared library libmathlibs.so\x1b[0m\n'}
+[8.900122] (planning) StdoutLine: {'line': b'[ 29%] \x1b[32m\x1b[1mLinking CXX shared library libconfig_reader.so\x1b[0m\n'}
+[8.920452] (-) TimerEvent: {}
+[8.969671] (planning) StdoutLine: {'line': b'[ 29%] Built target config_reader\n'}
+[8.985706] (planning) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.o\x1b[0m\n'}
+[8.986720] (planning) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o\x1b[0m\n'}
+[9.020567] (-) TimerEvent: {}
+[9.071714] (planning) StdoutLine: {'line': b'[ 35%] Built target mathlibs\n'}
+[9.090086] (planning) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/main_car/main_car.cpp.o\x1b[0m\n'}
+[9.090329] (planning) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/obs_car/obs_car.cpp.o\x1b[0m\n'}
+[9.090439] (planning) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.o\x1b[0m\n'}
+[9.090504] (planning) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_smoother.cpp.o\x1b[0m\n'}
+[9.120679] (-) TimerEvent: {}
+[9.221000] (-) TimerEvent: {}
+[9.321283] (-) TimerEvent: {}
+[9.421594] (-) TimerEvent: {}
+[9.521936] (-) TimerEvent: {}
+[9.622276] (-) TimerEvent: {}
+[9.722620] (-) TimerEvent: {}
+[9.822952] (-) TimerEvent: {}
+[9.923287] (-) TimerEvent: {}
+[10.023646] (-) TimerEvent: {}
+[10.123981] (-) TimerEvent: {}
+[10.224273] (-) TimerEvent: {}
+[10.324620] (-) TimerEvent: {}
+[10.424948] (-) TimerEvent: {}
+[10.525277] (-) TimerEvent: {}
+[10.625668] (-) TimerEvent: {}
+[10.726001] (-) TimerEvent: {}
+[10.826365] (-) TimerEvent: {}
+[10.830145] (planning) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable global_path_server\x1b[0m\n'}
+[10.919271] (planning) StdoutLine: {'line': b'[ 50%] Built target global_path_server\n'}
+[10.926087] (planning) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking CXX shared library libvehicle_info.so\x1b[0m\n'}
+[10.926412] (-) TimerEvent: {}
+[11.005619] (planning) StdoutLine: {'line': b'[ 52%] Built target vehicle_info\n'}
+[11.021359] (planning) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object src/move_cmd/CMakeFiles/car_move_cmd.dir/car_move_cmd.cpp.o\x1b[0m\n'}
+[11.023026] (planning) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object src/move_cmd/CMakeFiles/obs_move_cmd.dir/obs_move_cmd.cpp.o\x1b[0m\n'}
+[11.023075] (planning) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object src/decision_center/CMakeFiles/decision_center.dir/decision_center.cpp.o\x1b[0m\n'}
+[11.026507] (-) TimerEvent: {}
+[11.126860] (-) TimerEvent: {}
+[11.227194] (-) TimerEvent: {}
+[11.327492] (-) TimerEvent: {}
+[11.423858] (planning) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libreference_line.so\x1b[0m\n'}
+[11.427638] (-) TimerEvent: {}
+[11.514103] (planning) StdoutLine: {'line': b'[ 64%] Built target reference_line\n'}
+[11.527755] (-) TimerEvent: {}
+[11.628083] (-) TimerEvent: {}
+[11.728441] (-) TimerEvent: {}
+[11.828785] (-) TimerEvent: {}
+[11.929141] (-) TimerEvent: {}
+[12.029507] (-) TimerEvent: {}
+[12.129814] (-) TimerEvent: {}
+[12.230181] (-) TimerEvent: {}
+[12.330627] (-) TimerEvent: {}
+[12.430913] (-) TimerEvent: {}
+[12.531242] (-) TimerEvent: {}
+[12.631579] (-) TimerEvent: {}
+[12.731858] (-) TimerEvent: {}
+[12.741739] (planning) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libdecision_center.so\x1b[0m\n'}
+[12.764793] (planning) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable pnc_map_server\x1b[0m\n'}
+[12.796189] (planning) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX executable car_move_cmd\x1b[0m\n'}
+[12.816504] (planning) StdoutLine: {'line': b'[ 73%] Built target decision_center\n'}
+[12.831901] (planning) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_speeds/local_speeds_smoother.cpp.o\x1b[0m\n'}
+[12.832095] (-) TimerEvent: {}
+[12.832210] (planning) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_path/local_path_smoother.cpp.o\x1b[0m\n'}
+[12.832894] (planning) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_path/local_path_planner.cpp.o\x1b[0m\n'}
+[12.833326] (planning) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_speeds/local_speeds_planner.cpp.o\x1b[0m\n'}
+[12.920066] (planning) StderrLine: {'line': b"/usr/bin/ld: libpnc_map.so: undefined reference to `Planning::PncMapCreatorBase::PncMapCreatorBase()'\n"}
+[12.926072] (planning) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[12.927511] (planning) StderrLine: {'line': b'gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:202\xef\xbc\x9asrc/pnc_map_creator/pnc_map_server] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[12.927675] (planning) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:580\xef\xbc\x9asrc/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[12.927717] (planning) StderrLine: {'line': b'gmake[1]: *** \xe6\xad\xa3\xe5\x9c\xa8\xe7\xad\x89\xe5\xbe\x85\xe6\x9c\xaa\xe5\xae\x8c\xe6\x88\x90\xe7\x9a\x84\xe4\xbb\xbb\xe5\x8a\xa1....\n'}
+[12.932181] (-) TimerEvent: {}
+[12.937857] (planning) StdoutLine: {'line': b'[ 85%] Built target car_move_cmd\n'}
+[12.960340] (planning) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable obs_move_cmd\x1b[0m\n'}
+[13.032340] (-) TimerEvent: {}
+[13.047663] (planning) StdoutLine: {'line': b'[ 88%] Built target obs_move_cmd\n'}
+[13.132474] (-) TimerEvent: {}
+[13.232786] (-) TimerEvent: {}
+[13.333143] (-) TimerEvent: {}
+[13.433449] (-) TimerEvent: {}
+[13.533761] (-) TimerEvent: {}
+[13.634156] (-) TimerEvent: {}
+[13.734482] (-) TimerEvent: {}
+[13.834807] (-) TimerEvent: {}
+[13.935128] (-) TimerEvent: {}
+[14.035449] (-) TimerEvent: {}
+[14.135746] (-) TimerEvent: {}
+[14.236073] (-) TimerEvent: {}
+[14.336434] (-) TimerEvent: {}
+[14.436762] (-) TimerEvent: {}
+[14.537072] (-) TimerEvent: {}
+[14.637379] (-) TimerEvent: {}
+[14.737722] (-) TimerEvent: {}
+[14.838003] (-) TimerEvent: {}
+[14.847163] (planning) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX shared library liblocal_planner.so\x1b[0m\n'}
+[14.911749] (planning) StdoutLine: {'line': b'[ 91%] Built target local_planner\n'}
+[14.912564] (planning) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[14.914018] (planning) CommandEnded: {'returncode': 2}
+[14.916784] (planning) JobEnded: {'identifier': 'planning', 'rc': 2}
+[14.927104] (-) EventReactorShutdown: {}

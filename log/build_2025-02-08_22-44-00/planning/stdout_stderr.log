@@ -1,0 +1,30 @@
+[  5%] Built target global_planner
+[ 14%] Built target pnc_map
+[ 20%] Built target config_reader
+[ 29%] Built target mathlibs
+[ 35%] Built target global_path_server
+[ 41%] Built target pnc_map_server
+[ 50%] Built target vehicle_info
+[ 58%] Built target reference_line
+[ 64%] Built target decision_center
+[ 70%] Built target car_move_cmd
+[ 76%] Built target obs_move_cmd
+[ 91%] Built target local_planner
+[35m[1mConsolidate compiler generated dependencies of target planning_node[0m
+[ 94%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o[0m
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:[m[K In member function ‘[01m[Kbool Planning::PlanningProcess::connect_server(const T&)[m[K’:
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:80:68:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+   80 |       if constexpr (std::is_same<T, rclcpp::Client<PNCMapService>::[01;31m[KSharedPtr[m[K)
+      |                                                                    [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:80:77:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   80 |       if constexpr (std::is_same<T, rclcpp::Client<PNCMapService>::SharedPtr[01;31m[K)[m[K
+      |                                                                             [01;31m[K^[m[K
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:84:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+   84 |       else if constexpr (std::is_same<T, rclcpp::Client<GlobalPathService>::[01;31m[KSharedPtr[m[K)
+      |                                                                             [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:84:86:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   84 |       else if constexpr (std::is_same<T, rclcpp::Client<GlobalPathService>::SharedPtr[01;31m[K)[m[K
+      |                                                                                      [01;31m[K^[m[K
+gmake[2]: *** [src/planning_process/CMakeFiles/planning_node.dir/build.make:90：src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:527：src/planning_process/CMakeFiles/planning_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,100 @@
+[0.135s] Invoking command in '/home/miao/planning_with_ROS2_ws/build/planning': CMAKE_PREFIX_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/miao/planning_with_ROS2_ws/src/planning -DCMAKE_INSTALL_PREFIX=/home/miao/planning_with_ROS2_ws/install/planning
+[0.177s] -- The C compiler identification is GNU 12.3.0
+[0.216s] -- The CXX compiler identification is GNU 11.4.0
+[0.221s] -- Detecting C compiler ABI info
+[0.278s] -- Detecting C compiler ABI info - done
+[0.282s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.282s] -- Detecting C compile features
+[0.283s] -- Detecting C compile features - done
+[0.284s] -- Detecting CXX compiler ABI info
+[0.339s] -- Detecting CXX compiler ABI info - done
+[0.343s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.343s] -- Detecting CXX compile features
+[0.344s] -- Detecting CXX compile features - done
+[0.345s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.439s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.492s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.517s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.519s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.524s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.530s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.538s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.566s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.568s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.632s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.649s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.674s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.681s] -- Looking for pthread.h
+[0.732s] -- Looking for pthread.h - found
+[0.733s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.785s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.786s] -- Found Threads: TRUE  
+[0.820s] -- Found tf2: 0.25.9 (/opt/ros/humble/share/tf2/cmake)
+[0.834s] -- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.890s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.899s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[0.920s] -- Found base_msgs: 0.0.0 (/home/miao/planning_with_ROS2_ws/install/base_msgs/share/base_msgs/cmake)
+[0.958s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.002s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.002s] -- Configured cppcheck include dirs: /home/miao/planning_with_ROS2_ws/src/planning/src/common/config_reader;/home/miao/planning_with_ROS2_ws/src/planning/src/common/math;/home/miao/planning_with_ROS2_ws/src/planning/src/decision_center;/home/miao/planning_with_ROS2_ws/src/planning/src/global_planner;/home/miao/planning_with_ROS2_ws/src/planning/src/global_planner/global_planner_normal;/home/miao/planning_with_ROS2_ws/src/planning/src/local_planner;/home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_path;/home/miao/planning_with_ROS2_ws/src/planning/src/local_planner/local_speeds;/home/miao/planning_with_ROS2_ws/src/planning/src/move_cmd;/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process;/home/miao/planning_with_ROS2_ws/src/planning/src/pnc_map_creator;/home/miao/planning_with_ROS2_ws/src/planning/src/pnc_map_creator/pnc_map_straight;/home/miao/planning_with_ROS2_ws/src/planning/src/pnc_map_creator/pnc_map_sturn;/home/miao/planning_with_ROS2_ws/src/planning/src/reference_line;/home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info;/home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/main_car;/home/miao/planning_with_ROS2_ws/src/planning/src/vehicle_info/obs_car
+[1.002s] -- Configured cppcheck exclude dirs and/or files: 
+[1.003s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.004s] -- Added test 'lint_cmake' to check CMake code style
+[1.004s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.005s] -- Added test 'uncrustify' to check C / C++ code style
+[1.005s] -- Configured uncrustify additional arguments: 
+[1.006s] -- Added test 'xmllint' to check XML markup files
+[1.007s] -- Configuring done
+[1.045s] -- Generating done
+[1.060s] -- Build files have been written to: /home/miao/planning_with_ROS2_ws/build/planning
+[1.070s] Invoked command in '/home/miao/planning_with_ROS2_ws/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/miao/planning_with_ROS2_ws/src/planning -DCMAKE_INSTALL_PREFIX=/home/miao/planning_with_ROS2_ws/install/planning
+[1.071s] Invoking command in '/home/miao/planning_with_ROS2_ws/build/planning': CMAKE_PREFIX_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/miao/planning_with_ROS2_ws/build/planning -- -j20 -l20
+[1.107s] [  2%] [32mBuilding CXX object src/global_planner/CMakeFiles/global_planner.dir/global_planner_normal/global_planner_normal.cpp.o[0m
+[1.107s] [  8%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map.dir/pnc_map_sturn/pnc_map_sturn.cpp.o[0m
+[1.107s] [  8%] [32mBuilding CXX object src/common/CMakeFiles/mathlibs.dir/math/polynomial_curve.cpp.o[0m
+[1.107s] [ 11%] [32mBuilding CXX object src/common/CMakeFiles/mathlibs.dir/math/curve.cpp.o[0m
+[1.108s] [ 14%] [32mBuilding CXX object src/common/CMakeFiles/config_reader.dir/config_reader/config_reader.cpp.o[0m
+[1.108s] [ 17%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map.dir/pnc_map_straight/pnc_map_straight.cpp.o[0m
+[2.879s] [ 20%] [32m[1mLinking CXX shared library libglobal_planner.so[0m
+[2.959s] [ 20%] Built target global_planner
+[3.036s] [ 23%] [32m[1mLinking CXX shared library libpnc_map.so[0m
+[3.120s] [ 23%] Built target pnc_map
+[3.148s] [ 26%] [32m[1mLinking CXX shared library libmathlibs.so[0m
+[3.163s] [ 29%] [32m[1mLinking CXX shared library libconfig_reader.so[0m
+[3.232s] [ 29%] Built target config_reader
+[3.248s] [ 32%] [32mBuilding CXX object src/global_planner/CMakeFiles/global_path_server.dir/global_path_server.cpp.o[0m
+[3.249s] [ 35%] [32mBuilding CXX object src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/pnc_map_server.cpp.o[0m
+[3.334s] [ 35%] Built target mathlibs
+[3.353s] [ 38%] [32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/main_car/main_car.cpp.o[0m
+[3.353s] [ 41%] [32mBuilding CXX object src/vehicle_info/CMakeFiles/vehicle_info.dir/obs_car/obs_car.cpp.o[0m
+[3.353s] [ 47%] [32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_creator.cpp.o[0m
+[3.353s] [ 47%] [32mBuilding CXX object src/reference_line/CMakeFiles/reference_line.dir/reference_line_smoother.cpp.o[0m
+[5.093s] [ 50%] [32m[1mLinking CXX executable global_path_server[0m
+[5.182s] [ 50%] Built target global_path_server
+[5.189s] [ 52%] [32m[1mLinking CXX shared library libvehicle_info.so[0m
+[5.268s] [ 52%] Built target vehicle_info
+[5.284s] [ 55%] [32mBuilding CXX object src/move_cmd/CMakeFiles/car_move_cmd.dir/car_move_cmd.cpp.o[0m
+[5.285s] [ 61%] [32mBuilding CXX object src/move_cmd/CMakeFiles/obs_move_cmd.dir/obs_move_cmd.cpp.o[0m
+[5.286s] [ 61%] [32mBuilding CXX object src/decision_center/CMakeFiles/decision_center.dir/decision_center.cpp.o[0m
+[5.686s] [ 64%] [32m[1mLinking CXX shared library libreference_line.so[0m
+[5.777s] [ 64%] Built target reference_line
+[7.004s] [ 67%] [32m[1mLinking CXX shared library libdecision_center.so[0m
+[7.027s] [ 70%] [32m[1mLinking CXX executable pnc_map_server[0m
+[7.059s] [ 73%] [32m[1mLinking CXX executable car_move_cmd[0m
+[7.079s] [ 73%] Built target decision_center
+[7.094s] [ 79%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_speeds/local_speeds_smoother.cpp.o[0m
+[7.095s] [ 79%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_path/local_path_smoother.cpp.o[0m
+[7.095s] [ 82%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_path/local_path_planner.cpp.o[0m
+[7.096s] [ 85%] [32mBuilding CXX object src/local_planner/CMakeFiles/local_planner.dir/local_speeds/local_speeds_planner.cpp.o[0m
+[7.183s] /usr/bin/ld: libpnc_map.so: undefined reference to `Planning::PncMapCreatorBase::PncMapCreatorBase()'
+[7.189s] collect2: error: ld returned 1 exit status
+[7.190s] gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:202：src/pnc_map_creator/pnc_map_server] 错误 1
+[7.190s] gmake[1]: *** [CMakeFiles/Makefile2:580：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] 错误 2
+[7.190s] gmake[1]: *** 正在等待未完成的任务....
+[7.200s] [ 85%] Built target car_move_cmd
+[7.223s] [ 88%] [32m[1mLinking CXX executable obs_move_cmd[0m
+[7.310s] [ 88%] Built target obs_move_cmd
+[9.110s] [ 91%] [32m[1mLinking CXX shared library liblocal_planner.so[0m
+[9.174s] [ 91%] Built target local_planner
+[9.175s] gmake: *** [Makefile:146：all] 错误 2
+[9.177s] Invoked command in '/home/miao/planning_with_ROS2_ws/build/planning' returned '2': CMAKE_PREFIX_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/miao/planning_with_ROS2_ws/build/planning -- -j20 -l20

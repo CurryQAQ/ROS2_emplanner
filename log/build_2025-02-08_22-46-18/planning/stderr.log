@@ -1,0 +1,22 @@
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:[m[K In member function ‘[01m[Kbool Planning::PlanningProcess::connect_server(const T&)[m[K’:
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:80:79:[m[K [01;31m[Kerror: [m[K‘[01m[Kvalue[m[K’ is not a member of ‘[01m[Krclcpp::Client<base_msgs::srv::PNCMapService>::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Client<base_msgs::srv::PNCMapService> >[m[K’}
+   80 | cpp::Client<PNCMapService>::SharedPtr::[01;31m[Kvalue[m[K)
+      |                                        [01;31m[K^~~~~[m[K
+
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:80:79:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:80:84:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   80 | cpp::Client<PNCMapService>::SharedPtr::value[01;31m[K)[m[K
+      |                                             [01;31m[K^[m[K
+
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:84:88:[m[K [01;31m[Kerror: [m[K‘[01m[Kvalue[m[K’ is not a member of ‘[01m[Krclcpp::Client<base_msgs::srv::GlobalPathService>::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Client<base_msgs::srv::GlobalPathService> >[m[K’}
+   84 | :Client<GlobalPathService>::SharedPtr::[01;31m[Kvalue[m[K)
+      |                                        [01;31m[K^~~~~[m[K
+
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:84:88:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:84:93:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+   84 | :Client<GlobalPathService>::SharedPtr::value[01;31m[K)[m[K
+      |                                             [01;31m[K^[m[K
+
+gmake[2]: *** [src/planning_process/CMakeFiles/planning_node.dir/build.make:90：src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:527：src/planning_process/CMakeFiles/planning_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

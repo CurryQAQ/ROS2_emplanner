@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libreference_line.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libreference_line.so"
-         OLD_RPATH "/opt/ros/humble/lib:/home/miao/planning_with_ROS2_ws/build/planning/src/common:/usr/local/lib:"
+         OLD_RPATH "/home/miao/planning_with_ROS2_ws/build/planning/src/common:/usr/local/lib:/opt/ros/humble/lib:/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libreference_line.so")

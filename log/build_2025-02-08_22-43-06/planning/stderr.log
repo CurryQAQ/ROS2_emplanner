@@ -1,0 +1,19 @@
+/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp: In instantiation of ‘[01m[Kbool Planning::PlanningProcess::connect_server(const T&) [with T = std::shared_ptr<rclcpp::Client<base_msgs::srv::PNCMapService> >][m[K’:
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:44:23:[m[K   required from here
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:80:69:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ is not a member of ‘[01m[Kstd::is_same<std::shared_ptr<rclcpp::Client<base_msgs::srv::PNCMapService> >, rclcpp::Client<base_msgs::srv::PNCMapService> >[m[K’
+   80 |       if constexpr (std::is_same<T, rclcpp::Client<PNCMapService>>::[01;31m[KSharedPtr[m[K)
+      |                                                                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:84:78:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ is not a member of ‘[01m[Kstd::is_same<std::shared_ptr<rclcpp::Client<base_msgs::srv::PNCMapService> >, rclcpp::Client<base_msgs::srv::GlobalPathService> >[m[K’
+   84 |       else if constexpr (std::is_same<T, rclcpp::Client<GlobalPathService>>::[01;31m[KSharedPtr[m[K)
+      |                                                                              [01;31m[K^~~~~~~~~[m[K
+/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp: In instantiation of ‘[01m[Kbool Planning::PlanningProcess::connect_server(const T&) [with T = std::shared_ptr<rclcpp::Client<base_msgs::srv::GlobalPathService> >][m[K’:
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:58:23:[m[K   required from here
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:80:69:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ is not a member of ‘[01m[Kstd::is_same<std::shared_ptr<rclcpp::Client<base_msgs::srv::GlobalPathService> >, rclcpp::Client<base_msgs::srv::PNCMapService> >[m[K’
+   80 |       if constexpr (std::is_same<T, rclcpp::Client<PNCMapService>>::[01;31m[KSharedPtr[m[K)
+      |                                                                     [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:84:78:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtr[m[K’ is not a member of ‘[01m[Kstd::is_same<std::shared_ptr<rclcpp::Client<base_msgs::srv::GlobalPathService> >, rclcpp::Client<base_msgs::srv::GlobalPathService> >[m[K’
+   84 |       else if constexpr (std::is_same<T, rclcpp::Client<GlobalPathService>>::[01;31m[KSharedPtr[m[K)
+      |                                                                              [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [src/planning_process/CMakeFiles/planning_node.dir/build.make:90：src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:527：src/planning_process/CMakeFiles/planning_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

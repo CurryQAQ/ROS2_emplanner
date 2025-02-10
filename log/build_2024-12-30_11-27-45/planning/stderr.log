@@ -1,5 +1,0 @@
-[31mCMake Error at src/local_planner/CMakeLists.txt:37 (intall):
-  Unknown CMake command "intall".
-
-[0m
-gmake: *** [Makefile:310：cmake_check_build_system] 错误 1

@@ -1,0 +1,64 @@
+[0.141s] Invoking command in '/home/miao/planning_with_ROS2_ws/build/planning': CMAKE_PREFIX_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/miao/planning_with_ROS2_ws/build/planning -- -j20 -l20
+[0.188s] [  5%] Built target global_planner
+[0.188s] [ 11%] Built target config_reader
+[0.191s] [ 26%] Built target mathlibs
+[0.191s] [ 29%] Built target pnc_map
+[0.210s] [ 35%] Built target global_path_server
+[0.213s] [ 41%] Built target pnc_map_server
+[0.214s] [ 50%] Built target vehicle_info
+[0.214s] [ 58%] Built target reference_line
+[0.233s] [ 64%] Built target car_move_cmd
+[0.237s] [ 70%] Built target obs_move_cmd
+[0.237s] [ 76%] Built target decision_center
+[0.262s] [ 91%] Built target local_planner
+[0.273s] [35m[1mConsolidate compiler generated dependencies of target planning_node[0m
+[0.291s] [ 94%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o[0m
+[3.210s] [ 97%] [32m[1mLinking CXX executable planning_node[0m
+[3.369s] [100%] Built target planning_node
+[3.379s] Invoked command in '/home/miao/planning_with_ROS2_ws/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/miao/planning_with_ROS2_ws/build/planning -- -j20 -l20
+[3.381s] Invoking command in '/home/miao/planning_with_ROS2_ws/build/planning': CMAKE_PREFIX_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/miao/planning_with_ROS2_ws/build/planning
+[3.385s] -- Install configuration: ""
+[3.385s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/libconfig_reader.so
+[3.385s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/libmathlibs.so
+[3.386s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/libdecision_center.so
+[3.386s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/libglobal_planner.so
+[3.387s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/global_path_server
+[3.387s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/liblocal_planner.so
+[3.388s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/car_move_cmd
+[3.388s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/obs_move_cmd
+[3.389s] -- Installing: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/planning_node
+[3.389s] -- Set runtime path of "/home/miao/planning_with_ROS2_ws/install/planning/lib/planning/planning_node" to ""
+[3.390s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/libpnc_map.so
+[3.390s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/planning/pnc_map_server
+[3.390s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/libreference_line.so
+[3.391s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/lib/libvehicle_info.so
+[3.391s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/config
+[3.391s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/config/planning_static_obs_config.yaml
+[3.391s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/launch
+[3.391s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/launch/planning_launch.py
+[3.391s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/launch/move_cmd_launch.py
+[3.391s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/rviz
+[3.391s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf
+[3.391s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/main_car
+[3.391s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/main_car/car_radar.xacro
+[3.391s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/main_car/car.xacro
+[3.391s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/main_car/car_camera.xacro
+[3.392s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/main_car/car_wheels.xacro
+[3.392s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/main_car/car_base.xacro
+[3.392s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/urdf/obs_car
+[3.392s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/package_run_dependencies/planning
+[3.392s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/parent_prefix_path/planning
+[3.392s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/ament_prefix_path.sh
+[3.392s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/ament_prefix_path.dsv
+[3.392s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/path.sh
+[3.392s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/environment/path.dsv
+[3.393s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.bash
+[3.393s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.sh
+[3.393s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.zsh
+[3.393s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/local_setup.dsv
+[3.393s] -- Installing: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/package.dsv
+[3.393s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/ament_index/resource_index/packages/planning
+[3.393s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/cmake/planningConfig.cmake
+[3.393s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/cmake/planningConfig-version.cmake
+[3.393s] -- Up-to-date: /home/miao/planning_with_ROS2_ws/install/planning/share/planning/package.xml
+[3.394s] Invoked command in '/home/miao/planning_with_ROS2_ws/build/planning' returned '0': CMAKE_PREFIX_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/miao/planning_with_ROS2_ws/build/planning

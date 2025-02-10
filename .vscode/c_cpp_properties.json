@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "/opt/ros/${ROS_DISTRO}/include/**",
-                "/usr/local/include/**"
+                "/usr/local/include/**",
+                "${workspaceFolder}/src/base_msgs/srv/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

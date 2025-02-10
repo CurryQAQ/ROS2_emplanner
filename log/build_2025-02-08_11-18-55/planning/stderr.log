@@ -1,0 +1,6 @@
+/usr/bin/ld: libpnc_map.so: undefined reference to `Planning::PncMapCreatorBase::PncMapCreatorBase()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/build.make:202：src/pnc_map_creator/pnc_map_server] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:580：src/pnc_map_creator/CMakeFiles/pnc_map_server.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+gmake: *** [Makefile:146：all] 错误 2

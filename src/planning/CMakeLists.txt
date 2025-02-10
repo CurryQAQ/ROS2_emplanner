@@ -28,7 +28,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 #设置包名，让子目录节点安装时使用
 set(PLANNING_PACKAGE_NAME ${PROJECT_NAME})
 
-# 包含头文件的目录
+# 包含头文件的目录这段代码的主要作用是告知编译器在编译项目时去哪里查找头文件。
+# 通过指定这些目录路径，编译器能够正确定位到项目中各个模块所依赖的头文件，从而保证编译过程顺利进行，避免出现 “头文件找不到” 这样的编译错误。
 
 include_directories(
   /usr/local/include/eigen
@@ -95,3 +96,6 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
+
+
+# 这个主cmakelists的工作就是查找依赖，包含头文件的位置，添加子目录让主cmake可以找到子cmake，安装src之外的目录

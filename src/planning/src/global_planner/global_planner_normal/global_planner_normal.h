@@ -9,6 +9,7 @@ namespace Planning
     {
     public:
         GlobalPlannerNormal();
+        Path search_global_path(const PncMap &pnc_map) override;
     private:
 
     };

@@ -1,0 +1,34 @@
+[0.147s] Invoking command in '/home/miao/planning_with_ROS2_ws/build/planning': CMAKE_PREFIX_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/miao/planning_with_ROS2_ws/build/planning -- -j20 -l20
+[0.192s] [ 14%] Built target pnc_map
+[0.192s] [ 14%] Built target config_reader
+[0.193s] [ 20%] Built target global_planner
+[0.196s] [ 29%] Built target mathlibs
+[0.209s] [ 35%] Built target global_path_server
+[0.212s] [ 41%] Built target pnc_map_server
+[0.216s] [ 50%] Built target vehicle_info
+[0.218s] [ 58%] Built target reference_line
+[0.233s] [ 64%] Built target car_move_cmd
+[0.234s] [ 70%] Built target decision_center
+[0.235s] [ 76%] Built target obs_move_cmd
+[0.255s] [ 91%] Built target local_planner
+[0.270s] [35m[1mConsolidate compiler generated dependencies of target planning_node[0m
+[0.287s] [ 94%] [32mBuilding CXX object src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o[0m
+[2.196s] [01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:[m[K In member function ‘[01m[Kbool Planning::PlanningProcess::connect_server(const T&)[m[K’:
+[2.196s] [01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:80:68:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[2.196s]    80 |       if constexpr (std::is_same<T, rclcpp::Client<PNCMapService>::[01;31m[KSharedPtr[m[K)
+[2.196s]       |                                                                    [01;31m[K^~~~~~~~~[m[K
+[2.196s] [01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:80:77:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+[2.196s]    80 |       if constexpr (std::is_same<T, rclcpp::Client<PNCMapService>::SharedPtr[01;31m[K)[m[K
+[2.196s]       |                                                                             [01;31m[K^[m[K
+[2.196s] [01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:84:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[2.196s]    84 | e if constexpr (std::is_same<T, rclcpp::Client<GlobalPathService>::[01;31m[KSharedPtr[m[K)
+[2.196s]       |                                                                    [01;31m[K^~~~~~~~~[m[K
+[2.196s] 
+[2.196s] [01m[K/home/miao/planning_with_ROS2_ws/src/planning/src/planning_process/planning_process.cpp:84:86:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K)[m[K’ token
+[2.196s]    84 | e if constexpr (std::is_same<T, rclcpp::Client<GlobalPathService>::SharedPtr[01;31m[K)[m[K
+[2.196s]       |                                                                             [01;31m[K^[m[K
+[2.196s] 
+[2.615s] gmake[2]: *** [src/planning_process/CMakeFiles/planning_node.dir/build.make:90：src/planning_process/CMakeFiles/planning_node.dir/planning_process.cpp.o] 错误 1
+[2.615s] gmake[1]: *** [CMakeFiles/Makefile2:527：src/planning_process/CMakeFiles/planning_node.dir/all] 错误 2
+[2.615s] gmake: *** [Makefile:146：all] 错误 2
+[2.617s] Invoked command in '/home/miao/planning_with_ROS2_ws/build/planning' returned '2': CMAKE_PREFIX_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs:/home/miao/planning_with_ROS2_ws/install/planning:/home/miao/planning_with_ROS2_ws/install/data_plot:/opt/ros/humble LD_LIBRARY_PATH=/home/miao/planning_with_ROS2_ws/install/base_msgs/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/home/miao/planning_with_ROS2_ws/install/planning/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/miao/planning_with_ROS2_ws/build/planning -- -j20 -l20

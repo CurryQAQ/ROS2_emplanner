@@ -1,0 +1,4 @@
+# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
+
+set(base_msgs_IDL_FILES "msg/LocalPath.idl;msg/LocalPathPoint.idl;msg/LocalSpeeds.idl;msg/LocalSpeedsPoint.idl;msg/LocalTrajectory.idl;msg/LocalTrajectoryPoint.idl;msg/ObsInfo.idl;msg/PlotInfo.idl;msg/PNCMap.idl;msg/Referline.idl;msg/ReferlinePoint.idl;srv/GlobalPathService.idl;srv/PNCMapService.idl")
+set(base_msgs_INTERFACE_FILES "msg/LocalPath.msg;msg/LocalPathPoint.msg;msg/LocalSpeeds.msg;msg/LocalSpeedsPoint.msg;msg/LocalTrajectory.msg;msg/LocalTrajectoryPoint.msg;msg/ObsInfo.msg;msg/PlotInfo.msg;msg/PNCMap.msg;msg/Referline.msg;msg/ReferlinePoint.msg;srv/GlobalPathService.srv;srv/GlobalPathService_Request.msg;srv/GlobalPathService_Response.msg;srv/PNCMapService.srv;srv/PNCMapService_Request.msg;srv/PNCMapService_Response.msg")
